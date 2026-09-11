@@ -1,0 +1,27 @@
+services:
+  polaris-fgac:
+    image: fgac-polaris-minimal:1.7.0-demo
+    restart: unless-stopped
+    ports:
+      - "${CONTROL_BIND_IP:-0.0.0.0}:${POLARIS_PORT:-8181}:8181"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8181/q/health"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  storage:
+    image: fgacdemo-storage:latest
+    restart: unless-stopped
+    environment:
+      PARQUET_ROOT: /parquet
+      STORAGE_TOKEN: ${STORAGE_TOKEN:?set STORAGE_TOKEN}
+    ports:
+      - "${STORAGE_BIND_IP:-0.0.0.0}:${STORAGE_PORT:-8003}:8003"
+    volumes:
+      - ./data:/parquet:ro
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8003/health')"]
+      interval: 5s
+      timeout: 3s
+      retries: 30

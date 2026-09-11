@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+tmp/
+.gradle/
+build/
+target/
+*.crc
+
+# Locally built engine adapters and images are release artifacts.
+plugins/artifacts/
+images/
+release/
+*.tar
+*.tar.gz
+*.tar.zst
+*.zip
+
+# Local secrets and runtime state.
+.env
+.env.local
+*.log
+results/raw/
+
+# Large benchmark data is provisioned from a versioned manifest.
+storage/data/governed/nyc_taxi/*.parquet

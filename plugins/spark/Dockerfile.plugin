@@ -1,0 +1,6 @@
+FROM maven:3.9.9-eclipse-temurin-17
+WORKDIR /build
+COPY plugins/spark/pom.xml ./pom.xml
+COPY plugins/spark/src ./src
+RUN mvn -DskipTests package
+CMD ["sh", "-c", "cp /build/target/fgac-spark-extension-1.0.0.jar /artifacts/fgac-spark-extension.jar"]

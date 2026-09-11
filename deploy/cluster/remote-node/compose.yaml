@@ -1,0 +1,19 @@
+services:
+  remote:
+    image: fgac-remote:latest
+    restart: unless-stopped
+    command: ["uvicorn", "remote.app:app", "--host", "0.0.0.0", "--port", "8002"]
+    environment:
+      POLARIS_URL: ${POLARIS_URL:?set POLARIS_URL}
+      STORAGE_URL: ${STORAGE_URL:?set STORAGE_URL}
+      STORAGE_TOKEN: ${STORAGE_TOKEN:?set STORAGE_TOKEN}
+      SPARK_LOCAL_IP: 127.0.0.1
+    ports:
+      - "${REMOTE_BIND_IP:-0.0.0.0}:${REMOTE_PORT:-8002}:8002"
+    volumes:
+      - ./app:/app/remote:ro
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8002/health"]
+      interval: 5s
+      timeout: 3s
+      retries: 30

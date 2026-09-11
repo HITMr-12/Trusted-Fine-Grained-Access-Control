@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.parquet binary
+*.jar binary
+*.so binary
+*.png binary
+*.jpg binary
+*.jpeg binary

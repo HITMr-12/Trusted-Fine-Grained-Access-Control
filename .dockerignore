@@ -1,0 +1,11 @@
+.git
+__pycache__
+.pytest_cache
+output
+tmp
+images
+release
+plugins/artifacts
+*.tar
+*.zip
+storage/data/governed/nyc_taxi/*.parquet

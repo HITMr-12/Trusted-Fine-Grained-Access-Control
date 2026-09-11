@@ -1,0 +1,206 @@
+services:
+  polaris-fgac:
+    image: fgac-polaris-minimal:1.7.0-demo
+    build:
+      context: ./catalog/polaris-minimal
+    networks: [control]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8181/q/health"]
+      interval: 2s
+      timeout: 2s
+      retries: 30
+
+  storage:
+    build:
+      context: .
+      dockerfile: storage/Dockerfile
+    environment:
+      PARQUET_ROOT: /parquet
+      STORAGE_TOKEN: remote-storage-secret
+    volumes:
+      - ./storage/data:/parquet:ro
+    networks: [data]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8003/health')"]
+      interval: 2s
+      timeout: 2s
+      retries: 30
+
+  remote:
+    image: fgac-remote:latest
+    command: ["uvicorn", "remote.app:app", "--host", "0.0.0.0", "--port", "8002"]
+    environment:
+      POLARIS_URL: http://polaris-fgac:8181
+      STORAGE_URL: http://storage:8003
+      STORAGE_TOKEN: remote-storage-secret
+      SPARK_LOCAL_IP: 127.0.0.1
+    networks: [control, data]
+    volumes:
+      - ./remote:/app/remote:ro
+    depends_on:
+      polaris-fgac: {condition: service_healthy}
+      storage: {condition: service_healthy}
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8002/health"]
+      interval: 3s
+      timeout: 2s
+      retries: 40
+
+  adapter-core:
+    build:
+      context: .
+      dockerfile: adapter-core/Dockerfile
+    environment:
+      REMOTE_URL: http://remote:8002
+      MATERIALIZATION_TTL_SECONDS: 300
+    networks: [control]
+    depends_on:
+      remote: {condition: service_healthy}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8004/health')"]
+      interval: 2s
+      timeout: 2s
+      retries: 30
+
+  spark-plugin-builder:
+    build:
+      context: .
+      dockerfile: plugins/spark/Dockerfile.plugin
+    volumes:
+      - ./plugins/artifacts:/artifacts
+
+  pg-plugin-builder:
+    build:
+      context: .
+      dockerfile: plugins/postgres/Dockerfile.plugin
+    volumes:
+      - ./plugins/artifacts:/artifacts
+
+  spark-engine:
+    image: tabulario/spark-iceberg:latest
+    user: root
+    entrypoint: ["/opt/spark/bin/spark-submit"]
+    command:
+      - --master
+      - local[2]
+      - --jars
+      - /plugins/fgac-spark-extension.jar
+      - --conf
+      - spark.sql.extensions=demo.fgac.GovernedSparkExtension
+      - --conf
+      - spark.sql.catalogImplementation=in-memory
+      - --conf
+      - spark.sql.defaultCatalog=spark_catalog
+      - /app/demo.py
+    environment:
+      POLARIS_URL: http://polaris-fgac:8181
+      # Compatibility alias for the prebuilt demo plugin artifact.
+      CATALOG_URL: http://polaris-fgac:8181
+      REMOTE_URL: http://adapter-core:8004
+      USER_TOKEN: alice-token
+      PUBLIC_STORAGE_ROOT: /local-data
+      SPARK_LOCAL_IP: 127.0.0.1
+    volumes:
+      - ./plugins/artifacts:/plugins:ro
+      - ./clients/spark/demo.py:/app/demo.py:ro
+      - ./storage/data/public/departments.csv:/local-data/departments.csv:ro
+    networks: [control]
+    depends_on:
+      adapter-core: {condition: service_healthy}
+
+  spark-non-plugin:
+    image: tabulario/spark-iceberg:latest
+    user: root
+    entrypoint: ["/opt/spark/bin/spark-submit"]
+    command:
+      - --master
+      - local[2]
+      - --conf
+      - spark.sql.catalogImplementation=in-memory
+      - --conf
+      - spark.sql.defaultCatalog=spark_catalog
+      - /app/non_plugin_demo.py
+    environment:
+      REMOTE_URL: http://remote:8002
+      PUBLIC_STORAGE_ROOT: /local-data
+      SPARK_LOCAL_IP: 127.0.0.1
+    volumes:
+      - ./clients/spark/non_plugin_demo.py:/app/non_plugin_demo.py:ro
+      - ./storage/data/public/departments.csv:/local-data/departments.csv:ro
+    networks: [control]
+    depends_on:
+      adapter-core: {condition: service_healthy}
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: fgac
+      POSTGRES_USER: fgac
+      POSTGRES_PASSWORD: fgac-demo
+      POLARIS_URL: http://polaris-fgac:8181
+    volumes:
+      - ./plugins/artifacts:/plugins:ro
+      - ./postgres/init:/docker-entrypoint-initdb.d:ro
+      - ./storage/data/public:/public-data:ro
+    networks: [control]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U fgac -d fgac"]
+      interval: 2s
+      timeout: 2s
+      retries: 30
+    depends_on:
+      remote: {condition: service_healthy}
+
+  pg-tests:
+    image: postgres:16-alpine
+    environment:
+      PGHOST: postgres
+      PGDATABASE: fgac
+      PGUSER: fgac
+      PGPASSWORD: fgac-demo
+    command: ["psql", "-X", "-f", "/tests/pg_fgac_test.sql"]
+    volumes:
+      - ./postgres/tests:/tests:ro
+    networks: [control]
+    depends_on:
+      postgres: {condition: service_healthy}
+
+  pg-non-plugin-tests:
+    image: postgres:16-alpine
+    environment:
+      PGHOST: postgres
+      PGDATABASE: fgac
+      PGUSER: fgac
+      PGPASSWORD: fgac-demo
+      REMOTE_URL: http://remote:8002
+    entrypoint: ["/bin/sh", "/tests/pg_non_plugin_test.sh"]
+    volumes:
+      - ./postgres/tests:/tests:ro
+    networks: [control]
+    depends_on:
+      postgres: {condition: service_healthy}
+
+  security-tests:
+    image: fgac-remote:latest
+    entrypoint: ["python"]
+    command: ["/tests/security_contract.py"]
+    volumes:
+      - ./tests:/tests:ro
+    networks: [control]
+    depends_on:
+      remote: {condition: service_healthy}
+
+  adapter-core-tests:
+    image: fgac-remote:latest
+    entrypoint: ["python"]
+    command: ["/tests/adapter_core_contract.py"]
+    volumes:
+      - ./tests:/tests:ro
+    networks: [control]
+    depends_on:
+      adapter-core: {condition: service_healthy}
+
+networks:
+  control: {}
+  data:
+    internal: true
