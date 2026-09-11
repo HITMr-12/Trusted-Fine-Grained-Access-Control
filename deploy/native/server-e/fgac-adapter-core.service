@@ -1,0 +1,21 @@
+[Unit]
+Description=FGAC engine-neutral Adapter Core
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=fgac-adapter
+Group=fgac-adapter
+WorkingDirectory=/opt/fgac
+EnvironmentFile=/etc/fgac/adapter.env
+ExecStart=/opt/fgac/venv/bin/uvicorn app:app --app-dir /opt/fgac/adapter-core --host 127.0.0.1 --port 8004
+Restart=on-failure
+RestartSec=2
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+
+[Install]
+WantedBy=multi-user.target

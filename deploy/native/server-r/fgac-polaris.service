@@ -1,0 +1,20 @@
+[Unit]
+Description=FGAC minimal Polaris-compatible catalog
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=fgac
+Group=fgac
+WorkingDirectory=/opt/fgac/catalog
+ExecStart=/usr/bin/java --add-modules jdk.httpserver -cp /opt/fgac/catalog/classes org.apache.polaris.fgac.MinimalPolarisFgac
+Restart=on-failure
+RestartSec=2
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+
+[Install]
+WantedBy=multi-user.target

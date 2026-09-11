@@ -14,7 +14,9 @@
 - `storage/data/public/`：可由普通引擎直接读取的数据。
 - `storage/data/governed/`：只能由 Remote 读取的受控数据。
 - `clients/`、`postgres/`、`tests/`：引擎接入与契约测试。
-- `deploy/two-node/`：纯净基线与 Remote FGAC 的两台物理机部署和测试约束。
+- `deploy/native/`：两台 Linux 物理机的 systemd 原生部署入口。
+- `deploy/two-node/`：纯净基线与 Remote FGAC 的测试设计和可比性约束。
+- `docker-compose.yml`：仅用于开发机功能验证，不用于物理机性能测试。
 
 ## 当前迁移状态
 
