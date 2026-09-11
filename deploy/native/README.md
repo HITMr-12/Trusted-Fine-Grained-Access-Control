@@ -117,3 +117,9 @@ hash. Follow `deploy/two-node/README.md` for the complete comparability contract
 Capture the output of `systemctl status`, `journalctl`, `uname -a`, Java/Python/
 Spark/PostgreSQL versions, CPU topology, memory size, service environment hashes,
 Git commit, data checksums, and query result hashes with every run.
+
+## Cleanup
+
+After exporting the experiment manifest and results, follow
+`deploy/native/CLEANUP.md`. The cleanup scripts default to a dry run and require
+`--yes` before they stop services or remove files.
