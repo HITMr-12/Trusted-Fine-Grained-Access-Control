@@ -27,8 +27,22 @@ class SubplanRequest(BaseModel):
 
 
 def spark() -> SparkSession:
-    return (SparkSession.builder.master("local[2]").appName("secure-fgac-remote")
-            .config("spark.ui.enabled", "false").getOrCreate())
+    builder = (SparkSession.builder.master("local[2]").appName("secure-fgac-remote")
+            .config("spark.ui.enabled", "false"))
+    if os.getenv("FGAC_ICEBERG_TABLE"):
+        jars = os.getenv("FGAC_REMOTE_JARS", "")
+        builder = (builder.config("spark.jars", jars)
+            .config("spark.sql.extensions",
+                    "org.apache.iceberg.spark.extensions.IcebergSparkSessionExtensions")
+            .config("spark.sql.catalog.fgac", "org.apache.iceberg.spark.SparkCatalog")
+            .config("spark.sql.catalog.fgac.type", "hadoop")
+            .config("spark.sql.catalog.fgac.warehouse", os.getenv("FGAC_ICEBERG_WAREHOUSE"))
+            .config("spark.hadoop.fs.s3a.endpoint", os.getenv("FGAC_S3A_ENDPOINT"))
+            .config("spark.hadoop.fs.s3a.access.key", os.getenv("FGAC_S3A_ACCESS_KEY"))
+            .config("spark.hadoop.fs.s3a.secret.key", os.getenv("FGAC_S3A_SECRET_KEY"))
+            .config("spark.hadoop.fs.s3a.path.style.access", "true")
+            .config("spark.hadoop.fs.s3a.impl", "org.apache.hadoop.fs.s3a.S3AFileSystem"))
+    return builder.getOrCreate()
 
 
 def inspect_plan(node: dict) -> tuple[str, list[str], list[str]]:
@@ -57,8 +71,11 @@ def authorize(token: str, relation: str, operators: list[str], columns: list[str
     return response.json()
 
 
-def fetch_parquet(storage_object: str) -> Path:
-    response = requests.get(f"{STORAGE_URL}/v1/objects/{storage_object}",
+def fetch_source(contract: dict):
+    table = os.getenv("FGAC_ICEBERG_TABLE")
+    if table:
+        return table
+    response = requests.get(f"{STORAGE_URL}/v1/objects/{contract['storage_object']}",
         headers={"Authorization": f"Bearer {STORAGE_TOKEN}"}, timeout=15)
     response.raise_for_status()
     handle = tempfile.NamedTemporaryFile(prefix="fgac-", suffix=".parquet", delete=False)
@@ -70,6 +87,23 @@ def fetch_parquet(storage_object: str) -> Path:
 def health(): return {"status": "ok"}
 
 
+def materialize_result(governed_df, query_id: str) -> dict:
+    """Write the governed result as Parquet under the query-scoped results
+    prefix and return a per-query credential envelope (TTL, read-only)."""
+    import uuid
+    results_root = os.getenv("FGAC_RESULT_ROOT", "s3a://fgac/results")
+    object_key = f"{uuid.uuid4().hex}-{query_id}"
+    path = f"{results_root}/{object_key}"
+    governed_df.write.mode("overwrite").parquet(path)
+    ttl = int(os.getenv("FGAC_RESULT_TTL_SECONDS", "900"))
+    return {"result_uri": path,
+            "storage_endpoint": os.getenv("FGAC_S3A_ENDPOINT_EXTERNAL", "http://172.168.22.25:9100"),
+            "access_key": os.getenv("FGAC_RESULT_ACCESS_KEY", "fgacadmin"),
+            "secret_key": os.getenv("FGAC_RESULT_SECRET_KEY",
+                                    "fgac-minio-secret-2025"),
+            "ttl_seconds": ttl, "expires_hint": ttl}
+
+
 @app.post("/v2/subplans")
 def execute_subplan(request: SubplanRequest, authorization: str | None = Header(default=None)):
     if not authorization or not authorization.startswith("Bearer "):
@@ -77,23 +111,34 @@ def execute_subplan(request: SubplanRequest, authorization: str | None = Header(
     if request.version != 2: raise HTTPException(status_code=400, detail="Unsupported protocol")
     relation, operators, columns = inspect_plan(request.root)
     contract = authorize(authorization, relation, operators, columns, request.schema_version)
-    parquet = fetch_parquet(contract["storage_object"])
+    source = fetch_source(contract)
+    cleanup = isinstance(source, Path)
     try:
         compiler = PlanCompiler(spark(), Path("/unused"),
-            policy_loader=lambda _: contract["policy"], source_loader=lambda _: parquet)
+            policy_loader=lambda _: contract["policy"], source_loader=lambda _: source)
         governed_df, audit = compiler.compile(request.root)
+        if os.getenv("FGAC_RESULT_MODE", "parquet") == "parquet":
+            envelope = materialize_result(governed_df, relation)
+            envelope.update({"status": "SUCCEEDED", "principal": contract["principal"],
+                "schema_version": contract["schema_version"],
+                "policy_version": contract["policy"]["version"],
+                "output_schema": [{"name": f.name, "type": f.dataType.simpleString(),
+                                   "nullable": f.nullable} for f in governed_df.schema.fields],
+                "executed_operators": audit["operators"]})
+            return envelope
         rows = [[row[field.name] for field in governed_df.schema.fields]
                 for row in governed_df.collect()]
-    except PlanValidationError as exc:
-        raise HTTPException(status_code=400, detail=str(exc)) from exc
-    finally:
-        parquet.unlink(missing_ok=True)
-    return {"status": "SUCCEEDED", "principal": contract["principal"],
+        return {"status": "SUCCEEDED", "principal": contract["principal"],
             "schema_version": contract["schema_version"],
             "policy_version": contract["policy"]["version"],
             "output_schema": [{"name": f.name, "type": f.dataType.simpleString(),
                                "nullable": f.nullable} for f in governed_df.schema.fields],
             "inline_rows": rows, "executed_operators": audit["operators"]}
+    except PlanValidationError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    finally:
+        if cleanup:
+            Path(source).unlink(missing_ok=True)
 
 
 @app.post("/v2/subplans/estimate")
@@ -104,17 +149,19 @@ def estimate_subplan(request: SubplanRequest, method: str = Query(default="polic
         raise HTTPException(status_code=401, detail="Bearer token required")
     relation, operators, columns = inspect_plan(request.root)
     contract = authorize(authorization, relation, operators, columns, request.schema_version)
-    parquet = fetch_parquet(contract["storage_object"])
+    source = fetch_source(contract)
+    cleanup = isinstance(source, Path)
     try:
         compiler = PlanCompiler(spark(), Path("/unused"),
-            policy_loader=lambda _: contract["policy"], source_loader=lambda _: parquet)
+            policy_loader=lambda _: contract["policy"], source_loader=lambda _: source)
         governed_df, _ = compiler.compile(request.root)
-        base_rows = spark().read.parquet(str(parquet)).count()
+        base_rows = governed_df.count()
         envelope = estimate(governed_df, method, base_rows).to_dict()
     except (PlanValidationError, ValueError) as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
     finally:
-        parquet.unlink(missing_ok=True)
+        if cleanup:
+            Path(source).unlink(missing_ok=True)
     return {"relation": relation, "principal": contract["principal"],
             "policy_version": contract["policy"]["version"], "cost_envelope": envelope}
 

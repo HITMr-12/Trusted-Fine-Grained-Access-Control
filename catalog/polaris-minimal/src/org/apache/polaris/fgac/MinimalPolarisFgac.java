@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
 
 /** Dependency-free deployment profile for the Polaris FGAC compatibility API. */
 public final class MinimalPolarisFgac {
-  private static final String COLUMNS = "[\"id\",\"region\",\"amount\",\"owner\",\"card_no\"]";
+  private static final String COLUMNS = "[\"VendorID\",\"trip_distance\",\"fare_amount\",\"payment_type\"]";
   private static final Pattern SCHEMA = Pattern.compile("\\\"schema_version\\\"\\s*:\\s*\\\"([^\\\"]+)\\\"");
 
   private MinimalPolarisFgac() {}
@@ -45,13 +45,13 @@ public final class MinimalPolarisFgac {
     }
     String token = exchange.getRequestHeaders().getFirst("Authorization");
     String principal;
-    String region;
+    String vendorId;
     if ("Bearer alice-token".equals(token)) {
       principal = "alice";
-      region = "CN";
+      vendorId = "1";
     } else if ("Bearer bob-token".equals(token)) {
       principal = "bob";
-      region = "US";
+      vendorId = "2";
     } else {
       send(exchange, 401, error("Invalid or missing bearer token"));
       return;
@@ -80,8 +80,8 @@ public final class MinimalPolarisFgac {
         + "\"storage_object\":\"governed.orders.v1\","
         + "\"authorized_operators\":[\"governed_scan\",\"filter\",\"project\"],"
         + "\"authorized_columns\":" + COLUMNS + ",\"policy\":{\"version\":\"2\","
-        + "\"row_filter\":{\"column\":\"region\",\"op\":\"eq\",\"value\":\""
-        + region + "\"},\"masks\":{\"card_no\":{\"type\":\"last4\",\"prefix\":\"****\"}},"
+        + "\"row_filter\":{\"column\":\"VendorID\",\"op\":\"eq\",\"value\":" + vendorId + "},"
+        + "\"masks\":{},"
         + "\"releasable_columns\":" + COLUMNS + "}}";
     send(exchange, 200, response);
   }

@@ -122,11 +122,14 @@ class PlanCompiler:
         if relation not in ALLOWED_RELATIONS:
             raise PlanValidationError("Relation is not remotely governable")
         source = self.source_loader(relation) if self.source_loader else self.raw_root / relation
-        if not source.is_file():
-            raise PlanValidationError("Raw relation not found")
         policy = self.policy_loader(relation)
         self.audit["policy_versions"][relation] = policy["version"]
-        raw_df = self.session.read.parquet(str(source))
+        if isinstance(source, str):
+            raw_df = self.session.table(source)
+        else:
+            if not source.is_file():
+                raise PlanValidationError("Raw relation not found")
+            raw_df = self.session.read.parquet(str(source))
         governed_df = self._apply_row_policy(raw_df, policy["row_filter"])
         return self._apply_masks(governed_df, policy.get("masks", {}))
 
