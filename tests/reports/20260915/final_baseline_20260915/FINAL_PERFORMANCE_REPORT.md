@@ -1,5 +1,7 @@
 # 最新FGAC、Ranger原生基线与inline统一性能报告
 
+后续验证：[0.1%/1%四方法隔离、三次独立重启复测](../alignment_isolated_20260915/ISOLATED_ALIGNMENT_REPORT.md)未复现本报告小结果集的固定劣化幅度。下文保留本轮八场景原始结果；单轮百分比不应视为跨会话稳定常数。
+
 本报告仅使用2026-09-15同一轮交错测试，FGAC为分区内逐批交付、8192行批次、无压缩。原生基线为Spark＋Kyuubi AuthZ＋Apache Ranger；inline显式写入相同策略条件，是非安全等价的理想参照。
 
 ## 当前结论

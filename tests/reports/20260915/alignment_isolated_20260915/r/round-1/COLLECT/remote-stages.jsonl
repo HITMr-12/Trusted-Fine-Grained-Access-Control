@@ -1,0 +1,528 @@
+{"kind": "prepare", "time": 1789469379.643754, "ms": 2477.9005898162723, "cpu_ms": 6274.278440000004, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469379.6490414, "ms": 2.880857326090336, "cpu_ms": 2.859059999998692, "ok": true}
+{"kind": "stream", "time": 1789469386.1765704, "ms": 6524.573659524322, "cpu_ms": 19768.265569999996, "principal": "bob", "job_id": "flight-2de5d62a9184cf642531721d", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469417.3925638, "ms": 147.15901482850313, "cpu_ms": 258.8908399999994, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469417.3977163, "ms": 3.1539807096123695, "cpu_ms": 13.122080000002256, "ok": true}
+{"kind": "stream", "time": 1789469418.2121851, "ms": 812.1926859021187, "cpu_ms": 5048.169729999998, "principal": "bob", "job_id": "flight-170aaa33c75c9aac7f95fac9", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469423.0100288, "ms": 72.95442745089531, "cpu_ms": 167.8490000000039, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469423.0140936, "ms": 2.324526198208332, "cpu_ms": 12.355800000001693, "ok": true}
+{"kind": "stream", "time": 1789469423.5776622, "ms": 561.3437434658408, "cpu_ms": 2535.3005600000033, "principal": "bob", "job_id": "flight-e470b8b442cd7e31a423e4e9", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469426.3692784, "ms": 65.96582476049662, "cpu_ms": 157.73546999999866, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469426.373054, "ms": 2.2319843992590904, "cpu_ms": 2.2027700000037953, "ok": true}
+{"kind": "stream", "time": 1789469426.825946, "ms": 450.58747194707394, "cpu_ms": 2476.5450100000025, "principal": "bob", "job_id": "flight-12c642816cebd46fe648481e", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469426.982601, "ms": 75.08052606135607, "cpu_ms": 277.68813000000137, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469426.9867232, "ms": 2.5325072929263115, "cpu_ms": 12.502400000002467, "ok": true}
+{"kind": "stream", "time": 1789469427.4833045, "ms": 490.3900595381856, "cpu_ms": 1955.2604800000067, "principal": "bob", "job_id": "flight-b9305c41045a3de0f0e4f802", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469429.4237483, "ms": 65.16021210700274, "cpu_ms": 138.13369000000364, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469429.427413, "ms": 2.207783982157707, "cpu_ms": 12.198449999999639, "ok": true}
+{"kind": "stream", "time": 1789469429.90939, "ms": 479.7532204538584, "cpu_ms": 1386.3994299999972, "principal": "bob", "job_id": "flight-be5a98b60d642ef0a4cc9a37", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469432.63882, "ms": 74.85656905919313, "cpu_ms": 177.7985299999898, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469432.6426306, "ms": 2.270725555717945, "cpu_ms": 12.274700000006078, "ok": true}
+{"kind": "stream", "time": 1789469433.1387932, "ms": 493.9567344263196, "cpu_ms": 3495.4931399999937, "principal": "bob", "job_id": "flight-ad3025babe98b7f4e8ff8947", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469435.6201794, "ms": 62.69292999058962, "cpu_ms": 177.73490000000436, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469435.62401, "ms": 2.2700047120451927, "cpu_ms": 12.31455999999298, "ok": true}
+{"kind": "stream", "time": 1789469436.052979, "ms": 426.56197771430016, "cpu_ms": 1297.0827100000122, "principal": "bob", "job_id": "flight-e6e353add9975dc5188cff08", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469437.847773, "ms": 56.68058060109615, "cpu_ms": 147.53509999999892, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469437.8517375, "ms": 2.3684361949563026, "cpu_ms": 12.36201000000392, "ok": true}
+{"kind": "stream", "time": 1789469438.2564273, "ms": 402.36677695065737, "cpu_ms": 1675.2693800000031, "principal": "bob", "job_id": "flight-b02f467eae3f2bf5466a7bbf", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469439.9790797, "ms": 53.10711823403835, "cpu_ms": 118.1982699999935, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469439.9826958, "ms": 2.1115634590387344, "cpu_ms": 2.1693500000026233, "ok": true}
+{"kind": "stream", "time": 1789469440.342836, "ms": 357.76127595454454, "cpu_ms": 1346.0699000000034, "principal": "bob", "job_id": "flight-456eb888a038d521a6edd7d8", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469440.9821894, "ms": 48.157885670661926, "cpu_ms": 127.5415299999878, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469440.9857516, "ms": 2.0901449024677277, "cpu_ms": 12.143870000016932, "ok": true}
+{"kind": "stream", "time": 1789469441.342789, "ms": 354.5866282656789, "cpu_ms": 965.2609899999902, "principal": "bob", "job_id": "flight-121055f70d4759b922d8ad6b", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469443.079512, "ms": 55.99462054669857, "cpu_ms": 197.84654000000046, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469443.0833497, "ms": 2.2491449490189552, "cpu_ms": 2.3027599999920767, "ok": true}
+{"kind": "stream", "time": 1789469443.463481, "ms": 377.9885349795222, "cpu_ms": 1386.1688799999997, "principal": "bob", "job_id": "flight-d8036b523639bd58bc279b14", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469445.3612556, "ms": 50.31454283744097, "cpu_ms": 97.92833999999573, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469445.3650753, "ms": 2.2322656586766243, "cpu_ms": 2.287559999999189, "ok": true}
+{"kind": "stream", "time": 1789469445.7457356, "ms": 377.47977022081614, "cpu_ms": 1224.936310000004, "principal": "bob", "job_id": "flight-f0c74396d83402c38a8287a1", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469448.6074922, "ms": 53.45509480684996, "cpu_ms": 139.94036999999082, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469448.6116257, "ms": 2.5681080296635628, "cpu_ms": 12.520940000001701, "ok": true}
+{"kind": "stream", "time": 1789469448.992016, "ms": 378.54977045208216, "cpu_ms": 979.1294700000037, "principal": "bob", "job_id": "flight-8e7f0b1221ad2bdc26c5d5d6", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469451.029627, "ms": 49.19219668954611, "cpu_ms": 77.60398999998586, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469451.0333476, "ms": 2.171015366911888, "cpu_ms": 2.2499699999940503, "ok": true}
+{"kind": "stream", "time": 1789469451.3913522, "ms": 356.18003737181425, "cpu_ms": 965.0217799999865, "principal": "bob", "job_id": "flight-38ae06fca0f6b321bd7319f0", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469452.4762368, "ms": 52.4468207731843, "cpu_ms": 97.83566999999493, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469452.480011, "ms": 2.205025404691696, "cpu_ms": 2.292349999990506, "ok": true}
+{"kind": "stream", "time": 1789469452.8685842, "ms": 385.3645622730255, "cpu_ms": 1106.3774899999858, "principal": "bob", "job_id": "flight-fceeecfd64e2561305e86678", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469454.953313, "ms": 48.12786169350147, "cpu_ms": 97.71877000000018, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469454.957255, "ms": 2.3454558104276657, "cpu_ms": 2.5606499999923926, "ok": true}
+{"kind": "stream", "time": 1789469455.317991, "ms": 359.0620122849941, "cpu_ms": 735.1086999999978, "principal": "bob", "job_id": "flight-e048d95e642cc1dab446dae2", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469455.4202998, "ms": 46.31587024778128, "cpu_ms": 108.01170000000582, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469455.4239402, "ms": 2.127325162291527, "cpu_ms": 2.212749999998209, "ok": true}
+{"kind": "stream", "time": 1789469455.7916944, "ms": 366.07351154088974, "cpu_ms": 996.3509100000039, "principal": "bob", "job_id": "flight-7854aee811435af2f9d90c55", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469458.0417626, "ms": 47.82164189964533, "cpu_ms": 147.9749299999895, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469458.0460527, "ms": 2.5778384879231453, "cpu_ms": 2.6051899999970374, "ok": true}
+{"kind": "stream", "time": 1789469458.4935756, "ms": 445.7323784008622, "cpu_ms": 2655.264119999998, "principal": "bob", "job_id": "flight-ab7cf6bac41a09538b952059", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469459.5570934, "ms": 44.41498871892691, "cpu_ms": 77.41821999999843, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469459.560858, "ms": 2.164694480597973, "cpu_ms": 2.2250100000036355, "ok": true}
+{"kind": "stream", "time": 1789469459.920589, "ms": 358.11038222163916, "cpu_ms": 796.2988500000137, "principal": "bob", "job_id": "flight-4e8bec35a87457cd7647a1d0", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469461.4110909, "ms": 41.15353710949421, "cpu_ms": 57.65418000000011, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469461.4147837, "ms": 2.1239658817648888, "cpu_ms": 2.194760000008955, "ok": true}
+{"kind": "stream", "time": 1789469461.7411153, "ms": 324.6706360951066, "cpu_ms": 865.0482400000072, "principal": "bob", "job_id": "flight-e431248e3cee48c7b41f21f2", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469464.6089144, "ms": 41.33286979049444, "cpu_ms": 58.28860999999108, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469464.6128492, "ms": 2.2770659998059273, "cpu_ms": 12.381879999992407, "ok": true}
+{"kind": "stream", "time": 1789469464.9456935, "ms": 331.1572317034006, "cpu_ms": 806.1692399999885, "principal": "bob", "job_id": "flight-443e23ea1fe9bc30593176c8", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469466.3568482, "ms": 40.27215298265219, "cpu_ms": 77.56732, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469466.360495, "ms": 2.13786493986845, "cpu_ms": 2.169730000005643, "ok": true}
+{"kind": "stream", "time": 1789469466.685171, "ms": 323.14258348196745, "cpu_ms": 785.1682200000027, "principal": "bob", "job_id": "flight-5d0a232ce8655f8ad9b4c44b", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469467.234481, "ms": 40.444704703986645, "cpu_ms": 67.5011000000012, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469467.2387333, "ms": 2.5234567001461983, "cpu_ms": 2.54045999999164, "ok": true}
+{"kind": "stream", "time": 1789469467.5702295, "ms": 329.8363434150815, "cpu_ms": 816.0677700000036, "principal": "bob", "job_id": "flight-cdfa72adfc522c9eb50d01a3", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469468.5998256, "ms": 41.30384232848883, "cpu_ms": 57.49347999999088, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469468.6035404, "ms": 2.15731468051672, "cpu_ms": 12.282440000007, "ok": true}
+{"kind": "stream", "time": 1789469468.9294233, "ms": 324.20929707586765, "cpu_ms": 1345.0095299999987, "principal": "bob", "job_id": "flight-5b47e7ba61ab4ed9dc6d774d", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469471.4782925, "ms": 44.99854892492294, "cpu_ms": 88.18542000000207, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469471.482056, "ms": 2.177036367356777, "cpu_ms": 2.3007199999938166, "ok": true}
+{"kind": "stream", "time": 1789469471.9128468, "ms": 429.0738506242633, "cpu_ms": 2806.692990000016, "principal": "bob", "job_id": "flight-d8cab1bd1d9b17e00ad2cd67", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469472.9704592, "ms": 41.88937786966562, "cpu_ms": 107.78625000000375, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469472.9742367, "ms": 2.1540960296988487, "cpu_ms": 2.224830000002953, "ok": true}
+{"kind": "stream", "time": 1789469473.2865007, "ms": 310.6954265385866, "cpu_ms": 855.309879999993, "principal": "bob", "job_id": "flight-f24a8a13131f5c72685f9dec", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469475.6808755, "ms": 43.15881710499525, "cpu_ms": 67.83796999999936, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469475.6848822, "ms": 2.3182369768619537, "cpu_ms": 12.446789999984276, "ok": true}
+{"kind": "stream", "time": 1789469476.0013437, "ms": 314.74598310887814, "cpu_ms": 646.2185199999908, "principal": "bob", "job_id": "flight-e71f6bed5fefc9303e077481", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469476.5327086, "ms": 40.485989302396774, "cpu_ms": 97.69794000000331, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469476.5363302, "ms": 2.0758453756570816, "cpu_ms": 2.1871999999945047, "ok": true}
+{"kind": "stream", "time": 1789469476.864983, "ms": 327.0035441964865, "cpu_ms": 825.161169999987, "principal": "bob", "job_id": "flight-5070a6e23cdb196532c0ddda", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469478.7527108, "ms": 46.34934198111296, "cpu_ms": 68.0711400000149, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469478.7563417, "ms": 2.1432852372527122, "cpu_ms": 2.1910099999900012, "ok": true}
+{"kind": "stream", "time": 1789469479.0826163, "ms": 324.5938131585717, "cpu_ms": 669.0144599999996, "principal": "bob", "job_id": "flight-cfb6279eb043bebbaf08c814", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469481.021171, "ms": 49.65876694768667, "cpu_ms": 47.81205999999827, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469481.0247838, "ms": 2.0874151960015297, "cpu_ms": 2.1624099999968394, "ok": true}
+{"kind": "stream", "time": 1789469481.409596, "ms": 383.14826413989067, "cpu_ms": 945.3072199999895, "principal": "bob", "job_id": "flight-81c4e5316ed6a62c8af2d5e9", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469481.502051, "ms": 49.340084195137024, "cpu_ms": 77.26384000001474, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469481.5056593, "ms": 2.113555558025837, "cpu_ms": 2.229270000000838, "ok": true}
+{"kind": "stream", "time": 1789469481.910326, "ms": 403.00949662923813, "cpu_ms": 916.8954600000063, "principal": "bob", "job_id": "flight-f7257689c69f858c60a69982", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469483.8815985, "ms": 48.719361424446106, "cpu_ms": 56.732179999983146, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469483.889192, "ms": 2.2552767768502235, "cpu_ms": 2.3488200000088, "ok": true}
+{"kind": "stream", "time": 1789469484.2860618, "ms": 395.02460043877363, "cpu_ms": 854.659060000003, "principal": "bob", "job_id": "flight-a79baccc2e41845b2983036f", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469485.2784524, "ms": 50.10764207690954, "cpu_ms": 57.07261999998536, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469485.2818809, "ms": 1.9253343343734741, "cpu_ms": 2.0221099999986336, "ok": true}
+{"kind": "stream", "time": 1789469485.6607678, "ms": 377.2493777796626, "cpu_ms": 1035.646149999991, "principal": "bob", "job_id": "flight-fe9214adfbb42d4bb2ee2cf4", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469488.0164711, "ms": 48.40701073408127, "cpu_ms": 47.32565999999849, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469488.0199819, "ms": 2.03708466142416, "cpu_ms": 12.158190000008062, "ok": true}
+{"kind": "stream", "time": 1789469488.4350655, "ms": 413.3941112086177, "cpu_ms": 674.329709999995, "principal": "bob", "job_id": "flight-6aa65e7edc33cdd5481246e3", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469488.9008837, "ms": 42.22918767482042, "cpu_ms": 47.41242999999429, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469488.904692, "ms": 2.2083260118961334, "cpu_ms": 12.27122999999608, "ok": true}
+{"kind": "stream", "time": 1789469489.2881973, "ms": 381.839144974947, "cpu_ms": 786.0243500000053, "principal": "bob", "job_id": "flight-e85d22bda58f2263bbd04737", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469491.443872, "ms": 44.22471206635237, "cpu_ms": 57.12005999998837, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469491.4474936, "ms": 2.083844505250454, "cpu_ms": 12.215440000005628, "ok": true}
+{"kind": "stream", "time": 1789469491.9119298, "ms": 462.7147428691387, "cpu_ms": 4924.716170000011, "principal": "bob", "job_id": "flight-dab75206f64d5cdc5b5c40b8", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469493.6853843, "ms": 41.029879823327065, "cpu_ms": 67.25980999999592, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469493.6888685, "ms": 2.0025745034217834, "cpu_ms": 2.1188700000038807, "ok": true}
+{"kind": "stream", "time": 1789469494.0123715, "ms": 321.8267224729061, "cpu_ms": 615.367489999997, "principal": "bob", "job_id": "flight-3598122b033fc3c051aa589b", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469494.5471437, "ms": 41.6073240339756, "cpu_ms": 77.34508000001483, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469494.550765, "ms": 2.099274657666683, "cpu_ms": 2.1941899999973202, "ok": true}
+{"kind": "stream", "time": 1789469494.874528, "ms": 322.0641678199172, "cpu_ms": 584.7545399999916, "principal": "bob", "job_id": "flight-2d073b7c45163251faacfe0e", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469496.5484786, "ms": 41.621665470302105, "cpu_ms": 77.2864299999867, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469496.5521047, "ms": 2.113835886120796, "cpu_ms": 2.2610099999980093, "ok": true}
+{"kind": "stream", "time": 1789469496.8672643, "ms": 313.49075119942427, "cpu_ms": 775.6530700000042, "principal": "bob", "job_id": "flight-50318ba54ec0a258f30f80a8", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469497.355023, "ms": 39.26041815429926, "cpu_ms": 47.21723999999483, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469497.3586783, "ms": 2.071645110845566, "cpu_ms": 2.2025600000006307, "ok": true}
+{"kind": "stream", "time": 1789469497.6521623, "ms": 291.82801488786936, "cpu_ms": 604.0525399999979, "principal": "bob", "job_id": "flight-56a00f61e2f1222f1d03774d", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469500.2590327, "ms": 38.51950354874134, "cpu_ms": 67.20243000000892, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469500.2624748, "ms": 1.932874321937561, "cpu_ms": 2.037229999999113, "ok": true}
+{"kind": "stream", "time": 1789469500.5631096, "ms": 299.1280872374773, "cpu_ms": 535.3109100000069, "principal": "bob", "job_id": "flight-7433dc889a9277712bca6e23", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469501.4768536, "ms": 37.75939904153347, "cpu_ms": 56.55084000001409, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469501.4802713, "ms": 1.902134157717228, "cpu_ms": 12.005810000005113, "ok": true}
+{"kind": "stream", "time": 1789469501.8222015, "ms": 340.4550962150097, "cpu_ms": 1144.2307399999977, "principal": "bob", "job_id": "flight-ce281fd4f5867d56df1e3388", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469503.6567354, "ms": 41.930580511689186, "cpu_ms": 46.49944999998468, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469503.6600986, "ms": 1.9057542085647583, "cpu_ms": 1.9829700000002504, "ok": true}
+{"kind": "stream", "time": 1789469503.967186, "ms": 305.61343394219875, "cpu_ms": 545.790690000004, "principal": "bob", "job_id": "flight-885816a477cc37749eae8a33", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469504.0479465, "ms": 37.18837536871433, "cpu_ms": 47.79312999998808, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469504.0520186, "ms": 2.2230269387364388, "cpu_ms": 2.337900000000559, "ok": true}
+{"kind": "stream", "time": 1789469504.356813, "ms": 303.25264018028975, "cpu_ms": 724.7723600000029, "principal": "bob", "job_id": "flight-79fcf8dc8cac916600a9665b", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469505.763351, "ms": 37.21246588975191, "cpu_ms": 67.4515700000029, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469505.767148, "ms": 2.219276502728462, "cpu_ms": 2.302470000003609, "ok": true}
+{"kind": "stream", "time": 1789469506.0717912, "ms": 302.9459109529853, "cpu_ms": 698.4727599999871, "principal": "bob", "job_id": "flight-515643f3a77bb8094dd2bb64", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469507.7727907, "ms": 38.745458237826824, "cpu_ms": 47.08965999998327, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469507.7765837, "ms": 2.128266729414463, "cpu_ms": 12.226670000003992, "ok": true}
+{"kind": "stream", "time": 1789469508.0832312, "ms": 305.0005016848445, "cpu_ms": 534.7215799999958, "principal": "bob", "job_id": "flight-7868f4f05cdea03a5996007d", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469508.950093, "ms": 37.85734251141548, "cpu_ms": 67.43885000000205, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469508.9577446, "ms": 2.1854061633348465, "cpu_ms": 2.3275799999993296, "ok": true}
+{"kind": "stream", "time": 1789469509.287345, "ms": 327.5356851518154, "cpu_ms": 536.3673599999998, "principal": "bob", "job_id": "flight-875eed4183302488d2974b58", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469511.818816, "ms": 46.11141514033079, "cpu_ms": 86.57557000000793, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469511.822311, "ms": 1.9472837448120117, "cpu_ms": 2.039249999995718, "ok": true}
+{"kind": "stream", "time": 1789469512.2312238, "ms": 407.01651852577925, "cpu_ms": 2355.119280000011, "principal": "bob", "job_id": "flight-1b46a6b1ca49994939ec19a3", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469513.557748, "ms": 37.752133794128895, "cpu_ms": 37.05691999999772, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469513.5609846, "ms": 1.8410738557577133, "cpu_ms": 1.944980000004648, "ok": true}
+{"kind": "stream", "time": 1789469513.8714092, "ms": 308.6377363651991, "cpu_ms": 595.4026900000002, "principal": "bob", "job_id": "flight-d9a1d020f4b8a228ed1ef43b", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469514.7714982, "ms": 36.40431258827448, "cpu_ms": 46.40085999999144, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469514.774767, "ms": 1.8082140013575554, "cpu_ms": 1.92905999999482, "ok": true}
+{"kind": "stream", "time": 1789469515.0731924, "ms": 296.7575201764703, "cpu_ms": 534.0019799999993, "principal": "bob", "job_id": "flight-a554c637a3c5771da3b84e1e", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469515.5441387, "ms": 39.778619073331356, "cpu_ms": 136.6144999999932, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469515.5473886, "ms": 1.8369043245911598, "cpu_ms": 1.9743900000008807, "ok": true}
+{"kind": "stream", "time": 1789469515.8892922, "ms": 340.1807388290763, "cpu_ms": 695.3280999999976, "principal": "bob", "job_id": "flight-2ee31a4ae7dc9971d2ce113f", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469517.7525175, "ms": 38.76087348908186, "cpu_ms": 47.092359999993505, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469517.756303, "ms": 2.2358670830726624, "cpu_ms": 2.2845700000004854, "ok": true}
+{"kind": "stream", "time": 1789469518.0787888, "ms": 320.8296000957489, "cpu_ms": 664.1603699999905, "principal": "bob", "job_id": "flight-60388113b0fe8ca7fc1b1f53", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469520.2951586, "ms": 37.21705079078674, "cpu_ms": 37.04529000000889, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469520.2989204, "ms": 2.135896123945713, "cpu_ms": 2.2474499999987074, "ok": true}
+{"kind": "stream", "time": 1789469520.61181, "ms": 311.1801855266094, "cpu_ms": 565.4074299999934, "principal": "bob", "job_id": "flight-dc19d04a56ec0a2bfb131e35", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469521.9998024, "ms": 38.85565511882305, "cpu_ms": 57.39069999998492, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469522.003498, "ms": 2.1414468064904213, "cpu_ms": 2.270490000000791, "ok": true}
+{"kind": "stream", "time": 1789469522.3236926, "ms": 318.5897180810571, "cpu_ms": 744.4757000000095, "principal": "bob", "job_id": "flight-524445bb03190b747540a30d", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469523.591428, "ms": 40.12406524270773, "cpu_ms": 46.78902000000562, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469523.5948725, "ms": 1.920793205499649, "cpu_ms": 12.031189999987646, "ok": true}
+{"kind": "stream", "time": 1789469523.9129186, "ms": 316.34938437491655, "cpu_ms": 575.6186899999989, "principal": "bob", "job_id": "flight-1fcecf75db7fd41a26721014", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469524.3829536, "ms": 39.114768616855145, "cpu_ms": 76.56246999999894, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469524.3864312, "ms": 1.9403239712119102, "cpu_ms": 2.055040000016106, "ok": true}
+{"kind": "stream", "time": 1789469524.7134812, "ms": 325.34700632095337, "cpu_ms": 644.2827600000101, "principal": "bob", "job_id": "flight-4960cf8e81a224d3703d1120", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469525.5990727, "ms": 40.46512767672539, "cpu_ms": 47.28899999997793, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469525.6024945, "ms": 1.9342340528964996, "cpu_ms": 2.0511499999997795, "ok": true}
+{"kind": "stream", "time": 1789469525.9455945, "ms": 341.45674109458923, "cpu_ms": 595.812130000013, "principal": "bob", "job_id": "flight-95fccab20c9a5030147d427c", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469527.2338448, "ms": 38.550334982573986, "cpu_ms": 46.92074999999818, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469527.2375584, "ms": 2.0619556307792664, "cpu_ms": 2.1558999999911066, "ok": true}
+{"kind": "stream", "time": 1789469527.5994334, "ms": 360.18302012234926, "cpu_ms": 634.1463100000055, "principal": "bob", "job_id": "flight-93183e47decc57cde8c7a247", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469529.9859443, "ms": 41.24076571315527, "cpu_ms": 46.93859000002476, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469529.9899943, "ms": 2.131296321749687, "cpu_ms": 2.1875999999849682, "ok": true}
+{"kind": "stream", "time": 1789469530.3569298, "ms": 365.21865893155336, "cpu_ms": 635.9021399999847, "principal": "bob", "job_id": "flight-704e193dc491fcb1bf1335b0", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469531.6121466, "ms": 42.83228795975447, "cpu_ms": 46.53418000000897, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469531.615646, "ms": 1.993824727833271, "cpu_ms": 1.997020000004568, "ok": true}
+{"kind": "stream", "time": 1789469532.0038397, "ms": 386.41578517854214, "cpu_ms": 1844.3096500000138, "principal": "bob", "job_id": "flight-1a024b7f67dc6be276b8f565", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469532.8654878, "ms": 39.05531018972397, "cpu_ms": 57.01393999999027, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469532.8687804, "ms": 1.8658237531781197, "cpu_ms": 1.9116500000109227, "ok": true}
+{"kind": "stream", "time": 1789469533.233972, "ms": 363.66167664527893, "cpu_ms": 839.6784400000001, "principal": "bob", "job_id": "flight-a9dcf056f4ff940f523578a7", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469533.7337024, "ms": 39.2778217792511, "cpu_ms": 77.30243000000314, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469533.7376978, "ms": 2.3380881175398827, "cpu_ms": 12.341300000031197, "ok": true}
+{"kind": "stream", "time": 1789469534.0739202, "ms": 334.5801243558526, "cpu_ms": 654.8958800000264, "principal": "bob", "job_id": "flight-62ab13ecdffc4c0864cad721", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469536.1885743, "ms": 51.082344725728035, "cpu_ms": 138.25725000000944, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469536.1931486, "ms": 2.6899203658103943, "cpu_ms": 22.761330000008684, "ok": true}
+{"kind": "stream", "time": 1789469536.5573823, "ms": 362.2615961357951, "cpu_ms": 1026.4768399999866, "principal": "bob", "job_id": "flight-37ef64412c162f56f826d320", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469537.595578, "ms": 43.46627555787563, "cpu_ms": 57.99857999997471, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469537.599934, "ms": 2.536970190703869, "cpu_ms": 2.6664400000129262, "ok": true}
+{"kind": "stream", "time": 1789469537.9374633, "ms": 335.78898571431637, "cpu_ms": 675.2143900000078, "principal": "bob", "job_id": "flight-4e7963c0034ad014714b0376", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469540.0321593, "ms": 45.68540398031473, "cpu_ms": 48.13489999997955, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469540.036218, "ms": 2.4015484377741814, "cpu_ms": 2.522909999981948, "ok": true}
+{"kind": "stream", "time": 1789469540.3744414, "ms": 336.3692192360759, "cpu_ms": 749.3716299999846, "principal": "bob", "job_id": "flight-c988678e73125ddac8c147ca", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469541.245906, "ms": 42.6575718447566, "cpu_ms": 58.34765999998126, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469541.2504609, "ms": 2.6953211054205894, "cpu_ms": 2.7431700000022374, "ok": true}
+{"kind": "stream", "time": 1789469541.5530705, "ms": 300.82470644265413, "cpu_ms": 675.1045200000192, "principal": "bob", "job_id": "flight-6d9f48230c5feea0d9f6a323", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469542.0056896, "ms": 44.25788391381502, "cpu_ms": 67.99955000002456, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469542.0096555, "ms": 2.331538125872612, "cpu_ms": 2.41828000000055, "ok": true}
+{"kind": "stream", "time": 1789469542.3225265, "ms": 311.04755867272615, "cpu_ms": 616.7840100000035, "principal": "bob", "job_id": "flight-5680e52ccb68a52524ee01a8", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469544.06373, "ms": 37.23830170929432, "cpu_ms": 38.08806000000686, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469544.0682518, "ms": 2.6981402188539505, "cpu_ms": 2.771699999982502, "ok": true}
+{"kind": "stream", "time": 1789469544.3643458, "ms": 294.37438398599625, "cpu_ms": 605.144469999999, "principal": "bob", "job_id": "flight-8bb0a501dee104af44ac1bca", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469545.9823303, "ms": 38.90817333012819, "cpu_ms": 39.09745000001408, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469545.986727, "ms": 2.5483397766947746, "cpu_ms": 2.70940999999425, "ok": true}
+{"kind": "stream", "time": 1789469546.2886705, "ms": 300.22569466382265, "cpu_ms": 789.8447499999861, "principal": "bob", "job_id": "flight-1e993023444d5caaeef926a4", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469547.98736, "ms": 36.43207438290119, "cpu_ms": 27.885979999979327, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469547.9915488, "ms": 2.4335691705346107, "cpu_ms": 2.502990000010641, "ok": true}
+{"kind": "stream", "time": 1789469548.279355, "ms": 286.2482611089945, "cpu_ms": 805.0000800000134, "principal": "bob", "job_id": "flight-72d7f6e67144c4a5d2d6dde9", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469548.3625612, "ms": 37.782554514706135, "cpu_ms": 117.78643999997485, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469548.366936, "ms": 2.5823907926678658, "cpu_ms": 2.70231000001786, "ok": true}
+{"kind": "stream", "time": 1789469548.6718976, "ms": 303.2238045707345, "cpu_ms": 675.7794500000216, "principal": "bob", "job_id": "flight-957d3001e35e29249c000fb7", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469550.7391047, "ms": 37.63654641807079, "cpu_ms": 47.98904000000448, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469550.7433128, "ms": 2.4727899581193924, "cpu_ms": 2.559329999996862, "ok": true}
+{"kind": "stream", "time": 1789469551.04435, "ms": 299.4224699214101, "cpu_ms": 574.8116499999867, "principal": "bob", "job_id": "flight-92f38c10e3a14c43c60dfc2a", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469551.9190912, "ms": 37.53893543034792, "cpu_ms": 68.30338000000324, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469551.9233692, "ms": 2.5684116408228874, "cpu_ms": 2.5915299999894614, "ok": true}
+{"kind": "stream", "time": 1789469552.2947392, "ms": 369.66169625520706, "cpu_ms": 3528.8845800000104, "principal": "bob", "job_id": "flight-e5713cf840e0cc71e5f321ba", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469553.187149, "ms": 36.38331685215235, "cpu_ms": 37.57900000002223, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469553.1908808, "ms": 2.1758070215582848, "cpu_ms": 2.2533300000020517, "ok": true}
+{"kind": "stream", "time": 1789469553.4906795, "ms": 298.22639748454094, "cpu_ms": 555.0621200000023, "principal": "bob", "job_id": "flight-c0047f3b6b275bcfa8d6a7e3", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469555.1448383, "ms": 36.07116360217333, "cpu_ms": 37.56912999998008, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469555.1483824, "ms": 2.054206095635891, "cpu_ms": 2.159670000025926, "ok": true}
+{"kind": "stream", "time": 1789469555.444038, "ms": 294.20782066881657, "cpu_ms": 696.2874499999998, "principal": "bob", "job_id": "flight-272d5976921ad5daab4f49f4", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469556.4171088, "ms": 35.8254024758935, "cpu_ms": 57.44673999998895, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469556.4209356, "ms": 2.17454694211483, "cpu_ms": 2.292820000008078, "ok": true}
+{"kind": "stream", "time": 1789469556.7223387, "ms": 299.87987875938416, "cpu_ms": 505.1478299999985, "principal": "bob", "job_id": "flight-2617324e7dc191a8bc710dc0", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469558.3434265, "ms": 36.41880862414837, "cpu_ms": 38.03525999998669, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469558.3471081, "ms": 2.163187600672245, "cpu_ms": 2.2244699999873774, "ok": true}
+{"kind": "stream", "time": 1789469558.6409328, "ms": 292.35064424574375, "cpu_ms": 516.1995300000228, "principal": "bob", "job_id": "flight-5bdceb5ec2631c6a091199e6", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469559.5033634, "ms": 36.180026829242706, "cpu_ms": 47.79849999999897, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469559.5071638, "ms": 2.161656506359577, "cpu_ms": 2.2895799999957944, "ok": true}
+{"kind": "stream", "time": 1789469559.7997785, "ms": 290.97925778478384, "cpu_ms": 645.0258000000417, "principal": "bob", "job_id": "flight-a9cc8bca0525b9ae2bba2ce2", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469561.937356, "ms": 36.856742575764656, "cpu_ms": 57.641880000005585, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469561.941473, "ms": 2.3682788014411926, "cpu_ms": 12.514070000037236, "ok": true}
+{"kind": "stream", "time": 1789469562.2426622, "ms": 299.5734913274646, "cpu_ms": 936.3850400000047, "principal": "bob", "job_id": "flight-f06fb6db008ef532b64bb1c8", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469563.5720897, "ms": 36.70811280608177, "cpu_ms": 37.85202000000254, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469563.5760906, "ms": 2.2973883897066116, "cpu_ms": 2.4200299999961317, "ok": true}
+{"kind": "stream", "time": 1789469563.8719249, "ms": 294.1462704911828, "cpu_ms": 445.9985600000209, "principal": "bob", "job_id": "flight-16760f971bbc820592173317", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469564.7575738, "ms": 35.828365944325924, "cpu_ms": 48.09109999996508, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469564.761308, "ms": 2.155468799173832, "cpu_ms": 2.228150000007645, "ok": true}
+{"kind": "stream", "time": 1789469565.054901, "ms": 292.0583877712488, "cpu_ms": 444.9481999999989, "principal": "bob", "job_id": "flight-3bff9b6511b364a4c6195b15", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469566.351841, "ms": 35.62440350651741, "cpu_ms": 47.53622999999152, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469566.3555758, "ms": 2.193666994571686, "cpu_ms": 2.2730200000182776, "ok": true}
+{"kind": "stream", "time": 1789469566.671526, "ms": 314.37063962221146, "cpu_ms": 554.893700000008, "principal": "bob", "job_id": "flight-fe2b4ae92efe8b8f98f6db57", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469567.4787312, "ms": 39.206063374876976, "cpu_ms": 37.44720999998208, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469567.482572, "ms": 2.2128885611891747, "cpu_ms": 2.2777100000155315, "ok": true}
+{"kind": "stream", "time": 1789469567.8024168, "ms": 318.1891944259405, "cpu_ms": 565.8992099999978, "principal": "bob", "job_id": "flight-61b9d7a2b0deaed167cced24", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469569.859366, "ms": 39.081634022295475, "cpu_ms": 47.89022999997883, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469569.863343, "ms": 2.2931378334760666, "cpu_ms": 2.380009999995991, "ok": true}
+{"kind": "stream", "time": 1789469570.1863108, "ms": 321.23374566435814, "cpu_ms": 815.2401100000191, "principal": "bob", "job_id": "flight-369a4050ec38c6f025207df9", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469570.653922, "ms": 38.40303793549538, "cpu_ms": 67.89753999998993, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469570.6577418, "ms": 2.21081729978323, "cpu_ms": 12.345979999992096, "ok": true}
+{"kind": "stream", "time": 1789469571.0356014, "ms": 376.1893277987838, "cpu_ms": 3386.1434199999962, "principal": "bob", "job_id": "flight-54f1fc11cc697cccf180922a", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469573.6037278, "ms": 37.958365865051746, "cpu_ms": 57.66115000000127, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469573.607463, "ms": 2.143886871635914, "cpu_ms": 2.2669700000221837, "ok": true}
+{"kind": "stream", "time": 1789469573.9246485, "ms": 315.6675500795245, "cpu_ms": 725.9617899999853, "principal": "bob", "job_id": "flight-52360502477b5f61a92438b5", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469574.7692072, "ms": 37.16849908232689, "cpu_ms": 37.32644999999479, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469574.772739, "ms": 2.0008860155940056, "cpu_ms": 2.1270700000002307, "ok": true}
+{"kind": "stream", "time": 1789469575.1166093, "ms": 342.4016488716006, "cpu_ms": 787.9918099999941, "principal": "bob", "job_id": "flight-34f87d7f496755b3b21f9553", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469576.317751, "ms": 39.78673089295626, "cpu_ms": 49.02538999999706, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469576.3214302, "ms": 2.057235687971115, "cpu_ms": 2.1684300000117673, "ok": true}
+{"kind": "stream", "time": 1789469576.6354475, "ms": 312.3797317966819, "cpu_ms": 535.121509999982, "principal": "bob", "job_id": "flight-3104d8b1daee891205995eef", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469578.1692402, "ms": 38.515541702508926, "cpu_ms": 77.9989700000101, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469578.1731627, "ms": 2.2630682215094566, "cpu_ms": 2.3852700000190907, "ok": true}
+{"kind": "stream", "time": 1789469578.496305, "ms": 321.44095934927464, "cpu_ms": 539.2342800000165, "principal": "bob", "job_id": "flight-a3f10219c915276b024a8dcc", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469579.3071454, "ms": 38.25536835938692, "cpu_ms": 37.431050000009236, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469579.3112147, "ms": 2.39418912678957, "cpu_ms": 2.5393800000017563, "ok": true}
+{"kind": "stream", "time": 1789469579.6204352, "ms": 307.56988003849983, "cpu_ms": 656.0740900000042, "principal": "bob", "job_id": "flight-40920d8cd4bd4be2750cdc5b", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469581.2172673, "ms": 37.81628701835871, "cpu_ms": 57.479090000015276, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469581.221357, "ms": 2.3602088913321495, "cpu_ms": 2.4607900000148675, "ok": true}
+{"kind": "stream", "time": 1789469581.5269647, "ms": 304.01076655834913, "cpu_ms": 505.3097500000092, "principal": "bob", "job_id": "flight-b4fbccfd7ed45cae861b01e1", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469581.9584155, "ms": 37.76628617197275, "cpu_ms": 37.33434000000102, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469581.9624221, "ms": 2.2935792803764343, "cpu_ms": 2.4488200000121196, "ok": true}
+{"kind": "stream", "time": 1789469582.2763634, "ms": 312.2732760384679, "cpu_ms": 676.4908400000138, "principal": "bob", "job_id": "flight-189a1f7bba2cd14f6522f107", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469583.7061563, "ms": 40.10642599314451, "cpu_ms": 48.67624000002024, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469583.7105885, "ms": 2.5930609554052353, "cpu_ms": 2.758169999992788, "ok": true}
+{"kind": "stream", "time": 1789469584.0259051, "ms": 313.36686853319407, "cpu_ms": 564.9857000000225, "principal": "bob", "job_id": "flight-7ce5c5472ec38521cebe1925", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469585.972339, "ms": 38.18900045007467, "cpu_ms": 57.31718000001251, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469585.976198, "ms": 2.212667837738991, "cpu_ms": 2.21466000002124, "ok": true}
+{"kind": "stream", "time": 1789469586.2835572, "ms": 305.84422405809164, "cpu_ms": 776.4960100000167, "principal": "bob", "job_id": "flight-665599287f88d4376ba42104", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469587.5536642, "ms": 40.35282973200083, "cpu_ms": 77.6285099999825, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469587.5578544, "ms": 2.4471599608659744, "cpu_ms": 12.612429999990127, "ok": true}
+{"kind": "stream", "time": 1789469587.8604212, "ms": 296.24366760253906, "cpu_ms": 744.7635499999592, "principal": "bob", "job_id": "flight-d7024f5db636443c9041fc32", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469588.321982, "ms": 35.75551230460405, "cpu_ms": 37.327559999994264, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469588.3255227, "ms": 2.0129773765802383, "cpu_ms": 2.1471100000098886, "ok": true}
+{"kind": "stream", "time": 1789469588.618684, "ms": 291.66453424841166, "cpu_ms": 565.9552700000177, "principal": "bob", "job_id": "flight-c204f4cca39be58351484a58", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469589.4687197, "ms": 34.832704812288284, "cpu_ms": 27.66385000001037, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469589.4722629, "ms": 2.006855793297291, "cpu_ms": 2.128410000011627, "ok": true}
+{"kind": "stream", "time": 1789469589.8361251, "ms": 362.39587515592575, "cpu_ms": 3704.9858199999903, "principal": "bob", "job_id": "flight-2f4a887323f1deffd28b6ecd", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469591.0171468, "ms": 36.0792251303792, "cpu_ms": 37.37375000000043, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469591.0209832, "ms": 2.2126976400613785, "cpu_ms": 2.3438800000121773, "ok": true}
+{"kind": "stream", "time": 1789469591.3113382, "ms": 288.8583680614829, "cpu_ms": 446.28731000000244, "principal": "bob", "job_id": "flight-8994f74be00483ca3bda1029", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469592.8648288, "ms": 35.02898756414652, "cpu_ms": 47.281650000030595, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469592.8688164, "ms": 2.2826790809631348, "cpu_ms": 2.4031500000205597, "ok": true}
+{"kind": "stream", "time": 1789469593.1463802, "ms": 276.0504959151149, "cpu_ms": 434.9859200000026, "principal": "bob", "job_id": "flight-3d0f206b810d0b4352f7ee5c", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469594.7003577, "ms": 35.809094086289406, "cpu_ms": 37.67587999999478, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469594.704384, "ms": 2.3329490795731544, "cpu_ms": 2.488069999998288, "ok": true}
+{"kind": "stream", "time": 1789469594.992087, "ms": 286.14227287471294, "cpu_ms": 444.90264000000934, "principal": "bob", "job_id": "flight-583d7f6d4cc30647bc8e0d0a", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469596.5978963, "ms": 36.297159269452095, "cpu_ms": 58.09608000001276, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469596.601782, "ms": 2.2197291254997253, "cpu_ms": 2.3652799999922536, "ok": true}
+{"kind": "stream", "time": 1789469596.8869433, "ms": 283.52487552911043, "cpu_ms": 445.7175900000152, "principal": "bob", "job_id": "flight-793a4f35bfe60296ac449ee2", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469597.7881398, "ms": 35.00600904226303, "cpu_ms": 37.31448999999998, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469597.7920716, "ms": 2.263268455862999, "cpu_ms": 2.3616299999957846, "ok": true}
+{"kind": "stream", "time": 1789469598.0761693, "ms": 282.5990207493305, "cpu_ms": 435.84035999998605, "principal": "bob", "job_id": "flight-b6464c51bee972d5214900f5", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469599.234967, "ms": 34.64473597705364, "cpu_ms": 57.2413599999777, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469599.2390614, "ms": 2.3744283244013786, "cpu_ms": 2.4482899999895835, "ok": true}
+{"kind": "stream", "time": 1789469599.528385, "ms": 287.7244781702757, "cpu_ms": 544.8303700000281, "principal": "bob", "job_id": "flight-7eb65914d572f8479ab63ad8", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469600.7307193, "ms": 37.10170555859804, "cpu_ms": 37.470890000008694, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469600.7345057, "ms": 2.19096802175045, "cpu_ms": 2.32911000000513, "ok": true}
+{"kind": "stream", "time": 1789469601.0256665, "ms": 289.5300844684243, "cpu_ms": 495.4181500000061, "principal": "bob", "job_id": "flight-b836a2968510eedf317cc9d6", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469601.8328543, "ms": 36.633582785725594, "cpu_ms": 38.250570000002426, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469601.837117, "ms": 2.4449005722999573, "cpu_ms": 2.5800399999980073, "ok": true}
+{"kind": "stream", "time": 1789469602.1172304, "ms": 278.41221634298563, "cpu_ms": 434.63504999999714, "principal": "bob", "job_id": "flight-ab7799f67c35140fd7dd10d3", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469604.2553816, "ms": 34.62192788720131, "cpu_ms": 37.40301999999929, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469604.259316, "ms": 2.2310586646199226, "cpu_ms": 2.3753700000099798, "ok": true}
+{"kind": "stream", "time": 1789469604.5405228, "ms": 279.5307207852602, "cpu_ms": 444.6308499999816, "principal": "bob", "job_id": "flight-bf0111744cf4af8050677bb2", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469605.38919, "ms": 35.43267399072647, "cpu_ms": 47.486929999990934, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469605.3933997, "ms": 2.4399105459451675, "cpu_ms": 2.5997299999858114, "ok": true}
+{"kind": "stream", "time": 1789469605.6807017, "ms": 285.7402050867677, "cpu_ms": 595.7103400000108, "principal": "bob", "job_id": "flight-aeb145c2177c3426f1bbf48f", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469606.177444, "ms": 35.638995468616486, "cpu_ms": 67.38319999999476, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469606.1813047, "ms": 2.215118147432804, "cpu_ms": 2.358389999983501, "ok": true}
+{"kind": "stream", "time": 1789469606.466151, "ms": 283.1947561353445, "cpu_ms": 505.4607399999895, "principal": "bob", "job_id": "flight-867d3a8722a81fd166121e16", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469608.703622, "ms": 35.33076401799917, "cpu_ms": 37.780410000010534, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469608.7072837, "ms": 2.0855972543358803, "cpu_ms": 2.214600000002065, "ok": true}
+{"kind": "stream", "time": 1789469608.9981005, "ms": 289.3042219802737, "cpu_ms": 485.188020000038, "principal": "bob", "job_id": "flight-e3e50fc2a33c41202a0d07fe", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469610.161686, "ms": 34.80094112455845, "cpu_ms": 57.357510000002776, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469610.165458, "ms": 2.1430980414152145, "cpu_ms": 2.290740000006508, "ok": true}
+{"kind": "stream", "time": 1789469610.4783382, "ms": 311.3203700631857, "cpu_ms": 1664.9617600000113, "principal": "bob", "job_id": "flight-3a1f7fc731c8663203328da3", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469610.9241905, "ms": 35.41066590696573, "cpu_ms": 37.336860000010574, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469610.9283488, "ms": 2.4512112140655518, "cpu_ms": 12.58618999997907, "ok": true}
+{"kind": "stream", "time": 1789469611.212003, "ms": 281.9889672100544, "cpu_ms": 515.8220899999719, "principal": "bob", "job_id": "flight-23eb319ad8f48650aa2229dd", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469612.8514802, "ms": 36.56447492539883, "cpu_ms": 98.0867799999885, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469612.8557868, "ms": 2.502249553799629, "cpu_ms": 12.670059999976502, "ok": true}
+{"kind": "stream", "time": 1789469613.140093, "ms": 282.39757381379604, "cpu_ms": 1064.5555799999897, "principal": "bob", "job_id": "flight-2b3fed6ef08c7970b1941250", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469613.9121242, "ms": 34.07094441354275, "cpu_ms": 47.48329000003082, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469613.9156203, "ms": 2.010147087275982, "cpu_ms": 2.1304800000052637, "ok": true}
+{"kind": "stream", "time": 1789469614.2014837, "ms": 284.47650372982025, "cpu_ms": 425.88332999997647, "principal": "bob", "job_id": "flight-ab25204b8b2e50bad395bab6", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469615.0354588, "ms": 34.13075674325228, "cpu_ms": 37.24496000000954, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469615.039004, "ms": 2.0273569971323013, "cpu_ms": 2.1426099999928283, "ok": true}
+{"kind": "stream", "time": 1789469615.3184226, "ms": 277.90020126849413, "cpu_ms": 514.7095400000126, "principal": "bob", "job_id": "flight-bb0ae632e565b0d57014b612", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469617.3440797, "ms": 34.55747105181217, "cpu_ms": 37.16270999998983, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469617.3475888, "ms": 2.023966982960701, "cpu_ms": 2.1222099999818056, "ok": true}
+{"kind": "stream", "time": 1789469617.6339376, "ms": 284.90099497139454, "cpu_ms": 435.53231000001347, "principal": "bob", "job_id": "flight-6c9a9f3efd77c09af9021d66", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469618.101255, "ms": 34.01956707239151, "cpu_ms": 47.236119999979564, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469618.1049912, "ms": 2.1469183266162872, "cpu_ms": 2.2659600000167757, "ok": true}
+{"kind": "stream", "time": 1789469618.3917065, "ms": 285.1556185632944, "cpu_ms": 466.0512900000242, "principal": "bob", "job_id": "flight-9adc78c6ae44cbbc79017a06", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469620.0301826, "ms": 35.038525238633156, "cpu_ms": 57.82826000000796, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469620.0338993, "ms": 2.1339673548936844, "cpu_ms": 2.235750000011194, "ok": true}
+{"kind": "stream", "time": 1789469620.3112895, "ms": 275.81887505948544, "cpu_ms": 417.0977299999947, "principal": "bob", "job_id": "flight-4867d7c5e9510b86224f3ab1", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469621.1013296, "ms": 34.46057066321373, "cpu_ms": 67.29269999999588, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469621.105294, "ms": 2.3044999688863754, "cpu_ms": 2.4342699999806428, "ok": true}
+{"kind": "stream", "time": 1789469621.3901532, "ms": 283.22681970894337, "cpu_ms": 484.7566699999959, "principal": "bob", "job_id": "flight-3e84c9513b72c5cf9bcf3a58", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469622.9264846, "ms": 35.46077944338322, "cpu_ms": 57.18151000002081, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469622.9301612, "ms": 2.127077430486679, "cpu_ms": 2.2454900000070666, "ok": true}
+{"kind": "stream", "time": 1789469623.2151773, "ms": 283.404934220016, "cpu_ms": 475.36009999998896, "principal": "bob", "job_id": "flight-1142e7b815dd5a958d4e42a9", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469624.3507442, "ms": 33.99925772100687, "cpu_ms": 27.18830000000594, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469624.354429, "ms": 2.082768827676773, "cpu_ms": 2.1929899999975078, "ok": true}
+{"kind": "stream", "time": 1789469624.6343381, "ms": 278.4411460161209, "cpu_ms": 514.3880900000113, "principal": "bob", "job_id": "flight-bc69fc965a55873a98ca1974", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469625.3932133, "ms": 34.2201292514801, "cpu_ms": 47.54923000001554, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469625.396758, "ms": 2.049568109214306, "cpu_ms": 2.0911100000091665, "ok": true}
+{"kind": "stream", "time": 1789469625.6912618, "ms": 293.0236104875803, "cpu_ms": 455.5440000000317, "principal": "bob", "job_id": "flight-a06f0a0f4453222453f67e65", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469628.0628245, "ms": 36.511399783194065, "cpu_ms": 67.23704999998859, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469628.0665812, "ms": 2.156478352844715, "cpu_ms": 2.2825000000068485, "ok": true}
+{"kind": "stream", "time": 1789469628.392256, "ms": 323.9461602643132, "cpu_ms": 1944.5548200000076, "principal": "bob", "job_id": "flight-976ef707f2620d95a08f7f44", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469629.5702114, "ms": 33.996288664638996, "cpu_ms": 27.10050000001729, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469629.5737157, "ms": 1.997547224164009, "cpu_ms": 2.1132200000124612, "ok": true}
+{"kind": "stream", "time": 1789469629.885025, "ms": 309.81523264199495, "cpu_ms": 495.8071000000075, "principal": "bob", "job_id": "flight-5a9e26d66404bc4f34997ac6", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469630.3222976, "ms": 33.6697269231081, "cpu_ms": 37.2647099999881, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469630.3258858, "ms": 2.0025065168738365, "cpu_ms": 2.108609999993405, "ok": true}
+{"kind": "stream", "time": 1789469630.6138108, "ms": 286.4591656252742, "cpu_ms": 455.5980999999747, "principal": "bob", "job_id": "flight-0c8b57c9480c9098e19ec7aa", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469631.7950392, "ms": 35.065158270299435, "cpu_ms": 37.905480000006264, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469631.798926, "ms": 2.233099192380905, "cpu_ms": 2.385839999988093, "ok": true}
+{"kind": "stream", "time": 1789469632.083932, "ms": 283.38551241904497, "cpu_ms": 474.85459000000674, "principal": "bob", "job_id": "flight-7d15922372df5d16350fb68b", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469632.869795, "ms": 33.846727572381496, "cpu_ms": 37.179939999987255, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469632.873475, "ms": 2.119959332048893, "cpu_ms": 2.22927999999456, "ok": true}
+{"kind": "stream", "time": 1789469633.157487, "ms": 282.44766779243946, "cpu_ms": 485.8289500000126, "principal": "bob", "job_id": "flight-ee5deaaa950e2b9e060fc584", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469634.348422, "ms": 40.59772752225399, "cpu_ms": 127.56817999999726, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469634.3525488, "ms": 2.410849556326866, "cpu_ms": 22.516710000019202, "ok": true}
+{"kind": "stream", "time": 1789469634.6559386, "ms": 301.5429237857461, "cpu_ms": 855.0061499999799, "principal": "bob", "job_id": "flight-d26d6470e9554e289ac8b2ad", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469637.0981114, "ms": 35.66056489944458, "cpu_ms": 67.34916999999996, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469637.1020904, "ms": 2.3342594504356384, "cpu_ms": 2.3178000000143584, "ok": true}
+{"kind": "stream", "time": 1789469637.3970616, "ms": 293.3728601783514, "cpu_ms": 585.2986499999702, "principal": "bob", "job_id": "flight-38ba7c459c1a266db75fdddd", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469637.960203, "ms": 36.64372395724058, "cpu_ms": 27.761159999982965, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469637.964106, "ms": 2.2582588717341423, "cpu_ms": 2.3184599999979127, "ok": true}
+{"kind": "stream", "time": 1789469638.2665482, "ms": 300.8790370076895, "cpu_ms": 786.7056200000206, "principal": "bob", "job_id": "flight-1932e0890ed0c1d26e9fcd4d", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469639.0833647, "ms": 37.106518633663654, "cpu_ms": 37.8871500000173, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469639.0876036, "ms": 2.4867020547389984, "cpu_ms": 2.5920700000199304, "ok": true}
+{"kind": "stream", "time": 1789469639.3935375, "ms": 304.3047394603491, "cpu_ms": 556.5672000000177, "principal": "bob", "job_id": "flight-4267c1f9b87882bbbfd48c9e", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469641.5072467, "ms": 36.43113374710083, "cpu_ms": 77.45249000001309, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469641.5108867, "ms": 2.0883576944470406, "cpu_ms": 2.245219999991832, "ok": true}
+{"kind": "stream", "time": 1789469641.8197794, "ms": 307.26727936416864, "cpu_ms": 555.0273199999936, "principal": "bob", "job_id": "flight-9e51fe11423b3a6eb1125c17", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469642.6405952, "ms": 35.97240895032883, "cpu_ms": 37.47024000000465, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469642.6443167, "ms": 2.1108081564307213, "cpu_ms": 2.1911900000191054, "ok": true}
+{"kind": "stream", "time": 1789469642.9417405, "ms": 295.9516542032361, "cpu_ms": 515.791059999998, "principal": "bob", "job_id": "flight-cf2c148850ae09a0e1072044", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469644.4612687, "ms": 36.677866242825985, "cpu_ms": 37.98652000000402, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469644.465024, "ms": 2.120968885719776, "cpu_ms": 2.258060000002615, "ok": true}
+{"kind": "stream", "time": 1789469644.7664034, "ms": 299.83599204570055, "cpu_ms": 685.2621699999872, "principal": "bob", "job_id": "flight-25f49a951d6cc0cf0453e87a", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469645.208569, "ms": 36.145271733403206, "cpu_ms": 57.28051000002665, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469645.212513, "ms": 2.3062704131007195, "cpu_ms": 2.396750000002612, "ok": true}
+{"kind": "stream", "time": 1789469645.5346265, "ms": 320.46132162213326, "cpu_ms": 1559.2569600000274, "principal": "bob", "job_id": "flight-f421e0d7a8a1938d3211cfc3", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469647.7480817, "ms": 35.82135867327452, "cpu_ms": 37.186139999988654, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469647.7515583, "ms": 2.001986838877201, "cpu_ms": 2.1103599999889866, "ok": true}
+{"kind": "stream", "time": 1789469648.0599055, "ms": 306.724158115685, "cpu_ms": 475.00385000000733, "principal": "bob", "job_id": "flight-aea2c019469c8b2dc4fdf05c", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469648.829102, "ms": 37.80629578977823, "cpu_ms": 39.56507000000897, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469648.8363607, "ms": 5.227125249803066, "cpu_ms": 5.413749999974016, "ok": true}
+{"kind": "stream", "time": 1789469649.1432886, "ms": 304.9704758450389, "cpu_ms": 516.5167499999654, "principal": "bob", "job_id": "flight-b1a0a8b33b495868ea22176e", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469650.6426914, "ms": 37.214601412415504, "cpu_ms": 48.16114999999854, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469650.6464062, "ms": 2.097957767546177, "cpu_ms": 2.2133899999801088, "ok": true}
+{"kind": "stream", "time": 1789469650.9480596, "ms": 300.0646671280265, "cpu_ms": 494.9985900000229, "principal": "bob", "job_id": "flight-d15ec882eb73e6113037030c", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469651.380815, "ms": 35.573357716202736, "cpu_ms": 39.79892999998924, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469651.3846786, "ms": 2.234560437500477, "cpu_ms": 2.344399999998359, "ok": true}
+{"kind": "stream", "time": 1789469651.694425, "ms": 307.96132795512676, "cpu_ms": 466.04447999999365, "principal": "bob", "job_id": "flight-a13943bcc1400cc0a33dab3b", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469652.8884313, "ms": 35.77816020697355, "cpu_ms": 46.92653000000746, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469652.8920424, "ms": 2.1028080955147743, "cpu_ms": 2.2204800000054092, "ok": true}
+{"kind": "stream", "time": 1789469653.1977603, "ms": 304.2596885934472, "cpu_ms": 464.7386399999789, "principal": "bob", "job_id": "flight-b5cb67dc0b172e561a5049ec", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469654.7158134, "ms": 35.37722770124674, "cpu_ms": 67.18591000000629, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469654.7198641, "ms": 2.3031895980238914, "cpu_ms": 2.3544799999797306, "ok": true}
+{"kind": "stream", "time": 1789469655.0281897, "ms": 306.65075313299894, "cpu_ms": 635.9794100000329, "principal": "bob", "job_id": "flight-4fbdc39008e7f2ae9100ea96", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469656.1839652, "ms": 35.888622514903545, "cpu_ms": 47.34111999997026, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469656.1875646, "ms": 2.0210081711411476, "cpu_ms": 12.134369999984074, "ok": true}
+{"kind": "stream", "time": 1789469656.4673626, "ms": 278.3241914585233, "cpu_ms": 447.6285599999983, "principal": "bob", "job_id": "flight-bed2810653cd5789c5700a88", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469657.3106508, "ms": 32.79188461601734, "cpu_ms": 56.904140000000325, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469657.3144212, "ms": 2.165799029171467, "cpu_ms": 2.280269999999973, "ok": true}
+{"kind": "stream", "time": 1789469657.5955873, "ms": 279.66888528317213, "cpu_ms": 475.1880199999903, "principal": "bob", "job_id": "flight-3432a3b34f951ff092e3ccca", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469658.7331643, "ms": 32.87604730576277, "cpu_ms": 36.8028000000038, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469658.7368941, "ms": 2.144298516213894, "cpu_ms": 2.1255399999802194, "ok": true}
+{"kind": "stream", "time": 1789469659.0177982, "ms": 279.386674053967, "cpu_ms": 415.88395999997374, "principal": "bob", "job_id": "flight-960b5517d15500ce32c08e84", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469659.8031235, "ms": 32.130349427461624, "cpu_ms": 26.623699999987593, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469659.8067613, "ms": 2.1629193797707558, "cpu_ms": 2.139580000005026, "ok": true}
+{"kind": "stream", "time": 1789469660.0786638, "ms": 270.4128585755825, "cpu_ms": 414.8706600000196, "principal": "bob", "job_id": "flight-6018246638155db846be5bf7", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469662.2631695, "ms": 33.7290158495307, "cpu_ms": 57.42367000001991, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469662.266672, "ms": 1.9849864766001701, "cpu_ms": 12.132989999969368, "ok": true}
+{"kind": "stream", "time": 1789469662.551702, "ms": 283.55483897030354, "cpu_ms": 508.8395100000014, "principal": "bob", "job_id": "flight-a9888b4c1518ffed02803a7a", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469662.6239233, "ms": 33.510263077914715, "cpu_ms": 46.914270000002034, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469662.627655, "ms": 2.111067995429039, "cpu_ms": 2.281670000002123, "ok": true}
+{"kind": "stream", "time": 1789469662.9071264, "ms": 277.88552921265364, "cpu_ms": 414.72557000000165, "principal": "bob", "job_id": "flight-22e3f2f12613ed53c5558cae", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469665.067769, "ms": 32.420034520328045, "cpu_ms": 26.645419999994147, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469665.0711195, "ms": 1.948157325387001, "cpu_ms": 2.1080900000072234, "ok": true}
+{"kind": "stream", "time": 1789469665.4022818, "ms": 329.749939031899, "cpu_ms": 2046.0133600000177, "principal": "bob", "job_id": "flight-fb31ccc939edcb64336c3bcf", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469665.8787296, "ms": 33.06418936699629, "cpu_ms": 46.920349999993505, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469665.882206, "ms": 1.9713165238499641, "cpu_ms": 2.1017999999912718, "ok": true}
+{"kind": "stream", "time": 1789469666.1610384, "ms": 277.2602401673794, "cpu_ms": 445.83736000001295, "principal": "bob", "job_id": "flight-01bed9324f8404594e8167eb", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469666.9355323, "ms": 32.91464876383543, "cpu_ms": 37.13980000000561, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469666.9390762, "ms": 2.068658359348774, "cpu_ms": 12.202559999991536, "ok": true}
+{"kind": "stream", "time": 1789469667.2082736, "ms": 267.72039849311113, "cpu_ms": 694.7381500000063, "principal": "bob", "job_id": "flight-52ea06717f0e2c1afb87c01e", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469669.0621352, "ms": 33.77553727477789, "cpu_ms": 36.79694999999583, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469669.0655117, "ms": 1.8849363550543785, "cpu_ms": 2.0103900000094654, "ok": true}
+{"kind": "stream", "time": 1789469669.3421447, "ms": 275.1084975898266, "cpu_ms": 394.6857799999748, "principal": "bob", "job_id": "flight-b99a3694c710abd42a72aff2", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469669.7998888, "ms": 32.441784627735615, "cpu_ms": 36.87223000000017, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469669.8034146, "ms": 1.996147446334362, "cpu_ms": 2.1045100000094408, "ok": true}
+{"kind": "stream", "time": 1789469670.0862348, "ms": 281.2666930258274, "cpu_ms": 475.9661999999878, "principal": "bob", "job_id": "flight-fac9e7099c14e0c2c00b342b", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469672.2979105, "ms": 33.01789052784443, "cpu_ms": 46.78190000004179, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469672.3013465, "ms": 1.9420366734266281, "cpu_ms": 12.068089999985432, "ok": true}
+{"kind": "stream", "time": 1789469672.584382, "ms": 281.50598146021366, "cpu_ms": 585.302530000007, "principal": "bob", "job_id": "flight-8fb8fa0d390854ed054ced98", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469672.6546729, "ms": 34.06735975295305, "cpu_ms": 38.137319999975716, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469672.6585486, "ms": 2.241739071905613, "cpu_ms": 2.4110299999904328, "ok": true}
+{"kind": "stream", "time": 1789469672.9413514, "ms": 281.2518896535039, "cpu_ms": 455.84695999997393, "principal": "bob", "job_id": "flight-cefda5739ad5b32598c38c25", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469674.440065, "ms": 32.727369107306004, "cpu_ms": 36.777680000000146, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469674.4434888, "ms": 1.9531575962901115, "cpu_ms": 2.0719000000042342, "ok": true}
+{"kind": "stream", "time": 1789469674.719481, "ms": 274.55858420580626, "cpu_ms": 444.7897800000078, "principal": "bob", "job_id": "flight-10d8e14e0872ae27dc7d73f2", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469676.5536015, "ms": 32.25876484066248, "cpu_ms": 36.799909999956526, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469676.5575094, "ms": 2.252870239317417, "cpu_ms": 2.42511999999806, "ok": true}
+{"kind": "stream", "time": 1789469676.8395863, "ms": 280.29565792530775, "cpu_ms": 436.0118600000078, "principal": "bob", "job_id": "flight-ada672a8226543b3f7179f6a", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469676.9077866, "ms": 31.661270186305046, "cpu_ms": 26.783109999996668, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469676.9112399, "ms": 1.9621066749095917, "cpu_ms": 2.06954999998743, "ok": true}
+{"kind": "stream", "time": 1789469677.1968608, "ms": 284.1630941256881, "cpu_ms": 544.9921299999971, "principal": "bob", "job_id": "flight-716ee813909244c86c700ef4", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469678.656792, "ms": 35.85159871727228, "cpu_ms": 37.355939999997645, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469678.6603234, "ms": 2.034728415310383, "cpu_ms": 2.1150299999987965, "ok": true}
+{"kind": "stream", "time": 1789469678.9465108, "ms": 284.7095411270857, "cpu_ms": 405.6904800000041, "principal": "bob", "job_id": "flight-373b9471b7754bb58f346ef8", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469680.4604423, "ms": 33.067974261939526, "cpu_ms": 37.00112999996463, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469680.4640033, "ms": 2.0463578402996063, "cpu_ms": 2.173279999993838, "ok": true}
+{"kind": "stream", "time": 1789469680.7456367, "ms": 280.12340422719717, "cpu_ms": 505.34311999999204, "principal": "bob", "job_id": "flight-01d28569e3d522326651336a", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469682.2390962, "ms": 33.41446630656719, "cpu_ms": 46.95954999999685, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469682.2426908, "ms": 2.05087848007679, "cpu_ms": 12.192069999969135, "ok": true}
+{"kind": "stream", "time": 1789469682.5603437, "ms": 316.1352686583996, "cpu_ms": 1484.913860000006, "principal": "bob", "job_id": "flight-e996f9f01cfcb8c6ea636105", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469683.6785383, "ms": 34.16975308209658, "cpu_ms": 36.827340000002096, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469683.6821077, "ms": 2.049708738923073, "cpu_ms": 2.034690000016326, "ok": true}
+{"kind": "stream", "time": 1789469683.9522436, "ms": 268.680227920413, "cpu_ms": 414.26821000001723, "principal": "bob", "job_id": "flight-041fdc3abcf4289dc867ba96", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469684.020573, "ms": 34.35208648443222, "cpu_ms": 38.36128000000372, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469684.0248191, "ms": 2.453162334859371, "cpu_ms": 2.570869999999559, "ok": true}
+{"kind": "stream", "time": 1789469684.2971346, "ms": 270.4976163804531, "cpu_ms": 505.30580999998165, "principal": "bob", "job_id": "flight-080ccaf716b7aec895100968", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469685.4362645, "ms": 34.226084128022194, "cpu_ms": 37.05357999999137, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469685.439835, "ms": 2.0208172500133514, "cpu_ms": 2.147070000006579, "ok": true}
+{"kind": "stream", "time": 1789469685.715564, "ms": 274.16739147156477, "cpu_ms": 454.54512000003433, "principal": "bob", "job_id": "flight-4544616ba53125b8e0d722ae", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469687.570796, "ms": 32.101815566420555, "cpu_ms": 46.836240000004636, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469687.574421, "ms": 2.042638137936592, "cpu_ms": 2.1699899999987338, "ok": true}
+{"kind": "stream", "time": 1789469687.850449, "ms": 274.55406822264194, "cpu_ms": 435.3207200000213, "principal": "bob", "job_id": "flight-f89e21d14633378728aa69e3", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469688.9373624, "ms": 32.98358432948589, "cpu_ms": 37.011620000015455, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469688.9410558, "ms": 2.0914478227496147, "cpu_ms": 2.2077099999933125, "ok": true}
+{"kind": "stream", "time": 1789469689.221288, "ms": 278.73102854937315, "cpu_ms": 685.5388299999561, "principal": "bob", "job_id": "flight-bab2457223b49a53fe8445ba", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469690.3701835, "ms": 32.93432388454676, "cpu_ms": 27.300999999994247, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469690.3735685, "ms": 1.907668076455593, "cpu_ms": 2.0269299999995383, "ok": true}
+{"kind": "stream", "time": 1789469690.642583, "ms": 267.45155081152916, "cpu_ms": 387.39866000003076, "principal": "bob", "job_id": "flight-08dba05f2e08ead1cfb2efbb", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469692.124743, "ms": 33.51769037544727, "cpu_ms": 37.05400999999142, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469692.128296, "ms": 2.0093079656362534, "cpu_ms": 2.1266100000048027, "ok": true}
+{"kind": "stream", "time": 1789469692.409777, "ms": 279.83893547207117, "cpu_ms": 405.34440000001837, "principal": "bob", "job_id": "flight-65d120c3a2240da7715a22ab", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469693.1739366, "ms": 32.94518496841192, "cpu_ms": 37.00931000000196, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469693.1777084, "ms": 2.158098854124546, "cpu_ms": 2.2560099999964223, "ok": true}
+{"kind": "stream", "time": 1789469693.4524384, "ms": 273.21064658463, "cpu_ms": 675.1706599999636, "principal": "bob", "job_id": "flight-80aae3f5e54333fcbf7d4a9e", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469693.8822532, "ms": 32.5049115344882, "cpu_ms": 36.879209999995055, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469693.8857794, "ms": 1.959746703505516, "cpu_ms": 2.0872300000007726, "ok": true}
+{"kind": "stream", "time": 1789469694.1659005, "ms": 278.57755590230227, "cpu_ms": 415.9031099999879, "principal": "bob", "job_id": "flight-3ed2dfa9f35cd2b069d87e2f", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469695.3114493, "ms": 34.19169690459967, "cpu_ms": 47.26962000000867, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469695.3149421, "ms": 1.948927529156208, "cpu_ms": 12.077909999987924, "ok": true}
+{"kind": "stream", "time": 1789469695.5935822, "ms": 277.22384687513113, "cpu_ms": 676.9758800000147, "principal": "bob", "job_id": "flight-64216c275ce9a02673be41a3", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469697.8152442, "ms": 33.241597935557365, "cpu_ms": 37.28230999999482, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469697.8188865, "ms": 2.060897648334503, "cpu_ms": 2.20561999998381, "ok": true}
+{"kind": "stream", "time": 1789469698.108036, "ms": 287.63516526669264, "cpu_ms": 705.6052300000317, "principal": "bob", "job_id": "flight-90dd5e5cbc23175d9e1bed6e", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469698.175524, "ms": 31.938706524670124, "cpu_ms": 26.930339999978514, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469698.1790512, "ms": 2.010628581047058, "cpu_ms": 2.1578399999953035, "ok": true}
+{"kind": "stream", "time": 1789469698.451654, "ms": 271.17289789021015, "cpu_ms": 444.5175199999767, "principal": "bob", "job_id": "flight-634dba4651e6066810ff146e", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469700.6267803, "ms": 32.1271987631917, "cpu_ms": 37.282939999983, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469700.6304643, "ms": 2.1009892225265503, "cpu_ms": 2.2114300000168896, "ok": true}
+{"kind": "stream", "time": 1789469700.938661, "ms": 306.6599313169718, "cpu_ms": 1305.3961900000104, "principal": "bob", "job_id": "flight-6dcb8cc2c79de578578fb32d", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469702.0986006, "ms": 32.86933619529009, "cpu_ms": 47.338539999998375, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469702.102116, "ms": 1.9643185660243034, "cpu_ms": 2.0448899999792047, "ok": true}
+{"kind": "stream", "time": 1789469702.3763847, "ms": 272.7900194004178, "cpu_ms": 454.35038999997346, "principal": "bob", "job_id": "flight-14e39cfebdf89a43ace1315f", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469702.8044538, "ms": 33.976186998188496, "cpu_ms": 37.238300000012714, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469702.808008, "ms": 1.9967276602983475, "cpu_ms": 2.095040000000381, "ok": true}
+{"kind": "stream", "time": 1789469703.0827508, "ms": 273.31956569105387, "cpu_ms": 394.1660099999922, "principal": "bob", "job_id": "flight-85071077ee301e8ffe09e512", "batches": 3, "rows": 2243, "delivery": "COLLECT", "probe": {}}
+{"kind": "prepare", "time": 1789469704.6117916, "ms": 32.22790081053972, "cpu_ms": 26.998779999956923, "principal": "bob"}
+{"kind": "revalidate", "time": 1789469704.6153355, "ms": 1.9673379138112068, "cpu_ms": 2.094819999996389, "ok": true}
+{"kind": "stream", "time": 1789469704.8950891, "ms": 278.2816719263792, "cpu_ms": 425.43784000002915, "principal": "bob", "job_id": "flight-a0329854c9156738bf948fcd", "batches": 4, "rows": 22400, "delivery": "COLLECT", "probe": {}}

@@ -1,0 +1,86 @@
+[
+  {
+    "name": "bob_001",
+    "principal": "bob",
+    "target": 0.001,
+    "threshold": 30.06,
+    "plan": {
+      "version": 2,
+      "schema_version": "1",
+      "root": {
+        "op": "project",
+        "columns": [
+          "VendorID",
+          "trip_distance",
+          "fare_amount",
+          "payment_type"
+        ],
+        "input": {
+          "op": "filter",
+          "condition": {
+            "op": "gte",
+            "left": {
+              "op": "column",
+              "name": "trip_distance"
+            },
+            "right": {
+              "op": "literal",
+              "data_type": "double",
+              "value": 30.06
+            }
+          },
+          "input": {
+            "op": "governed_scan",
+            "relation": "lake.sales.orders"
+          }
+        }
+      }
+    },
+    "rows": 2243,
+    "authorized_rows": 2234632,
+    "actual_ratio": 0.0010037446881634201,
+    "business_sql": "trip_distance >= 30.06"
+  },
+  {
+    "name": "bob_01",
+    "principal": "bob",
+    "target": 0.01,
+    "threshold": 20.18,
+    "plan": {
+      "version": 2,
+      "schema_version": "1",
+      "root": {
+        "op": "project",
+        "columns": [
+          "VendorID",
+          "trip_distance",
+          "fare_amount",
+          "payment_type"
+        ],
+        "input": {
+          "op": "filter",
+          "condition": {
+            "op": "gte",
+            "left": {
+              "op": "column",
+              "name": "trip_distance"
+            },
+            "right": {
+              "op": "literal",
+              "data_type": "double",
+              "value": 20.18
+            }
+          },
+          "input": {
+            "op": "governed_scan",
+            "relation": "lake.sales.orders"
+          }
+        }
+      }
+    },
+    "rows": 22400,
+    "authorized_rows": 2234632,
+    "actual_ratio": 0.010024021852367638,
+    "business_sql": "trip_distance >= 20.18"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "run": 1,
+    "24_orders_each_twice": true,
+    "negative_controls_passed": true,
+    "snapshot_fixed": true
+  },
+  {
+    "run": 2,
+    "24_orders_each_twice": true,
+    "negative_controls_passed": true,
+    "snapshot_fixed": true
+  },
+  {
+    "run": 3,
+    "24_orders_each_twice": true,
+    "negative_controls_passed": true,
+    "snapshot_fixed": true
+  }
+]

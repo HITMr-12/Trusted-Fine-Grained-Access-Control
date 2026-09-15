@@ -1,0 +1,18 @@
+{
+  "modes": [
+    "NATIVE",
+    "COLLECT",
+    "STREAM",
+    "INLINE"
+  ],
+  "snapshot": 6896028106384817739,
+  "formal_repetitions": 48,
+  "warmup_schedule": "80 randomized round-robin cycles across four independent E sessions",
+  "minimum_warmup_queries_per_session": 80,
+  "seed": 91603,
+  "compute_budget": "User-selected deployment comparison: identical local[2] E Spark settings; FGAC adds R local[2]; no CPU affinity or aggregate quota",
+  "sink": "four-column double xxhash64 digest included in timer",
+  "cache": "Iceberg catalog cache enabled 30s, no data/result cache",
+  "timing": "start before SQL/Flight describe, end after full digest and bridge close",
+  "smoke": false
+}

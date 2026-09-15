@@ -1,0 +1,68 @@
+[
+  {
+    "run": 1,
+    "case": "bob_001",
+    "n": 48,
+    "batches": 3.0,
+    "arrow_bytes": 62804.0,
+    "write_before_partition_done": 0,
+    "first_partition_lead_ms": -0.08746050000000594,
+    "queue_wait_ms": 0.05404,
+    "partitions": 3.0
+  },
+  {
+    "run": 1,
+    "case": "bob_01",
+    "n": 48,
+    "batches": 4.0,
+    "arrow_bytes": 627200.0,
+    "write_before_partition_done": 47,
+    "first_partition_lead_ms": 15.425414499999988,
+    "queue_wait_ms": 0.077796,
+    "partitions": 3.0
+  },
+  {
+    "run": 2,
+    "case": "bob_001",
+    "n": 48,
+    "batches": 3.0,
+    "arrow_bytes": 62804.0,
+    "write_before_partition_done": 1,
+    "first_partition_lead_ms": -0.09065099999999404,
+    "queue_wait_ms": 0.058996,
+    "partitions": 3.0
+  },
+  {
+    "run": 2,
+    "case": "bob_01",
+    "n": 48,
+    "batches": 4.0,
+    "arrow_bytes": 627200.0,
+    "write_before_partition_done": 48,
+    "first_partition_lead_ms": 15.799936499999987,
+    "queue_wait_ms": 0.08239099999999999,
+    "partitions": 3.0
+  },
+  {
+    "run": 3,
+    "case": "bob_001",
+    "n": 48,
+    "batches": 3.0,
+    "arrow_bytes": 62804.0,
+    "write_before_partition_done": 0,
+    "first_partition_lead_ms": -0.09422100000000455,
+    "queue_wait_ms": 0.07560049999999999,
+    "partitions": 3.0
+  },
+  {
+    "run": 3,
+    "case": "bob_01",
+    "n": 48,
+    "batches": 4.0,
+    "arrow_bytes": 627200.0,
+    "write_before_partition_done": 48,
+    "first_partition_lead_ms": 15.702252999999999,
+    "queue_wait_ms": 0.095187,
+    "partitions": 3.0
+  }
+]

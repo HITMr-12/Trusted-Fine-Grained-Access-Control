@@ -1,0 +1,39 @@
+{
+  "conf": {
+    "sha256": "1975d271c5231e1a2acc7fa583e65aa65107414360e8f272fdabd5881005f838",
+    "settings": {
+      "spark.master": "local[2]",
+      "spark.driver.memory": "2g",
+      "spark.sql.shuffle.partitions": "200",
+      "spark.sql.adaptive.enabled": "true",
+      "spark.sql.execution.arrow.maxRecordsPerBatch": "8192",
+      "spark.sql.catalog.fgac.cache-enabled": "true",
+      "spark.sql.catalog.fgac.cache.expiration-interval-ms": "30000"
+    }
+  },
+  "native-conf": {
+    "sha256": "c58316486319f4314ae870cb667152762fe2bebf38701da0884da5051a934c35",
+    "settings": {
+      "spark.master": "local[2]",
+      "spark.driver.memory": "2g",
+      "spark.sql.shuffle.partitions": "200",
+      "spark.sql.adaptive.enabled": "true",
+      "spark.sql.execution.arrow.maxRecordsPerBatch": "8192",
+      "spark.sql.catalog.fgac.cache-enabled": "true",
+      "spark.sql.catalog.fgac.cache.expiration-interval-ms": "30000",
+      "spark.sql.extensions": "org.apache.kyuubi.plugin.spark.authz.ranger.RangerSparkExtension"
+    }
+  },
+  "inline-conf": {
+    "sha256": "1975d271c5231e1a2acc7fa583e65aa65107414360e8f272fdabd5881005f838",
+    "settings": {
+      "spark.master": "local[2]",
+      "spark.driver.memory": "2g",
+      "spark.sql.shuffle.partitions": "200",
+      "spark.sql.adaptive.enabled": "true",
+      "spark.sql.execution.arrow.maxRecordsPerBatch": "8192",
+      "spark.sql.catalog.fgac.cache-enabled": "true",
+      "spark.sql.catalog.fgac.cache.expiration-interval-ms": "30000"
+    }
+  }
+}
