@@ -1,0 +1,7 @@
+{
+  "ok": true,
+  "query_groups": 8832,
+  "failed_tasks_or_jobs": 0,
+  "memory_spill_bytes": 0.0,
+  "disk_spill_bytes": 0.0
+}

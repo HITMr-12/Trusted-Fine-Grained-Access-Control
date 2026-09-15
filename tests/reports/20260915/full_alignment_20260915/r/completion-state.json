@@ -1,0 +1,44 @@
+{
+  "role": "R",
+  "original_fgac_alive": true,
+  "original_manifest": 2096673,
+  "rounds_cleaned": [
+    [
+      {
+        "mode": "COLLECT",
+        "stopped": true,
+        "forced": []
+      },
+      {
+        "mode": "STREAM",
+        "stopped": true,
+        "forced": []
+      }
+    ],
+    [
+      {
+        "mode": "COLLECT",
+        "stopped": true,
+        "forced": []
+      },
+      {
+        "mode": "STREAM",
+        "stopped": true,
+        "forced": []
+      }
+    ],
+    [
+      {
+        "mode": "COLLECT",
+        "stopped": true,
+        "forced": []
+      },
+      {
+        "mode": "STREAM",
+        "stopped": true,
+        "forced": []
+      }
+    ]
+  ],
+  "isolated_ports_closed": true
+}

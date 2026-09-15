@@ -1,0 +1,14 @@
+{
+  "role": "E",
+  "catalog": 200,
+  "remote": 200,
+  "minio": 200,
+  "old_pids": {
+    "80220": "1038562685",
+    "837124": "1045421646",
+    "838595": "1045423512",
+    "4153454": "1038394616"
+  },
+  "all_test_workers_gone": true,
+  "original_config_unchanged": true
+}

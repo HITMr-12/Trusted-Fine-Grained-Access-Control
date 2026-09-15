@@ -1,0 +1,23 @@
+== Parsed Logical Plan ==
+'Aggregate [count(1) AS rows#3580L, sum('h1) AS sum1#3582, sum('h2) AS sum2#3584]
++- Project [cast(xxhash64(VendorID#3567, trip_distance#3568, fare_amount#3569, payment_type#3570L, 42) as decimal(38,0)) AS h1#3575, cast(xxhash64(9173, VendorID#3567, trip_distance#3568, fare_amount#3569, payment_type#3570L, 42) as decimal(38,0)) AS h2#3576]
+   +- RelationV2[VendorID#3567, trip_distance#3568, fare_amount#3569, payment_type#3570L]  BenchmarkArrowStream
+
+== Analyzed Logical Plan ==
+rows: bigint, sum1: decimal(38,0), sum2: decimal(38,0)
+Aggregate [count(1) AS rows#3580L, sum(h1#3575) AS sum1#3582, sum(h2#3576) AS sum2#3584]
++- Project [cast(xxhash64(VendorID#3567, trip_distance#3568, fare_amount#3569, payment_type#3570L, 42) as decimal(38,0)) AS h1#3575, cast(xxhash64(9173, VendorID#3567, trip_distance#3568, fare_amount#3569, payment_type#3570L, 42) as decimal(38,0)) AS h2#3576]
+   +- RelationV2[VendorID#3567, trip_distance#3568, fare_amount#3569, payment_type#3570L]  BenchmarkArrowStream
+
+== Optimized Logical Plan ==
+Aggregate [count(1) AS rows#3580L, sum(h1#3575) AS sum1#3582, sum(h2#3576) AS sum2#3584]
++- Project [cast(xxhash64(VendorID#3567, trip_distance#3568, fare_amount#3569, payment_type#3570L, 42) as decimal(38,0)) AS h1#3575, cast(xxhash64(9173, VendorID#3567, trip_distance#3568, fare_amount#3569, payment_type#3570L, 42) as decimal(38,0)) AS h2#3576]
+   +- RelationV2[VendorID#3567, trip_distance#3568, fare_amount#3569, payment_type#3570L] BenchmarkArrowStream
+
+== Physical Plan ==
+AdaptiveSparkPlan isFinalPlan=false
++- HashAggregate(keys=[], functions=[count(1), sum(h1#3575), sum(h2#3576)], output=[rows#3580L, sum1#3582, sum2#3584])
+   +- Exchange SinglePartition, ENSURE_REQUIREMENTS, [plan_id=3902]
+      +- HashAggregate(keys=[], functions=[partial_count(1), partial_sum(h1#3575), partial_sum(h2#3576)], output=[count#3595L, sum#3596, isEmpty#3597, sum#3598, isEmpty#3599])
+         +- Project [cast(xxhash64(VendorID#3567, trip_distance#3568, fare_amount#3569, payment_type#3570L, 42) as decimal(38,0)) AS h1#3575, cast(xxhash64(9173, VendorID#3567, trip_distance#3568, fare_amount#3569, payment_type#3570L, 42) as decimal(38,0)) AS h2#3576]
+            +- BatchScan BenchmarkArrowStream[VendorID#3567, trip_distance#3568, fare_amount#3569, payment_type#3570L] class fgac.bench.ArrowSocketSource$ArrowScan RuntimeFilters: []

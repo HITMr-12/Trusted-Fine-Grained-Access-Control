@@ -1,0 +1,769 @@
+[
+  {
+    "id": 14,
+    "guid": "705d19d6-f75d-4da6-8c05-bf8bbc320bf9",
+    "isEnabled": true,
+    "version": 1,
+    "service": "fgac_bench_0915",
+    "name": "all - global",
+    "policyType": 0,
+    "policyPriority": 0,
+    "description": "Policy for all - global",
+    "isAuditEnabled": true,
+    "resources": {
+      "global": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      }
+    },
+    "policyItems": [
+      {
+        "accesses": [
+          {
+            "type": "select",
+            "isAllowed": true
+          },
+          {
+            "type": "update",
+            "isAllowed": true
+          },
+          {
+            "type": "create",
+            "isAllowed": true
+          },
+          {
+            "type": "drop",
+            "isAllowed": true
+          },
+          {
+            "type": "alter",
+            "isAllowed": true
+          },
+          {
+            "type": "index",
+            "isAllowed": true
+          },
+          {
+            "type": "lock",
+            "isAllowed": true
+          },
+          {
+            "type": "all",
+            "isAllowed": true
+          },
+          {
+            "type": "read",
+            "isAllowed": true
+          },
+          {
+            "type": "write",
+            "isAllowed": true
+          },
+          {
+            "type": "repladmin",
+            "isAllowed": true
+          },
+          {
+            "type": "serviceadmin",
+            "isAllowed": true
+          },
+          {
+            "type": "tempudfadmin",
+            "isAllowed": true
+          },
+          {
+            "type": "refresh",
+            "isAllowed": true
+          }
+        ],
+        "users": [
+          "lyb"
+        ],
+        "delegateAdmin": true
+      }
+    ],
+    "serviceType": "hive",
+    "isDenyAllElse": false
+  },
+  {
+    "id": 15,
+    "guid": "cb7f5d30-4c0b-46a4-9594-430f08687fec",
+    "isEnabled": true,
+    "version": 1,
+    "service": "fgac_bench_0915",
+    "name": "all - database, table, column",
+    "policyType": 0,
+    "policyPriority": 0,
+    "description": "Policy for all - database, table, column",
+    "isAuditEnabled": true,
+    "resources": {
+      "column": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      },
+      "database": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      },
+      "table": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      }
+    },
+    "policyItems": [
+      {
+        "accesses": [
+          {
+            "type": "select",
+            "isAllowed": true
+          },
+          {
+            "type": "update",
+            "isAllowed": true
+          },
+          {
+            "type": "create",
+            "isAllowed": true
+          },
+          {
+            "type": "drop",
+            "isAllowed": true
+          },
+          {
+            "type": "alter",
+            "isAllowed": true
+          },
+          {
+            "type": "index",
+            "isAllowed": true
+          },
+          {
+            "type": "lock",
+            "isAllowed": true
+          },
+          {
+            "type": "all",
+            "isAllowed": true
+          },
+          {
+            "type": "read",
+            "isAllowed": true
+          },
+          {
+            "type": "write",
+            "isAllowed": true
+          },
+          {
+            "type": "repladmin",
+            "isAllowed": true
+          },
+          {
+            "type": "serviceadmin",
+            "isAllowed": true
+          },
+          {
+            "type": "tempudfadmin",
+            "isAllowed": true
+          },
+          {
+            "type": "refresh",
+            "isAllowed": true
+          }
+        ],
+        "users": [
+          "lyb"
+        ],
+        "delegateAdmin": true
+      }
+    ],
+    "serviceType": "hive",
+    "isDenyAllElse": false
+  },
+  {
+    "id": 16,
+    "guid": "065d7f91-5af5-4cda-be9a-b245fc90a231",
+    "isEnabled": true,
+    "version": 1,
+    "service": "fgac_bench_0915",
+    "name": "all - database, table",
+    "policyType": 0,
+    "policyPriority": 0,
+    "description": "Policy for all - database, table",
+    "isAuditEnabled": true,
+    "resources": {
+      "database": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      },
+      "table": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      }
+    },
+    "policyItems": [
+      {
+        "accesses": [
+          {
+            "type": "select",
+            "isAllowed": true
+          },
+          {
+            "type": "update",
+            "isAllowed": true
+          },
+          {
+            "type": "create",
+            "isAllowed": true
+          },
+          {
+            "type": "drop",
+            "isAllowed": true
+          },
+          {
+            "type": "alter",
+            "isAllowed": true
+          },
+          {
+            "type": "index",
+            "isAllowed": true
+          },
+          {
+            "type": "lock",
+            "isAllowed": true
+          },
+          {
+            "type": "all",
+            "isAllowed": true
+          },
+          {
+            "type": "read",
+            "isAllowed": true
+          },
+          {
+            "type": "write",
+            "isAllowed": true
+          },
+          {
+            "type": "repladmin",
+            "isAllowed": true
+          },
+          {
+            "type": "serviceadmin",
+            "isAllowed": true
+          },
+          {
+            "type": "tempudfadmin",
+            "isAllowed": true
+          },
+          {
+            "type": "refresh",
+            "isAllowed": true
+          }
+        ],
+        "users": [
+          "lyb"
+        ],
+        "delegateAdmin": true
+      }
+    ],
+    "serviceType": "hive",
+    "isDenyAllElse": false
+  },
+  {
+    "id": 17,
+    "guid": "152db3ec-37c2-4d31-82f3-47484e1a18eb",
+    "isEnabled": true,
+    "version": 1,
+    "service": "fgac_bench_0915",
+    "name": "all - database",
+    "policyType": 0,
+    "policyPriority": 0,
+    "description": "Policy for all - database",
+    "isAuditEnabled": true,
+    "resources": {
+      "database": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      }
+    },
+    "policyItems": [
+      {
+        "accesses": [
+          {
+            "type": "select",
+            "isAllowed": true
+          },
+          {
+            "type": "update",
+            "isAllowed": true
+          },
+          {
+            "type": "create",
+            "isAllowed": true
+          },
+          {
+            "type": "drop",
+            "isAllowed": true
+          },
+          {
+            "type": "alter",
+            "isAllowed": true
+          },
+          {
+            "type": "index",
+            "isAllowed": true
+          },
+          {
+            "type": "lock",
+            "isAllowed": true
+          },
+          {
+            "type": "all",
+            "isAllowed": true
+          },
+          {
+            "type": "read",
+            "isAllowed": true
+          },
+          {
+            "type": "write",
+            "isAllowed": true
+          },
+          {
+            "type": "repladmin",
+            "isAllowed": true
+          },
+          {
+            "type": "serviceadmin",
+            "isAllowed": true
+          },
+          {
+            "type": "tempudfadmin",
+            "isAllowed": true
+          },
+          {
+            "type": "refresh",
+            "isAllowed": true
+          }
+        ],
+        "users": [
+          "lyb"
+        ],
+        "delegateAdmin": true
+      }
+    ],
+    "serviceType": "hive",
+    "isDenyAllElse": false
+  },
+  {
+    "id": 18,
+    "guid": "78a7baef-fb10-44ac-af83-dd6737fff942",
+    "isEnabled": true,
+    "version": 1,
+    "service": "fgac_bench_0915",
+    "name": "all - hiveservice",
+    "policyType": 0,
+    "policyPriority": 0,
+    "description": "Policy for all - hiveservice",
+    "isAuditEnabled": true,
+    "resources": {
+      "hiveservice": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      }
+    },
+    "policyItems": [
+      {
+        "accesses": [
+          {
+            "type": "select",
+            "isAllowed": true
+          },
+          {
+            "type": "update",
+            "isAllowed": true
+          },
+          {
+            "type": "create",
+            "isAllowed": true
+          },
+          {
+            "type": "drop",
+            "isAllowed": true
+          },
+          {
+            "type": "alter",
+            "isAllowed": true
+          },
+          {
+            "type": "index",
+            "isAllowed": true
+          },
+          {
+            "type": "lock",
+            "isAllowed": true
+          },
+          {
+            "type": "all",
+            "isAllowed": true
+          },
+          {
+            "type": "read",
+            "isAllowed": true
+          },
+          {
+            "type": "write",
+            "isAllowed": true
+          },
+          {
+            "type": "repladmin",
+            "isAllowed": true
+          },
+          {
+            "type": "serviceadmin",
+            "isAllowed": true
+          },
+          {
+            "type": "tempudfadmin",
+            "isAllowed": true
+          },
+          {
+            "type": "refresh",
+            "isAllowed": true
+          }
+        ],
+        "users": [
+          "lyb"
+        ],
+        "delegateAdmin": true
+      }
+    ],
+    "serviceType": "hive",
+    "isDenyAllElse": false
+  },
+  {
+    "id": 19,
+    "guid": "a58d2e56-5d15-45ce-a90c-c1001441b817",
+    "isEnabled": true,
+    "version": 1,
+    "service": "fgac_bench_0915",
+    "name": "all - database, udf",
+    "policyType": 0,
+    "policyPriority": 0,
+    "description": "Policy for all - database, udf",
+    "isAuditEnabled": true,
+    "resources": {
+      "database": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      },
+      "udf": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      }
+    },
+    "policyItems": [
+      {
+        "accesses": [
+          {
+            "type": "select",
+            "isAllowed": true
+          },
+          {
+            "type": "update",
+            "isAllowed": true
+          },
+          {
+            "type": "create",
+            "isAllowed": true
+          },
+          {
+            "type": "drop",
+            "isAllowed": true
+          },
+          {
+            "type": "alter",
+            "isAllowed": true
+          },
+          {
+            "type": "index",
+            "isAllowed": true
+          },
+          {
+            "type": "lock",
+            "isAllowed": true
+          },
+          {
+            "type": "all",
+            "isAllowed": true
+          },
+          {
+            "type": "read",
+            "isAllowed": true
+          },
+          {
+            "type": "write",
+            "isAllowed": true
+          },
+          {
+            "type": "repladmin",
+            "isAllowed": true
+          },
+          {
+            "type": "serviceadmin",
+            "isAllowed": true
+          },
+          {
+            "type": "tempudfadmin",
+            "isAllowed": true
+          },
+          {
+            "type": "refresh",
+            "isAllowed": true
+          }
+        ],
+        "users": [
+          "lyb"
+        ],
+        "delegateAdmin": true
+      }
+    ],
+    "serviceType": "hive",
+    "isDenyAllElse": false
+  },
+  {
+    "id": 20,
+    "guid": "2a0f2627-a575-4c98-8be5-7cde79afa1dd",
+    "isEnabled": true,
+    "version": 1,
+    "service": "fgac_bench_0915",
+    "name": "all - url",
+    "policyType": 0,
+    "policyPriority": 0,
+    "description": "Policy for all - url",
+    "isAuditEnabled": true,
+    "resources": {
+      "url": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": true
+      }
+    },
+    "policyItems": [
+      {
+        "accesses": [
+          {
+            "type": "select",
+            "isAllowed": true
+          },
+          {
+            "type": "update",
+            "isAllowed": true
+          },
+          {
+            "type": "create",
+            "isAllowed": true
+          },
+          {
+            "type": "drop",
+            "isAllowed": true
+          },
+          {
+            "type": "alter",
+            "isAllowed": true
+          },
+          {
+            "type": "index",
+            "isAllowed": true
+          },
+          {
+            "type": "lock",
+            "isAllowed": true
+          },
+          {
+            "type": "all",
+            "isAllowed": true
+          },
+          {
+            "type": "read",
+            "isAllowed": true
+          },
+          {
+            "type": "write",
+            "isAllowed": true
+          },
+          {
+            "type": "repladmin",
+            "isAllowed": true
+          },
+          {
+            "type": "serviceadmin",
+            "isAllowed": true
+          },
+          {
+            "type": "tempudfadmin",
+            "isAllowed": true
+          },
+          {
+            "type": "refresh",
+            "isAllowed": true
+          }
+        ],
+        "users": [
+          "lyb"
+        ],
+        "delegateAdmin": true
+      }
+    ],
+    "serviceType": "hive",
+    "isDenyAllElse": false
+  },
+  {
+    "id": 22,
+    "guid": "af779207-418f-4674-8ec5-a079de254603",
+    "isEnabled": true,
+    "version": 2,
+    "service": "fgac_bench_0915",
+    "name": "bench-four-columns",
+    "policyType": 0,
+    "policyPriority": 0,
+    "isAuditEnabled": true,
+    "resources": {
+      "column": {
+        "values": [
+          "VendorID",
+          "trip_distance",
+          "fare_amount",
+          "payment_type"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      },
+      "database": {
+        "values": [
+          "nyc"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      },
+      "table": {
+        "values": [
+          "taxi_trips"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      }
+    },
+    "policyItems": [
+      {
+        "accesses": [
+          {
+            "type": "select",
+            "isAllowed": true
+          }
+        ],
+        "users": [
+          "alice",
+          "bob",
+          "bench_full"
+        ],
+        "delegateAdmin": false
+      }
+    ],
+    "serviceType": "hive",
+    "isDenyAllElse": false
+  },
+  {
+    "id": 23,
+    "guid": "6c852fcc-1fec-4b25-a38c-c1833b9139fe",
+    "isEnabled": true,
+    "version": 2,
+    "service": "fgac_bench_0915",
+    "name": "bench-row-policy",
+    "policyType": 2,
+    "policyPriority": 0,
+    "isAuditEnabled": true,
+    "resources": {
+      "database": {
+        "values": [
+          "nyc"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      },
+      "table": {
+        "values": [
+          "taxi_trips"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      }
+    },
+    "rowFilterPolicyItems": [
+      {
+        "accesses": [
+          {
+            "type": "select",
+            "isAllowed": true
+          }
+        ],
+        "users": [
+          "alice"
+        ],
+        "delegateAdmin": false,
+        "rowFilterInfo": {
+          "filterExpr": "VendorID = 1"
+        }
+      },
+      {
+        "accesses": [
+          {
+            "type": "select",
+            "isAllowed": true
+          }
+        ],
+        "users": [
+          "bob"
+        ],
+        "delegateAdmin": false,
+        "rowFilterInfo": {
+          "filterExpr": "VendorID = 2"
+        }
+      }
+    ],
+    "serviceType": "hive",
+    "isDenyAllElse": false
+  }
+]

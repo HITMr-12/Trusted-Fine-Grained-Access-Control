@@ -1,0 +1,54 @@
+{
+  "ok": true,
+  "three_independent_restarts": true,
+  "formal_queries": 4608,
+  "warmup_queries": 1440,
+  "24_orders_each_twice_per_case_per_run": true,
+  "negative_controls_passed": true,
+  "snapshot_fixed": true,
+  "both_gaps_at_least_300_seconds": true,
+  "timing": [
+    {
+      "run": 1,
+      "start_epoch": 1789472171.3356833,
+      "all_test_processes_stopped_epoch": 1789473630.6361377,
+      "done": {
+        "ok": true,
+        "records": 2016,
+        "formal_records": 1536,
+        "cases": 8,
+        "all_paired_results_equal": true
+      },
+      "wait_start_epoch": 1789473630.6361377,
+      "wait_end_epoch": 1789473930.6313975,
+      "wait_monotonic_seconds": 300.0
+    },
+    {
+      "run": 2,
+      "start_epoch": 1789473930.632412,
+      "all_test_processes_stopped_epoch": 1789475358.0588212,
+      "done": {
+        "ok": true,
+        "records": 2016,
+        "formal_records": 1536,
+        "cases": 8,
+        "all_paired_results_equal": true
+      },
+      "wait_start_epoch": 1789475358.0588212,
+      "wait_end_epoch": 1789475658.0510967,
+      "wait_monotonic_seconds": 300.0
+    },
+    {
+      "run": 3,
+      "start_epoch": 1789475658.0526514,
+      "all_test_processes_stopped_epoch": 1789477146.2513936,
+      "done": {
+        "ok": true,
+        "records": 2016,
+        "formal_records": 1536,
+        "cases": 8,
+        "all_paired_results_equal": true
+      }
+    }
+  ]
+}

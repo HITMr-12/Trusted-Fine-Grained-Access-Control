@@ -1,0 +1,31 @@
+== Parsed Logical Plan ==
+'Aggregate [count(1) AS rows#5509L, sum('h1) AS sum1#5511, sum('h2) AS sum2#5513]
++- Project [cast(xxhash64(VendorID#5476, trip_distance#5480, fare_amount#5486, payment_type#5485L, 42) as decimal(38,0)) AS h1#5504, cast(xxhash64(9173, VendorID#5476, trip_distance#5480, fare_amount#5486, payment_type#5485L, 42) as decimal(38,0)) AS h2#5505]
+   +- Project [VendorID#5476, trip_distance#5480, fare_amount#5486, payment_type#5485L]
+      +- Filter ((VendorID#5476 = 2) AND (trip_distance#5480 >= cast(1.7 as double)))
+         +- SubqueryAlias fgac.nyc.taxi_trips
+            +- RelationV2[VendorID#5476, tpep_pickup_datetime#5477, tpep_dropoff_datetime#5478, passenger_count#5479L, trip_distance#5480, RatecodeID#5481L, store_and_fwd_flag#5482, PULocationID#5483, DOLocationID#5484, payment_type#5485L, fare_amount#5486, extra#5487, mta_tax#5488, tip_amount#5489, tolls_amount#5490, improvement_surcharge#5491, total_amount#5492, congestion_surcharge#5493, Airport_fee#5494] fgac.nyc.taxi_trips fgac.nyc.taxi_trips
+
+== Analyzed Logical Plan ==
+rows: bigint, sum1: decimal(38,0), sum2: decimal(38,0)
+Aggregate [count(1) AS rows#5509L, sum(h1#5504) AS sum1#5511, sum(h2#5505) AS sum2#5513]
++- Project [cast(xxhash64(VendorID#5476, trip_distance#5480, fare_amount#5486, payment_type#5485L, 42) as decimal(38,0)) AS h1#5504, cast(xxhash64(9173, VendorID#5476, trip_distance#5480, fare_amount#5486, payment_type#5485L, 42) as decimal(38,0)) AS h2#5505]
+   +- Project [VendorID#5476, trip_distance#5480, fare_amount#5486, payment_type#5485L]
+      +- Filter ((VendorID#5476 = 2) AND (trip_distance#5480 >= cast(1.7 as double)))
+         +- SubqueryAlias fgac.nyc.taxi_trips
+            +- RelationV2[VendorID#5476, tpep_pickup_datetime#5477, tpep_dropoff_datetime#5478, passenger_count#5479L, trip_distance#5480, RatecodeID#5481L, store_and_fwd_flag#5482, PULocationID#5483, DOLocationID#5484, payment_type#5485L, fare_amount#5486, extra#5487, mta_tax#5488, tip_amount#5489, tolls_amount#5490, improvement_surcharge#5491, total_amount#5492, congestion_surcharge#5493, Airport_fee#5494] fgac.nyc.taxi_trips fgac.nyc.taxi_trips
+
+== Optimized Logical Plan ==
+Aggregate [count(1) AS rows#5509L, sum(h1#5504) AS sum1#5511, sum(h2#5505) AS sum2#5513]
++- Project [cast(xxhash64(VendorID#5476, trip_distance#5480, fare_amount#5486, payment_type#5485L, 42) as decimal(38,0)) AS h1#5504, cast(xxhash64(9173, VendorID#5476, trip_distance#5480, fare_amount#5486, payment_type#5485L, 42) as decimal(38,0)) AS h2#5505]
+   +- Filter (((isnotnull(VendorID#5476) AND isnotnull(trip_distance#5480)) AND (VendorID#5476 = 2)) AND (trip_distance#5480 >= 1.7))
+      +- RelationV2[VendorID#5476, trip_distance#5480, payment_type#5485L, fare_amount#5486] fgac.nyc.taxi_trips
+
+== Physical Plan ==
+AdaptiveSparkPlan isFinalPlan=false
++- HashAggregate(keys=[], functions=[count(1), sum(h1#5504), sum(h2#5505)], output=[rows#5509L, sum1#5511, sum2#5513])
+   +- Exchange SinglePartition, ENSURE_REQUIREMENTS, [plan_id=4328]
+      +- HashAggregate(keys=[], functions=[partial_count(1), partial_sum(h1#5504), partial_sum(h2#5505)], output=[count#5528L, sum#5529, isEmpty#5530, sum#5531, isEmpty#5532])
+         +- Project [cast(xxhash64(VendorID#5476, trip_distance#5480, fare_amount#5486, payment_type#5485L, 42) as decimal(38,0)) AS h1#5504, cast(xxhash64(9173, VendorID#5476, trip_distance#5480, fare_amount#5486, payment_type#5485L, 42) as decimal(38,0)) AS h2#5505]
+            +- Filter (((isnotnull(VendorID#5476) AND isnotnull(trip_distance#5480)) AND (VendorID#5476 = 2)) AND (trip_distance#5480 >= 1.7))
+               +- BatchScan fgac.nyc.taxi_trips[VendorID#5476, trip_distance#5480, payment_type#5485L, fare_amount#5486] fgac.nyc.taxi_trips (branch=null) [filters=VendorID IS NOT NULL, trip_distance IS NOT NULL, VendorID = 2, trip_distance >= 1.7, groupedBy=] RuntimeFilters: []

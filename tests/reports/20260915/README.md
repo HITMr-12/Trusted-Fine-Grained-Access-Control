@@ -1,6 +1,6 @@
 # 2026-09-15 FGAC 部署、优化与性能报告
 
-请优先阅读 [最终统一基线报告](final_baseline_20260915/FINAL_PERFORMANCE_REPORT.md)。最终结果只使用同轮的最新 FGAC、Spark＋Kyuubi AuthZ＋Ranger 和 inline 对照，不拼接不同轮次的耗时。
+请优先阅读 [三轮全场景复测与最终分析](full_alignment_20260915/FULL_RESTART_REPORT.md)：八场景、四方法独立进程，轮间各等待完整五分钟。高返回率收益跨重启成立，小结果集仍有运行阶段波动，不能用总体平均宣称全部场景稳定低于5%。此前单轮和专项测试作为阶段证据保留。
 
 关于0.1%/1%前后结果反转，请同时阅读 [四方法隔离复测](alignment_isolated_20260915/ISOLATED_ALIGNMENT_REPORT.md)：三次独立重启未复现此前固定幅度的劣化；该复测只覆盖两个小结果集，不替代八场景报告。
 
@@ -17,6 +17,7 @@
 | 7 | [分区内逐批交付](partition_stream_20260915/PARTITION_STREAM_REPORT.md) | 消除完整分区收集屏障，同轮对照验证改善 |
 | 8 | [最终统一基线](final_baseline_20260915/FINAL_PERFORMANCE_REPORT.md) | 最新FGAC与真实Ranger基线、inline同轮复测 |
 | 9 | [小结果集隔离复测](alignment_isolated_20260915/ISOLATED_ALIGNMENT_REPORT.md) | COLLECT/STREAM/Native/Inline独立进程、三次重启，检验结论反转 |
+| 10 | [三轮全场景复测](full_alignment_20260915/FULL_RESTART_REPORT.md) | 恢复八场景、方法隔离、两段五分钟间隔，分析最终结论与剩余波动 |
 
 各阶段报告保留当时的结果和限制；早期的百分比不是当前最终结论。不能把不同阶段的FGAC与原生耗时组合成新的劣化率。
 
