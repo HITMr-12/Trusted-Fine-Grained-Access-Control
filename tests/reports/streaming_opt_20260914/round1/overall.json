@@ -1,0 +1,34 @@
+{
+  "round": "round1",
+  "formal_queries": 630,
+  "pairs": 210,
+  "primary": "mean paired ratio O/A minus one; seven scenes equally weighted",
+  "U_over_A_mean_degradation": 0.11836962339714871,
+  "O_over_A_mean_degradation": -0.007524195485985407,
+  "O_over_A_degradation_ci95": [
+    -0.013196359505862636,
+    -0.0018128736418275397
+  ],
+  "O_over_U_mean_ratio": 0.8883892212138934,
+  "mean_saved_ms": 55.69412581445206,
+  "total_time_degradation": 0.016050031815758592,
+  "target_met": true,
+  "upper_ci_below_target": true,
+  "blocks": [
+    {
+      "block": 0,
+      "optimized_degradation": -0.014693837701656304,
+      "unoptimized_degradation": 0.12226176696524671
+    },
+    {
+      "block": 1,
+      "optimized_degradation": -0.00827880127359186,
+      "unoptimized_degradation": 0.1124935732156032
+    },
+    {
+      "block": 2,
+      "optimized_degradation": 0.00040005251729194097,
+      "unoptimized_degradation": 0.12035353001059625
+    }
+  ]
+}

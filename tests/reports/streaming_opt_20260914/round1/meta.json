@@ -1,0 +1,15 @@
+{
+  "spark": "3.5.8",
+  "master": "local[2]",
+  "shuffle": "200",
+  "snapshot": [
+    6896028106384817739
+  ],
+  "seed": 914,
+  "smoke": false,
+  "sink": "full-column-double-digest-included",
+  "stream_adapter": "same Arrow IPC, 2 Spark partitions; U=unoptimized, O=bounded early prefetch",
+  "objective": "mean of paired O/A - 1 < 0.10, equal seven cases",
+  "max_optimization_rounds": 5,
+  "compiler_sha256": "d3e8315b8feac424aa632efb86791eb64307c462d1208b88bc8753bc9b341429"
+}

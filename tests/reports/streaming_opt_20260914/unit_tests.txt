@@ -1,0 +1,20 @@
+test_backpressure_and_close_with_full_queue (streaming.test_streaming.PrefetchQueueTests) ... ok
+test_close_cancels_blocked_read (streaming.test_streaming.PrefetchQueueTests) ... ok
+test_oversized_batch_and_string_null_values (streaming.test_streaming.PrefetchQueueTests) ... ok
+test_expiry (streaming.test_streaming.StreamingTests) ... ok
+test_invalid_identity (streaming.test_streaming.StreamingTests) ... ok
+test_metadata_does_not_execute_scan (streaming.test_streaming.StreamingTests) ... ok
+test_missing_identity (streaming.test_streaming.StreamingTests) ... ok
+test_multiple_batches_and_empty (streaming.test_streaming.StreamingTests) ... ok
+test_partial_failure_is_not_success (streaming.test_streaming.StreamingTests) ... ok
+test_policy_change (streaming.test_streaming.StreamingTests) ... ok
+test_prefetch_empty_and_partial_failure (streaming.test_streaming.StreamingTests) ... ok
+test_prefetch_keeps_policy_revalidation (streaming.test_streaming.StreamingTests) ... ok
+test_prefetch_limits_do_not_consume_ticket (streaming.test_streaming.StreamingTests) ... ok
+test_prefetch_starts_before_consumption_and_preserves_rows (streaming.test_streaming.StreamingTests) ... ok
+test_ticket_owner_and_single_use (streaming.test_streaming.StreamingTests) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.102s
+
+OK

@@ -1,0 +1,21 @@
+{
+  "status": "target_met",
+  "rounds_completed": 1,
+  "max_rounds": 5,
+  "target_mean_degradation": 0.1,
+  "actual_mean_degradation": -0.007524195485985407,
+  "ci95": [
+    -0.013196359505862636,
+    -0.0018128736418275397
+  ],
+  "all_scenes_below_10_percent": false,
+  "formal_executions": 630,
+  "warmup_executions": 105,
+  "smoke_executions": 21,
+  "unit_tests": 15,
+  "all_results_match": true,
+  "failed_tasks": 0,
+  "client_sha256": "09ad6f0e37af8b48067f85be4d10db17bf8d711880a240bee4c13755f5700b90",
+  "production_unchanged": true,
+  "test_services_stopped": true
+}
