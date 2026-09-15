@@ -1,0 +1,17 @@
+{
+  "modes": [
+    "NATIVE",
+    "FGAC",
+    "INLINE"
+  ],
+  "snapshot": 6896028106384817739,
+  "formal_repetitions": 30,
+  "warmup_repetitions": 5,
+  "minimum_warmup_queries_per_session": 40,
+  "seed": 915,
+  "compute_budget": "User-selected deployment comparison: identical local[2] E Spark settings; FGAC adds R local[2]; no CPU affinity or aggregate quota",
+  "sink": "four-column double xxhash64 digest included in timer",
+  "cache": "Iceberg catalog cache enabled 30s, no data/result cache",
+  "timing": "start before SQL/Flight describe, end after full digest and bridge close",
+  "smoke": false
+}

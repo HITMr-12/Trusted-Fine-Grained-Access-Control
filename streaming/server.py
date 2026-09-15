@@ -122,7 +122,17 @@ class SparkBackend:
 
 
 class GovernedFlightServer(flight.FlightServerBase):
-    def __init__(self, location, backend, *, ticket_ttl=300, max_tickets=64, audit=None):
+    def __init__(self, location, backend, *, ticket_ttl=300, max_tickets=64, audit=None,
+                 compression=None, compression_level=None):
+        if compression not in (None, "lz4", "zstd"):
+            raise ValueError("Compression must be None, lz4 or zstd")
+        if compression_level is not None and compression != "zstd":
+            raise ValueError("A compression level is only supported for zstd")
+        codec = (pa.Codec(compression, compression_level=compression_level)
+                 if compression_level is not None else compression)
+        self.write_options = pa.ipc.IpcWriteOptions(compression=codec)
+        self.compression = compression or "none"
+        self.compression_level = compression_level
         super().__init__(location, middleware={"identity": IdentityFactory()})
         self.backend = backend
         self.ticket_ttl = ticket_ttl
@@ -214,9 +224,11 @@ class GovernedFlightServer(flight.FlightServerBase):
                     self.audit({"job_id": job_id, "principal": prepared.principal,
                                 "policy_version": prepared.policy_version,
                                 "status": status, "rows": rows, "batches": batches,
+                                "compression": self.compression,
+                                "compression_level": self.compression_level,
                                 "arrow_bytes": nbytes, "first_batch_ms": first_batch_ms,
                                 "elapsed_ms": (time.time() - start) * 1000})
-        return flight.GeneratorStream(prepared.schema, produce())
+        return flight.GeneratorStream(prepared.schema, produce(), options=self.write_options)
 
 
 def main():
@@ -227,9 +239,13 @@ def main():
     parser.add_argument("--batch-rows", type=int, default=8192)
     parser.add_argument("--audit")
     parser.add_argument("--ready-file")
+    parser.add_argument("--compression", choices=("none", "lz4", "zstd"), default="none")
+    parser.add_argument("--compression-level", type=int)
     args = parser.parse_args()
     if args.batch_rows < 1 or args.batch_rows > 65536:
         parser.error("batch-rows must be between 1 and 65536")
+    if args.compression_level is not None and args.compression != "zstd":
+        parser.error("--compression-level requires --compression zstd")
     if args.env_from_pid:
         # Read configuration into this process only. Never write or log secrets.
         raw = Path(f"/proc/{args.env_from_pid}/environ").read_bytes()
@@ -237,7 +253,9 @@ def main():
     sys.path.insert(0, args.service_root)
     service = importlib.import_module("remote.app")
     backend = SparkBackend(service, args.batch_rows)
-    server = GovernedFlightServer(args.location, backend, audit=args.audit)
+    server = GovernedFlightServer(args.location, backend, audit=args.audit,
+                                 compression=None if args.compression == "none" else args.compression,
+                                 compression_level=args.compression_level)
     def stop(*_):
         threading.Thread(target=server.shutdown, daemon=True).start()
     signal.signal(signal.SIGTERM, stop)

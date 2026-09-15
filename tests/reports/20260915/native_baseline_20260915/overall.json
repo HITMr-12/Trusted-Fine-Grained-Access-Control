@@ -1,0 +1,67 @@
+{
+  "formal_queries": 720,
+  "warmup_queries": 120,
+  "extra_session_warmup_queries": 80,
+  "legacy_seven": {
+    "cases": 7,
+    "paired_mean_degradation": 0.016307611921202374,
+    "ci95": [
+      0.004790984370066846,
+      0.028882598740603473
+    ],
+    "moving_block_ci95": [
+      -0.004025546503616631,
+      0.041155319532049005
+    ],
+    "ratio_of_total_times_minus1": 0.05250719567770834,
+    "FGAC_over_INLINE_mean": 0.12154045113851103,
+    "NATIVE_over_INLINE_mean": 0.11094177650574974,
+    "blocks": [
+      -0.010426439225768521,
+      0.03619362986139368,
+      0.023155645127981968
+    ]
+  },
+  "bob_six": {
+    "cases": 6,
+    "paired_mean_degradation": 0.047536889976137246,
+    "ci95": [
+      0.03515844285168941,
+      0.06118291532737587
+    ],
+    "moving_block_ci95": [
+      0.028127890576781493,
+      0.07068823204478655
+    ],
+    "ratio_of_total_times_minus1": 0.08009502154041992,
+    "FGAC_over_INLINE_mean": 0.13079685571885538,
+    "NATIVE_over_INLINE_mean": 0.08104130164031642,
+    "blocks": [
+      0.01997867398719451,
+      0.07028933899742679,
+      0.05234265694379046
+    ]
+  },
+  "all_eight": {
+    "cases": 8,
+    "paired_mean_degradation": 0.042392748793963056,
+    "ci95": [
+      0.03229077710985645,
+      0.053446841308434
+    ],
+    "moving_block_ci95": [
+      0.02360432695186209,
+      0.06560558763761754
+    ],
+    "ratio_of_total_times_minus1": 0.08836235357616706,
+    "FGAC_over_INLINE_mean": 0.14635286298556285,
+    "NATIVE_over_INLINE_mean": 0.10687136718922832,
+    "blocks": [
+      0.015745594609418125,
+      0.05993589197700349,
+      0.051496759795467556
+    ]
+  },
+  "all_digests_schemas_equal": true,
+  "all_remote_audits_complete": true
+}

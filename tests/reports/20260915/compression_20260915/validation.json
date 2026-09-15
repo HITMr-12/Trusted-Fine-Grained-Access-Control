@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "formal_queries": 384,
+  "regular_warmup": 160,
+  "extra_native_warmup": 80,
+  "audited_FGAC_queries": 408,
+  "paired_results_equal": true,
+  "negative_controls": 4
+}

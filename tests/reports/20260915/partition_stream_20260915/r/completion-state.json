@@ -1,0 +1,13 @@
+{
+  "role": "R",
+  "needed_kill_after_term": [
+    2581241
+  ],
+  "isolated_processes_stopped": true,
+  "original_fgac_pid": 2096673,
+  "original_fgac_alive": true,
+  "minio_top_level": [
+    "staging",
+    "warehouse"
+  ]
+}

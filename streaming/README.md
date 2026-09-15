@@ -33,6 +33,19 @@ python -m streaming.server \
 
 启动会创建自己的 Spark 会话，不复用或修改生产 Spark 会话。进程接收 SIGTERM/SIGINT 后关闭 Flight 服务并停止自己的 Spark。
 
+### 可选传输压缩
+
+默认 `--compression none` 保持无压缩。可以使用 `--compression lz4`，或
+`--compression zstd --compression-level 1`。压缩使用 Flight `GeneratorStream`
+的标准 Arrow IPC 写选项；兼容的 Flight 客户端自动解压，不改变字段、批次边界、
+ticket 或授权检查，也不生成 Parquet。客户端继续收到相同的 RecordBatch。
+压缩级别参数只接受与 zstd 搭配；不可用的 codec 会在启动时失败。
+
+该选项只压缩 Flight 输出，不压缩 Spark JVM→Python 或 E 端本机 IPC。
+审计中的 `arrow_bytes` 仍是解压后的逻辑字节，不能用于证明线上压缩率；审计另外记录
+`compression` 和 `compression_level`。压缩是否改善总耗时需在目标数据与网络上测量。
+它不消除 Spark `collectAsArrowToPython` 的分区级批次收集。
+
 ## 客户端
 
 ```python
@@ -108,3 +121,47 @@ python -m unittest streaming.test_streaming -v
 两机实际验证的明细保存在工作区 `output/streaming_prototype_20260914/`。验证客户端逐批计算与既有 Spark 相同的双 XXH64 摘要；它没有把结果写到磁盘或收集为整张表。该 Python 校验器的耗时不是之前 Spark 端到端性能基准的替代数据。
 
 参考：[Flight 协议](https://arrow.apache.org/docs/format/Flight.html)、[Python GeneratorStream](https://arrow.apache.org/docs/python/generated/pyarrow.flight.GeneratorStream.html)。
+
+
+### Optional partition-internal delivery (Spark 3.5 local mode)
+
+`FGAC_ARROW_DELIVERY=partition_stream` selects an experimental JVM adapter in
+`jvm/PartitionArrowStream.java`. The default remains the existing collect adapter.
+Compile the helper against the deployed Spark jars with Java 11 bytecode and add
+its jar to the **Remote** Spark session before starting it:
+
+```sh
+javac --release 11 -cp "$SPARK_HOME/jars/*" -d classes streaming/jvm/PartitionArrowStream.java
+jar cf partition-arrow-stream.jar -C classes .
+# Append this jar to the EXISTING Remote spark.jars list.
+# Do not replace the existing Iceberg/storage dependency jars.
+```
+
+Each task produces Spark Arrow batches into a shared bounded queue (two batches,
+16 MiB queued byte permits). A loopback socket forwards batches as they arrive,
+without collecting all batches of a partition. There are also in-flight producer
+and socket buffers; the queue limit is not a total process memory limit. A batch
+larger than 16 MiB fails the scan. No result files are created. Flight, policy
+checks, schemas, and the consumer adapter are unchanged.
+
+This adapter explicitly requires Spark 3.5 **local mode** and rejects speculation.
+It uses private Spark APIs and an in-process registry; it does not support remote
+executors. Output ordering is unspecified, as in the existing unordered governed
+scan API. Retried partitions fail the stream instead of replaying already sent
+rows. Consumers must discard partial results when a stream fails. Cancellation
+closes the socket and cancels the Spark job group. Use the existing default path
+for unsupported deployment modes.
+
+Run `streaming/test_partition_integration.py OUTPUT.json` through spark-submit
+with the helper jar to verify early batch delivery, bounded queue occupancy,
+empty results, cancellation, producer failure, recovery, and local authentication.
+The test uses generated data and does not access deployed tables.
+
+
+### Deployment and performance evidence
+
+The [2026-09-15 report index](../tests/reports/20260915/README.md) collects the
+real Ranger baseline, inline reference, compression experiments, partition
+streaming validation, and final unified comparison. Use the final same-run
+comparison for current performance conclusions; do not combine measurements
+from different deployment or warmup runs.

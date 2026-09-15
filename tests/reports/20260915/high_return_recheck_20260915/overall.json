@@ -1,0 +1,26 @@
+{
+  "formal_queries": 360,
+  "warmup_queries": 120,
+  "two_cases": {
+    "cases": 2,
+    "paired_mean_degradation": 0.15150308261416412,
+    "ci95": [
+      0.1359877946776303,
+      0.16799922916682933
+    ],
+    "moving_block_ci95": [
+      0.13210511484838555,
+      0.17645798519009268
+    ],
+    "ratio_of_total_times_minus1": 0.15168922769443238,
+    "FGAC_over_INLINE_mean": 0.1265737139266724,
+    "NATIVE_over_INLINE_mean": -0.021215226511619358,
+    "blocks": [
+      0.17199845297332347,
+      0.13898468634638067,
+      0.1435261085227882
+    ]
+  },
+  "all_digests_schemas_equal": true,
+  "all_remote_audits_complete": true
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "size": 8192,
+    "codec": "NONE",
+    "n": 36,
+    "batches": 273.0,
+    "nonempty_input_buffers": 1092.0,
+    "ipc_bytes": 62648640.0,
+    "encode_ms": 59.90086309611797,
+    "decode_ms": 3.5146595910191536,
+    "encode_cpu_ms": 59.897725000002566,
+    "decode_cpu_ms": 3.5193149999983575
+  },
+  {
+    "size": 8192,
+    "codec": "LZ4",
+    "n": 36,
+    "batches": 273.0,
+    "nonempty_input_buffers": 1092.0,
+    "ipc_bytes": 16786192.0,
+    "encode_ms": 80.40961064398289,
+    "decode_ms": 28.319602832198143,
+    "encode_cpu_ms": 160.65617000000287,
+    "decode_cpu_ms": 71.78149500000153
+  },
+  {
+    "size": 8192,
+    "codec": "ZSTD",
+    "n": 36,
+    "batches": 273.0,
+    "nonempty_input_buffers": 1092.0,
+    "ipc_bytes": 11215616.0,
+    "encode_ms": 129.03617415577173,
+    "decode_ms": 60.06620917469263,
+    "encode_cpu_ms": 332.9153400000031,
+    "decode_cpu_ms": 164.86391499999797
+  },
+  {
+    "size": 32768,
+    "codec": "NONE",
+    "n": 36,
+    "batches": 69.0,
+    "nonempty_input_buffers": 276.0,
+    "ipc_bytes": 62589888.0,
+    "encode_ms": 57.927158661186695,
+    "decode_ms": 2.1763546392321587,
+    "encode_cpu_ms": 57.940249999994364,
+    "decode_cpu_ms": 2.1812600000004068
+  },
+  {
+    "size": 32768,
+    "codec": "LZ4",
+    "n": 36,
+    "batches": 69.0,
+    "nonempty_input_buffers": 276.0,
+    "ipc_bytes": 17358408.0,
+    "encode_ms": 76.18480268865824,
+    "decode_ms": 19.752321764826775,
+    "encode_cpu_ms": 143.028134999998,
+    "decode_cpu_ms": 52.11529500000367
+  },
+  {
+    "size": 32768,
+    "codec": "ZSTD",
+    "n": 36,
+    "batches": 69.0,
+    "nonempty_input_buffers": 276.0,
+    "ipc_bytes": 10969304.0,
+    "encode_ms": 124.84144698828459,
+    "decode_ms": 48.92004560679197,
+    "encode_cpu_ms": 311.9683699999989,
+    "decode_cpu_ms": 138.6318299999978
+  },
+  {
+    "size": 65536,
+    "codec": "NONE",
+    "n": 36,
+    "batches": 35.0,
+    "nonempty_input_buffers": 140.0,
+    "ipc_bytes": 62580096.0,
+    "encode_ms": 57.447319850325584,
+    "decode_ms": 2.0022792741656303,
+    "encode_cpu_ms": 57.447265000000414,
+    "decode_cpu_ms": 2.0070800000020483
+  },
+  {
+    "size": 65536,
+    "codec": "LZ4",
+    "n": 36,
+    "batches": 35.0,
+    "nonempty_input_buffers": 140.0,
+    "ipc_bytes": 17310520.0,
+    "encode_ms": 74.85953625291586,
+    "decode_ms": 19.93908081203699,
+    "encode_cpu_ms": 138.3099399999992,
+    "decode_cpu_ms": 50.77419499999891
+  },
+  {
+    "size": 65536,
+    "codec": "ZSTD",
+    "n": 36,
+    "batches": 35.0,
+    "nonempty_input_buffers": 140.0,
+    "ipc_bytes": 10368352.0,
+    "encode_ms": 118.21216158568859,
+    "decode_ms": 46.66216764599085,
+    "encode_cpu_ms": 297.61973499999965,
+    "decode_cpu_ms": 131.78836500000202
+  }
+]

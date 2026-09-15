@@ -1,0 +1,24 @@
+{
+  "modes": [
+    "NATIVE",
+    "NONE",
+    "LZ4",
+    "ZSTD"
+  ],
+  "formal_repetitions": 48,
+  "warmup_repetitions": 20,
+  "extra_native_warmup": 80,
+  "seed": 91503,
+  "codec_levels": {
+    "NONE": null,
+    "LZ4": null,
+    "ZSTD": 1
+  },
+  "same_R_Spark": true,
+  "same_E_FGAC_Spark": true,
+  "E_native_and_FGAC_warmup_queries": 120,
+  "batch_rows": 8192,
+  "resource_policy": "no affinity or aggregate CPU quota",
+  "wire_probe": "separate from timed benchmark",
+  "smoke": false
+}

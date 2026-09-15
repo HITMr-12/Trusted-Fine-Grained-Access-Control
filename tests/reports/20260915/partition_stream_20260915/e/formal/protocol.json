@@ -1,0 +1,14 @@
+{
+  "modes": [
+    "COLLECT",
+    "STREAM"
+  ],
+  "formal_repetitions": 60,
+  "warmup_repetitions": 20,
+  "seed": 91507,
+  "same_R_Spark": true,
+  "same_E_Spark": true,
+  "resource_policy": "no affinity or CPU quota",
+  "prefetch": "2 batches / 16 MiB unchanged; actual byte occupancy varies with batch size",
+  "purpose": "partition-internal stream vs current collect; both 8192 rows, no compression; not new Ranger latency comparison"
+}

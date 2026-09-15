@@ -1,0 +1,21 @@
+{
+  "modes": [
+    "NONE_8192",
+    "LZ4_8192",
+    "ZSTD_8192",
+    "NONE_32768",
+    "LZ4_32768",
+    "ZSTD_32768",
+    "NONE_65536",
+    "LZ4_65536",
+    "ZSTD_65536"
+  ],
+  "formal_repetitions": 36,
+  "warmup_repetitions": 8,
+  "seed": 91504,
+  "same_R_Spark": true,
+  "same_E_Spark": true,
+  "resource_policy": "no affinity or CPU quota",
+  "prefetch": "2 batches / 16 MiB unchanged; actual byte occupancy varies with batch size",
+  "purpose": "factorial batch size and codec experiment; not new Ranger latency comparison"
+}

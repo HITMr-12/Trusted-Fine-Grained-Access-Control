@@ -1,0 +1,33 @@
+{
+  "incremental_and_bounded": {
+    "first_generated_ms": 2346.683663,
+    "first_written_ms": 2347.116029,
+    "first_partition_done_ms": 2382.848608,
+    "last_partition_done_ms": 2382.854068,
+    "producer_queue_ms": 1.678379,
+    "queue_peak_batches": 2,
+    "partitions": 2
+  },
+  "empty": {
+    "first_generated_ms": -1.0,
+    "first_written_ms": -1.0,
+    "first_partition_done_ms": -1.0,
+    "last_partition_done_ms": -1.0,
+    "producer_queue_ms": 0.0,
+    "queue_peak_batches": 0,
+    "partitions": 0
+  },
+  "cancel": true,
+  "producer_failure_propagates": true,
+  "recovery": {
+    "first_generated_ms": 108.866028,
+    "first_written_ms": 109.053581,
+    "first_partition_done_ms": 108.98077,
+    "last_partition_done_ms": 108.99932,
+    "producer_queue_ms": 0.086581,
+    "queue_peak_batches": 1,
+    "partitions": 2
+  },
+  "bad_local_token_rejected": true,
+  "ok": true
+}

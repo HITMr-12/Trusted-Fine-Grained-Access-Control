@@ -1,0 +1,42 @@
+[
+  {
+    "case": "bob_90",
+    "total_ms": 967.1312244608998,
+    "prepare_ms": 45.28411664068699,
+    "action_ms": 886.1280856654048,
+    "first_arrow_ms": 475.9497120976448,
+    "bridge_next_wait_ms": 572.3953805863857,
+    "bridge_ipc_write_ms": 33.760094083845615,
+    "stream_batches": 248.0,
+    "arrow_bytes": 56333172.0,
+    "e_cpu_ms": 1396.6865850000404,
+    "r_cpu_ms": 1981.34871499974,
+    "total_executor_cpu_ms": 3826.735124999772,
+    "prefetch_peak_bytes": 229376.0,
+    "prefetch_peak_batches": 1.0,
+    "after_first_ms": 487.47681081295013,
+    "r_stream_ms": 692.736123688519,
+    "queries_peak_queue_at_two": 14,
+    "queries": 60
+  },
+  {
+    "case": "bob_100",
+    "total_ms": 1043.635407462716,
+    "prepare_ms": 39.99726381152868,
+    "action_ms": 965.8399540930986,
+    "first_arrow_ms": 502.07973178476095,
+    "bridge_next_wait_ms": 600.3386918455362,
+    "bridge_ipc_write_ms": 35.14597285538912,
+    "stream_batches": 275.0,
+    "arrow_bytes": 62569696.0,
+    "e_cpu_ms": 1573.861375000007,
+    "r_cpu_ms": 2874.7718950000944,
+    "total_executor_cpu_ms": 4334.6481300000905,
+    "prefetch_peak_bytes": 229376.0,
+    "prefetch_peak_batches": 1.0,
+    "after_first_ms": 539.399023167789,
+    "r_stream_ms": 723.5551471821964,
+    "queries_peak_queue_at_two": 17,
+    "queries": 60
+  }
+]

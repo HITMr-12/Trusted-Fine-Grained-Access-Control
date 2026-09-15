@@ -39,7 +39,9 @@ class FakeBackend:
 class StreamingTests(unittest.TestCase):
     def setUp(self):
         self.backend = FakeBackend()
-        self.server = GovernedFlightServer("grpc://127.0.0.1:0", self.backend)
+        self.server = GovernedFlightServer("grpc://127.0.0.1:0", self.backend,
+            compression=getattr(self, "compression", None),
+            compression_level=getattr(self, "compression_level", None))
         self.thread = threading.Thread(target=self.server.serve, daemon=True)
         self.thread.start()
         self.location = "grpc://127.0.0.1:" + str(self.server.port)
@@ -185,6 +187,56 @@ class PrefetchQueueTests(unittest.TestCase):
             result = list(batches)
             self.assertEqual(result, [batch])
             self.assertEqual(batches.peak_queued_batches, 1)
+
+
+class Lz4StreamingTests(StreamingTests):
+    compression = "lz4"
+
+
+class ZstdStreamingTests(StreamingTests):
+    compression = "zstd"
+    compression_level = 1
+
+
+class CompressionTests(unittest.TestCase):
+    def test_invalid_settings_fail_before_listening(self):
+        for codec, level in [("gzip", None), (None, 1), ("lz4", 1)]:
+            with self.subTest(codec=codec, level=level), self.assertRaises(ValueError):
+                GovernedFlightServer("grpc://127.0.0.1:0", FakeBackend(),
+                                     compression=codec, compression_level=level)
+
+    def test_compressed_batch_arrives_before_producer_finishes(self):
+        for codec in ("lz4", "zstd"):
+            with self.subTest(codec=codec):
+                release = threading.Event()
+                batch = pa.record_batch([pa.array([1, None, 2, 1] * 2048, type=pa.int32()),
+                                         pa.array(["repeated", None, "text", "repeated"] * 2048)],
+                                        names=["id", "text"])
+                class Backend(FakeBackend):
+                    def batches(self, prepared, job_id):
+                        yield batch
+                        if not release.wait(5):
+                            raise RuntimeError("Consumer did not receive the first batch")
+                        yield batch
+                backend = Backend()
+                backend.schema = batch.schema
+                server = GovernedFlightServer("grpc://127.0.0.1:0", backend, compression=codec)
+                thread = threading.Thread(target=server.serve, daemon=True)
+                thread.start()
+                client = GovernedClient("grpc://127.0.0.1:" + str(server.port), "Bearer alice")
+                try:
+                    with client.scan({}) as (_, reader):
+                        batches = iter_batches(reader)
+                        self.assertTrue(next(batches).equals(batch))
+                        self.assertFalse(release.is_set())
+                        release.set()
+                        self.assertTrue(next(batches).equals(batch))
+                        self.assertEqual(list(batches), [])
+                finally:
+                    release.set()
+                    client.close()
+                    server.shutdown()
+                    thread.join(timeout=5)
 
 
 if __name__ == "__main__":

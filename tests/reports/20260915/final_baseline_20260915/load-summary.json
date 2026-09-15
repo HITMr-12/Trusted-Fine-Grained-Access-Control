@@ -1,0 +1,184 @@
+{
+  "R": {
+    "samples": 244,
+    "cpu_mean_pct": 2.8110318870418904,
+    "cpu_peak_pct": 6.911173932450528,
+    "max_single_core_busy_pct": 99.0521327014218,
+    "iowait_mean_pct": 0.0003059265878927081,
+    "swapin_pages": 0,
+    "swapout_pages": 0,
+    "top_processes": [
+      {
+        "pid_start": "2614665:733791794",
+        "name": "java",
+        "mean_cores": 0.4767248851879646
+      },
+      {
+        "pid_start": "628835:469130617",
+        "name": "doris_be",
+        "mean_cores": 0.3300613364696973
+      },
+      {
+        "pid_start": "2041081:731076660",
+        "name": "minio",
+        "mean_cores": 0.16131037448906577
+      },
+      {
+        "pid_start": "2631499:733870617",
+        "name": "java",
+        "mean_cores": 0.13894955381231272
+      },
+      {
+        "pid_start": "2632605:733876301",
+        "name": "java",
+        "mean_cores": 0.13891049561025728
+      },
+      {
+        "pid_start": "2626784:733847491",
+        "name": "java",
+        "mean_cores": 0.13168472822999658
+      },
+      {
+        "pid_start": "2628005:733853837",
+        "name": "java",
+        "mean_cores": 0.1283061937521989
+      },
+      {
+        "pid_start": "2629966:733863269",
+        "name": "java",
+        "mean_cores": 0.12434178624356929
+      },
+      {
+        "pid_start": "2634040:733883766",
+        "name": "java",
+        "mean_cores": 0.10575008206516846
+      },
+      {
+        "pid_start": "2425:5554",
+        "name": "k3s-server",
+        "mean_cores": 0.09297804999303172
+      },
+      {
+        "pid_start": "617568:469117748",
+        "name": "java",
+        "mean_cores": 0.07206238279233075
+      },
+      {
+        "pid_start": "2625113:733841051",
+        "name": "java",
+        "mean_cores": 0.06856667370836685
+      },
+      {
+        "pid_start": "2629549:733861399",
+        "name": "java",
+        "mean_cores": 0.06354769474423974
+      },
+      {
+        "pid_start": "2625914:733844111",
+        "name": "java",
+        "mean_cores": 0.06345004923910108
+      },
+      {
+        "pid_start": "2623767:733834489",
+        "name": "java",
+        "mean_cores": 0.06309852542060189
+      }
+    ],
+    "pressure_last": {
+      "cpu": "some avg10=0.00 avg60=0.00 avg300=0.00 total=4357646307\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+      "memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1940269\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1920920\n",
+      "io": "some avg10=0.00 avg60=0.00 avg300=0.00 total=13124458265\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=13069548402\n"
+    }
+  },
+  "E": {
+    "samples": 243,
+    "cpu_mean_pct": 3.1224882207622953,
+    "cpu_peak_pct": 6.565302432003543,
+    "max_single_core_busy_pct": 82.6923076923077,
+    "iowait_mean_pct": 0.000747996334404893,
+    "swapin_pages": 0,
+    "swapout_pages": 0,
+    "top_processes": [
+      {
+        "pid_start": "3477886:1072109382",
+        "name": "java",
+        "mean_cores": 0.601706403183031
+      },
+      {
+        "pid_start": "3477178:1072108728",
+        "name": "java",
+        "mean_cores": 0.4481049696066592
+      },
+      {
+        "pid_start": "3479317:1072110821",
+        "name": "java",
+        "mean_cores": 0.4446521560756693
+      },
+      {
+        "pid_start": "3480050:1072111609",
+        "name": "java",
+        "mean_cores": 0.14956339741301042
+      },
+      {
+        "pid_start": "179864:371194767",
+        "name": "containerd",
+        "mean_cores": 0.07916111473874997
+      },
+      {
+        "pid_start": "3478571:1072110024",
+        "name": "java",
+        "mean_cores": 0.07428425946898962
+      },
+      {
+        "pid_start": "1045974:119299987",
+        "name": "minio",
+        "mean_cores": 0.06209212129458878
+      },
+      {
+        "pid_start": "3477710:1072109037",
+        "name": "python",
+        "mean_cores": 0.062053106452430645
+      },
+      {
+        "pid_start": "3477175:1072108714",
+        "name": "python3",
+        "mean_cores": 0.05477683838994817
+      },
+      {
+        "pid_start": "1046874:119300132",
+        "name": "milvus",
+        "mean_cores": 0.05346984117765241
+      },
+      {
+        "pid_start": "1045572:119299826",
+        "name": "dockerd",
+        "mean_cores": 0.041141151055698245
+      },
+      {
+        "pid_start": "360246:2626580",
+        "name": "k3s-agent",
+        "mean_cores": 0.03534744699522292
+      },
+      {
+        "pid_start": "1046086:119299990",
+        "name": "minio",
+        "mean_cores": 0.03446961304666615
+      },
+      {
+        "pid_start": "886608:188564584",
+        "name": "gaussdb",
+        "mean_cores": 0.0238965908218257
+      },
+      {
+        "pid_start": "3610533:208666948",
+        "name": "gaussdb",
+        "mean_cores": 0.018512542604010224
+      }
+    ],
+    "pressure_last": {
+      "cpu": "some avg10=0.00 avg60=0.00 avg300=0.00 total=122448405190\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+      "memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=109683324\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=107607523\n",
+      "io": "some avg10=0.00 avg60=0.00 avg300=0.00 total=11323252320\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=11208054264\n"
+    }
+  }
+}

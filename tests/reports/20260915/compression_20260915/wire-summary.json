@@ -1,0 +1,62 @@
+[
+  {
+    "case": "bob_90",
+    "mode": "NONE",
+    "n": 5,
+    "tcp_received_bytes_median": 56409505,
+    "tcp_received_bytes_min": 56409488,
+    "tcp_received_bytes_max": 56409505,
+    "saved_fraction_vs_NONE": 0.0,
+    "arrow_logical_bytes": 56333172
+  },
+  {
+    "case": "bob_90",
+    "mode": "LZ4",
+    "n": 5,
+    "tcp_received_bytes_median": 14954200,
+    "tcp_received_bytes_min": 14954200,
+    "tcp_received_bytes_max": 14954200,
+    "saved_fraction_vs_NONE": 0.7348992869198196,
+    "arrow_logical_bytes": 56333172
+  },
+  {
+    "case": "bob_90",
+    "mode": "ZSTD",
+    "n": 5,
+    "tcp_received_bytes_median": 10021966,
+    "tcp_received_bytes_min": 10021949,
+    "tcp_received_bytes_max": 10021983,
+    "saved_fraction_vs_NONE": 0.8223355088827672,
+    "arrow_logical_bytes": 56333172
+  },
+  {
+    "case": "bob_100",
+    "mode": "NONE",
+    "n": 5,
+    "tcp_received_bytes_median": 62654016,
+    "tcp_received_bytes_min": 62654016,
+    "tcp_received_bytes_max": 62654025,
+    "saved_fraction_vs_NONE": 0.0,
+    "arrow_logical_bytes": 62569696
+  },
+  {
+    "case": "bob_100",
+    "mode": "LZ4",
+    "n": 5,
+    "tcp_received_bytes_median": 16793062,
+    "tcp_received_bytes_min": 16793028,
+    "tcp_received_bytes_max": 16793079,
+    "saved_fraction_vs_NONE": 0.7319714988421493,
+    "arrow_logical_bytes": 62569696
+  },
+  {
+    "case": "bob_100",
+    "mode": "ZSTD",
+    "n": 5,
+    "tcp_received_bytes_median": 11221774,
+    "tcp_received_bytes_min": 11221757,
+    "tcp_received_bytes_max": 11221774,
+    "saved_fraction_vs_NONE": 0.8208929815448702,
+    "arrow_logical_bytes": 62569696
+  }
+]

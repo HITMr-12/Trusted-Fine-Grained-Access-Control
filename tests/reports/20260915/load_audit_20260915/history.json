@@ -1,0 +1,58 @@
+{
+  "high_return_recheck_20260915-R": {
+    "start": 1789455332.56592,
+    "end": 1789455670.0156624,
+    "samples": 336,
+    "cpu_busy_pct_mean": 3.0726130775858067,
+    "cpu_busy_pct_p95": 7.892271662763466,
+    "cpu_busy_pct_max": 17.824182699827936,
+    "iowait_pct_mean": 0.0005120674527310831,
+    "iowait_pct_max": 0.04681647940074907,
+    "tracked_cpu_cores_mean": 1.3987925754737855,
+    "host_busy_cores_mean_assuming_hz100": 3.9244869177966497,
+    "untracked_cores_mean_assuming_hz100": 2.525694342322864,
+    "load1_mean": 2.9694940476190474
+  },
+  "high_return_recheck_20260915-E": {
+    "start": 1789455332.56592,
+    "end": 1789455670.0156624,
+    "samples": 336,
+    "cpu_busy_pct_mean": 3.0658259670025285,
+    "cpu_busy_pct_p95": 6.711200869970483,
+    "cpu_busy_pct_max": 13.812670034978623,
+    "iowait_pct_mean": 0.0006975297584283912,
+    "iowait_pct_max": 0.007807010695604653,
+    "tracked_cpu_cores_mean": 1.7685619620737716,
+    "host_busy_cores_mean_assuming_hz100": 3.919036336962448,
+    "untracked_cores_mean_assuming_hz100": 2.1504743748886765,
+    "load1_mean": 7.779702380952381
+  },
+  "compression_20260915-R": {
+    "start": 1789458540.967331,
+    "end": 1789458911.7176876,
+    "samples": 369,
+    "cpu_busy_pct_mean": 5.834944326426073,
+    "cpu_busy_pct_p95": 10.878204628691654,
+    "cpu_busy_pct_max": 25.833658727059742,
+    "iowait_pct_mean": 0.0006151592031253705,
+    "iowait_pct_max": 0.03131850923896023,
+    "tracked_cpu_cores_mean": 2.2226371390960775,
+    "host_busy_cores_mean_assuming_hz100": 7.448500065042869,
+    "untracked_cores_mean_assuming_hz100": 5.225862925946791,
+    "load1_mean": 9.10761517615176
+  },
+  "compression_20260915-E": {
+    "start": 1789458540.967331,
+    "end": 1789458911.7176876,
+    "samples": 369,
+    "cpu_busy_pct_mean": 2.9217428959559224,
+    "cpu_busy_pct_p95": 6.693680355333905,
+    "cpu_busy_pct_max": 10.93969144460028,
+    "iowait_pct_mean": 0.0006986612581196671,
+    "iowait_pct_max": 0.015506280043417585,
+    "tracked_cpu_cores_mean": 1.5878322522534671,
+    "host_busy_cores_mean_assuming_hz100": 3.7343231693431185,
+    "untracked_cores_mean_assuming_hz100": 2.1464909170896513,
+    "load1_mean": 9.309566395663957
+  }
+}

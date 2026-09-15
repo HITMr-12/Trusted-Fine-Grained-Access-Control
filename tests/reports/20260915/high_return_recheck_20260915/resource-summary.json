@@ -1,0 +1,20 @@
+{
+  "E": {
+    "peak_combined_python_jvm_rss_mib": {
+      "FGAC-lyb": 2232.35546875,
+      "INLINE-lyb": 2513.578125,
+      "NATIVE-bob": 2545.3828125
+    },
+    "machine_cpu_busy_fraction": 0.03188054876833102,
+    "samples": 513,
+    "scope": "whole observed run including worker startup and warmup; host CPU includes unrelated activity"
+  },
+  "R": {
+    "peak_combined_python_jvm_rss_mib": {
+      "FGAC-server": 3422.4453125
+    },
+    "machine_cpu_busy_fraction": 0.03053102510275474,
+    "samples": 528,
+    "scope": "whole observed run including worker startup and warmup; host CPU includes unrelated activity"
+  }
+}
