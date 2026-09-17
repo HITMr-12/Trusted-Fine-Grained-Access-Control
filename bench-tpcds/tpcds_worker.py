@@ -64,6 +64,11 @@ try:
                     'FGAC': '18833', 'FGAC-LZ4': '18834', 'FGAC-ZSTD': '18835'}[mode]
                 bridge = FlightBridge(case['plan'], 'Bearer ' + case['principal'] + '-token', prefetch=True)
                 df = bridge.dataframe(s)
+            elif mode == 'FGAC-FRAMES':
+                from frame_bridge_tpcds import FrameBridge
+                os.environ['FGAC_FLIGHT_URL'] = 'grpc://172.168.22.23:18836'
+                bridge = FrameBridge(case['plan'], 'Bearer ' + case['principal'] + '-token')
+                df = bridge.dataframe(s)
             else:
                 df = s.sql(sql)
             ready = time.perf_counter()
@@ -86,15 +91,19 @@ try:
                    'total_ms': (end - t) * 1000, 'prepare_ms': (ready - t) * 1000,
                    'digest_setup_ms': (action - ready) * 1000, 'action_ms': (end - action) * 1000,
                    'e_cpu_ms': cpu_ms, 'digest': value, 'schema': schema,
-                   'sql': sql if mode != 'FGAC' else None}
+                   'sql': sql if mode in ('NATIVE', 'INLINE') else None}
             if bridge:
                 row.update(stream_rows=bridge.rows, stream_batches=bridge.batches,
                            arrow_bytes=bridge.nbytes,
                            first_arrow_ms=(bridge.first_batch_at - t) * 1000 if bridge.first_batch_at else None,
-                           bridge_next_wait_ms=bridge.next_wait_ms,
-                           bridge_ipc_write_ms=bridge.ipc_write_ms,
-                           prefetch_peak_bytes=bridge.prefetched.peak_queued_bytes,
-                           prefetch_peak_batches=bridge.prefetched.peak_queued_batches)
+                           bridge_next_wait_ms=getattr(bridge, 'next_wait_ms', None),
+                           bridge_ipc_write_ms=getattr(bridge, 'ipc_write_ms', None),
+                           frame_files=getattr(bridge, 'files', None) and len(bridge.files),
+                           frame_disk_write_ms=getattr(bridge, 'disk_write_ms', None),
+                           prefetch_peak_bytes=getattr(getattr(bridge, 'prefetched', None),
+                                                       'peak_queued_bytes', None),
+                           prefetch_peak_batches=getattr(getattr(bridge, 'prefetched', None),
+                                                         'peak_queued_batches', None))
             if cmd.get('capture_plan'):
                 (out / (case['name'] + '_' + mode + '_plan.txt')).write_text(final._jdf.queryExecution().toString())
             answer(row)

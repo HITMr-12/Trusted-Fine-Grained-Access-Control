@@ -40,6 +40,10 @@ def run_case(case):
             from flight_bridge_tpcds import FlightBridge
             bridge = FlightBridge(case['plan'], 'Bearer ' + case['principal'] + '-token', prefetch=True)
             df = bridge.dataframe(spark)
+        elif mode == 'FGAC-FRAMES':
+            from frame_bridge_tpcds import FrameBridge
+            bridge = FrameBridge(case['plan'], 'Bearer ' + case['principal'] + '-token')
+            df = bridge.dataframe(spark)
         else:
             business = case['business_sql']
             if mode == 'INLINE' and case['row_filter_sql']:
