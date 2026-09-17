@@ -1,0 +1,14 @@
+{
+  "modes": [
+    "NATIVE",
+    "FGAC",
+    "FGAC-LZ4",
+    "FGAC-ZSTD"
+  ],
+  "warmup_cycles": 20,
+  "formal_repetitions": 6,
+  "seed": 91620,
+  "wire": "Arrow IPC over gRPC; LZ4/ZSTD via IpcWriteOptions, client transparent",
+  "compute_budget": "identical local[2] E workers; one R Spark serves 18833/18834/18835 sharing one scan slot",
+  "smoke": false
+}

@@ -1,0 +1,15 @@
+{
+  "modes": [
+    "NATIVE",
+    "FGAC",
+    "INLINE"
+  ],
+  "warmup_cycles": 30,
+  "formal_repetitions": 6,
+  "warmup_schedule": "30 randomized round-robin cycles across persistent E sessions",
+  "seed": 91610,
+  "compute_budget": "identical local[2] E Spark settings per worker; FGAC adds R local[2]; no CPU affinity or aggregate quota",
+  "sink": "five-column xxhash64 double-salt digest, same as 0915",
+  "timing": "start before SQL/Flight describe, end after full digest and bridge close",
+  "smoke": false
+}

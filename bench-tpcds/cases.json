@@ -1,0 +1,617 @@
+[
+ {
+  "name": "alice_001",
+  "principal": "alice",
+  "target": 0.001,
+  "threshold": 173.5,
+  "plan": {
+   "version": 2,
+   "schema_version": "1",
+   "root": {
+    "op": "project",
+    "columns": [
+     "ss_item_sk",
+     "ss_store_sk",
+     "ss_quantity",
+     "ss_sales_price",
+     "ss_net_paid"
+    ],
+    "input": {
+     "op": "filter",
+     "condition": {
+      "op": "gte",
+      "left": {
+       "op": "column",
+       "name": "ss_sales_price"
+      },
+      "right": {
+       "op": "literal",
+       "data_type": "double",
+       "value": 173.5
+      }
+     },
+     "input": {
+      "op": "governed_scan",
+      "relation": "lake.sales.store_sales"
+     }
+    }
+   }
+  },
+  "rows": 552,
+  "authorized_rows": 536919,
+  "actual_ratio": 0.001028,
+  "business_sql": "ss_sales_price >= 173.50",
+  "row_filter_sql": "ss_store_sk = 1"
+ },
+ {
+  "name": "alice_01",
+  "principal": "alice",
+  "target": 0.01,
+  "threshold": 143.7,
+  "plan": {
+   "version": 2,
+   "schema_version": "1",
+   "root": {
+    "op": "project",
+    "columns": [
+     "ss_item_sk",
+     "ss_store_sk",
+     "ss_quantity",
+     "ss_sales_price",
+     "ss_net_paid"
+    ],
+    "input": {
+     "op": "filter",
+     "condition": {
+      "op": "gte",
+      "left": {
+       "op": "column",
+       "name": "ss_sales_price"
+      },
+      "right": {
+       "op": "literal",
+       "data_type": "double",
+       "value": 143.7
+      }
+     },
+     "input": {
+      "op": "governed_scan",
+      "relation": "lake.sales.store_sales"
+     }
+    }
+   }
+  },
+  "rows": 5221,
+  "authorized_rows": 536919,
+  "actual_ratio": 0.009724,
+  "business_sql": "ss_sales_price >= 143.70",
+  "row_filter_sql": "ss_store_sk = 1"
+ },
+ {
+  "name": "alice_1",
+  "principal": "alice",
+  "target": 0.1,
+  "threshold": 88.8,
+  "plan": {
+   "version": 2,
+   "schema_version": "1",
+   "root": {
+    "op": "project",
+    "columns": [
+     "ss_item_sk",
+     "ss_store_sk",
+     "ss_quantity",
+     "ss_sales_price",
+     "ss_net_paid"
+    ],
+    "input": {
+     "op": "filter",
+     "condition": {
+      "op": "gte",
+      "left": {
+       "op": "column",
+       "name": "ss_sales_price"
+      },
+      "right": {
+       "op": "literal",
+       "data_type": "double",
+       "value": 88.8
+      }
+     },
+     "input": {
+      "op": "governed_scan",
+      "relation": "lake.sales.store_sales"
+     }
+    }
+   }
+  },
+  "rows": 52416,
+  "authorized_rows": 536919,
+  "actual_ratio": 0.097624,
+  "business_sql": "ss_sales_price >= 88.80",
+  "row_filter_sql": "ss_store_sk = 1"
+ },
+ {
+  "name": "alice_5",
+  "principal": "alice",
+  "target": 0.5,
+  "threshold": 27.6,
+  "plan": {
+   "version": 2,
+   "schema_version": "1",
+   "root": {
+    "op": "project",
+    "columns": [
+     "ss_item_sk",
+     "ss_store_sk",
+     "ss_quantity",
+     "ss_sales_price",
+     "ss_net_paid"
+    ],
+    "input": {
+     "op": "filter",
+     "condition": {
+      "op": "gte",
+      "left": {
+       "op": "column",
+       "name": "ss_sales_price"
+      },
+      "right": {
+       "op": "literal",
+       "data_type": "double",
+       "value": 27.6
+      }
+     },
+     "input": {
+      "op": "governed_scan",
+      "relation": "lake.sales.store_sales"
+     }
+    }
+   }
+  },
+  "rows": 261804,
+  "authorized_rows": 536919,
+  "actual_ratio": 0.487604,
+  "business_sql": "ss_sales_price >= 27.60",
+  "row_filter_sql": "ss_store_sk = 1"
+ },
+ {
+  "name": "alice_1_0",
+  "principal": "alice",
+  "target": 1.0,
+  "threshold": null,
+  "plan": {
+   "version": 2,
+   "schema_version": "1",
+   "root": {
+    "op": "project",
+    "columns": [
+     "ss_item_sk",
+     "ss_store_sk",
+     "ss_quantity",
+     "ss_sales_price",
+     "ss_net_paid"
+    ],
+    "input": {
+     "op": "governed_scan",
+     "relation": "lake.sales.store_sales"
+    }
+   }
+  },
+  "rows": 536919,
+  "authorized_rows": 536919,
+  "actual_ratio": 1.0,
+  "business_sql": "true",
+  "row_filter_sql": "ss_store_sk = 1"
+ },
+ {
+  "name": "bob_001",
+  "principal": "bob",
+  "target": 0.001,
+  "threshold": 173.5,
+  "plan": {
+   "version": 2,
+   "schema_version": "1",
+   "root": {
+    "op": "project",
+    "columns": [
+     "ss_item_sk",
+     "ss_store_sk",
+     "ss_quantity",
+     "ss_sales_price",
+     "ss_net_paid"
+    ],
+    "input": {
+     "op": "filter",
+     "condition": {
+      "op": "gte",
+      "left": {
+       "op": "column",
+       "name": "ss_sales_price"
+      },
+      "right": {
+       "op": "literal",
+       "data_type": "double",
+       "value": 173.5
+      }
+     },
+     "input": {
+      "op": "governed_scan",
+      "relation": "lake.sales.store_sales"
+     }
+    }
+   }
+  },
+  "rows": 540,
+  "authorized_rows": 541263,
+  "actual_ratio": 0.000998,
+  "business_sql": "ss_sales_price >= 173.50",
+  "row_filter_sql": "ss_store_sk = 2"
+ },
+ {
+  "name": "bob_01",
+  "principal": "bob",
+  "target": 0.01,
+  "threshold": 143.7,
+  "plan": {
+   "version": 2,
+   "schema_version": "1",
+   "root": {
+    "op": "project",
+    "columns": [
+     "ss_item_sk",
+     "ss_store_sk",
+     "ss_quantity",
+     "ss_sales_price",
+     "ss_net_paid"
+    ],
+    "input": {
+     "op": "filter",
+     "condition": {
+      "op": "gte",
+      "left": {
+       "op": "column",
+       "name": "ss_sales_price"
+      },
+      "right": {
+       "op": "literal",
+       "data_type": "double",
+       "value": 143.7
+      }
+     },
+     "input": {
+      "op": "governed_scan",
+      "relation": "lake.sales.store_sales"
+     }
+    }
+   }
+  },
+  "rows": 5268,
+  "authorized_rows": 541263,
+  "actual_ratio": 0.009733,
+  "business_sql": "ss_sales_price >= 143.70",
+  "row_filter_sql": "ss_store_sk = 2"
+ },
+ {
+  "name": "bob_1",
+  "principal": "bob",
+  "target": 0.1,
+  "threshold": 88.8,
+  "plan": {
+   "version": 2,
+   "schema_version": "1",
+   "root": {
+    "op": "project",
+    "columns": [
+     "ss_item_sk",
+     "ss_store_sk",
+     "ss_quantity",
+     "ss_sales_price",
+     "ss_net_paid"
+    ],
+    "input": {
+     "op": "filter",
+     "condition": {
+      "op": "gte",
+      "left": {
+       "op": "column",
+       "name": "ss_sales_price"
+      },
+      "right": {
+       "op": "literal",
+       "data_type": "double",
+       "value": 88.8
+      }
+     },
+     "input": {
+      "op": "governed_scan",
+      "relation": "lake.sales.store_sales"
+     }
+    }
+   }
+  },
+  "rows": 52675,
+  "authorized_rows": 541263,
+  "actual_ratio": 0.097319,
+  "business_sql": "ss_sales_price >= 88.80",
+  "row_filter_sql": "ss_store_sk = 2"
+ },
+ {
+  "name": "bob_5",
+  "principal": "bob",
+  "target": 0.5,
+  "threshold": 27.6,
+  "plan": {
+   "version": 2,
+   "schema_version": "1",
+   "root": {
+    "op": "project",
+    "columns": [
+     "ss_item_sk",
+     "ss_store_sk",
+     "ss_quantity",
+     "ss_sales_price",
+     "ss_net_paid"
+    ],
+    "input": {
+     "op": "filter",
+     "condition": {
+      "op": "gte",
+      "left": {
+       "op": "column",
+       "name": "ss_sales_price"
+      },
+      "right": {
+       "op": "literal",
+       "data_type": "double",
+       "value": 27.6
+      }
+     },
+     "input": {
+      "op": "governed_scan",
+      "relation": "lake.sales.store_sales"
+     }
+    }
+   }
+  },
+  "rows": 264927,
+  "authorized_rows": 541263,
+  "actual_ratio": 0.489461,
+  "business_sql": "ss_sales_price >= 27.60",
+  "row_filter_sql": "ss_store_sk = 2"
+ },
+ {
+  "name": "bob_1_0",
+  "principal": "bob",
+  "target": 1.0,
+  "threshold": null,
+  "plan": {
+   "version": 2,
+   "schema_version": "1",
+   "root": {
+    "op": "project",
+    "columns": [
+     "ss_item_sk",
+     "ss_store_sk",
+     "ss_quantity",
+     "ss_sales_price",
+     "ss_net_paid"
+    ],
+    "input": {
+     "op": "governed_scan",
+     "relation": "lake.sales.store_sales"
+    }
+   }
+  },
+  "rows": 541263,
+  "authorized_rows": 541263,
+  "actual_ratio": 1.0,
+  "business_sql": "true",
+  "row_filter_sql": "ss_store_sk = 2"
+ },
+ {
+  "name": "bench_full_001",
+  "principal": "bench_full",
+  "target": 0.001,
+  "threshold": 173.5,
+  "plan": {
+   "version": 2,
+   "schema_version": "1",
+   "root": {
+    "op": "project",
+    "columns": [
+     "ss_item_sk",
+     "ss_store_sk",
+     "ss_quantity",
+     "ss_sales_price",
+     "ss_net_paid"
+    ],
+    "input": {
+     "op": "filter",
+     "condition": {
+      "op": "gte",
+      "left": {
+       "op": "column",
+       "name": "ss_sales_price"
+      },
+      "right": {
+       "op": "literal",
+       "data_type": "double",
+       "value": 173.5
+      }
+     },
+     "input": {
+      "op": "governed_scan",
+      "relation": "lake.sales.store_sales"
+     }
+    }
+   }
+  },
+  "rows": 27668,
+  "authorized_rows": 28800991,
+  "actual_ratio": 0.000961,
+  "business_sql": "ss_sales_price >= 173.50",
+  "row_filter_sql": null
+ },
+ {
+  "name": "bench_full_01",
+  "principal": "bench_full",
+  "target": 0.01,
+  "threshold": 143.7,
+  "plan": {
+   "version": 2,
+   "schema_version": "1",
+   "root": {
+    "op": "project",
+    "columns": [
+     "ss_item_sk",
+     "ss_store_sk",
+     "ss_quantity",
+     "ss_sales_price",
+     "ss_net_paid"
+    ],
+    "input": {
+     "op": "filter",
+     "condition": {
+      "op": "gte",
+      "left": {
+       "op": "column",
+       "name": "ss_sales_price"
+      },
+      "right": {
+       "op": "literal",
+       "data_type": "double",
+       "value": 143.7
+      }
+     },
+     "input": {
+      "op": "governed_scan",
+      "relation": "lake.sales.store_sales"
+     }
+    }
+   }
+  },
+  "rows": 275793,
+  "authorized_rows": 28800991,
+  "actual_ratio": 0.009576,
+  "business_sql": "ss_sales_price >= 143.70",
+  "row_filter_sql": null
+ },
+ {
+  "name": "bench_full_1",
+  "principal": "bench_full",
+  "target": 0.1,
+  "threshold": 88.8,
+  "plan": {
+   "version": 2,
+   "schema_version": "1",
+   "root": {
+    "op": "project",
+    "columns": [
+     "ss_item_sk",
+     "ss_store_sk",
+     "ss_quantity",
+     "ss_sales_price",
+     "ss_net_paid"
+    ],
+    "input": {
+     "op": "filter",
+     "condition": {
+      "op": "gte",
+      "left": {
+       "op": "column",
+       "name": "ss_sales_price"
+      },
+      "right": {
+       "op": "literal",
+       "data_type": "double",
+       "value": 88.8
+      }
+     },
+     "input": {
+      "op": "governed_scan",
+      "relation": "lake.sales.store_sales"
+     }
+    }
+   }
+  },
+  "rows": 2752030,
+  "authorized_rows": 28800991,
+  "actual_ratio": 0.095553,
+  "business_sql": "ss_sales_price >= 88.80",
+  "row_filter_sql": null
+ },
+ {
+  "name": "bench_full_5",
+  "principal": "bench_full",
+  "target": 0.5,
+  "threshold": 27.6,
+  "plan": {
+   "version": 2,
+   "schema_version": "1",
+   "root": {
+    "op": "project",
+    "columns": [
+     "ss_item_sk",
+     "ss_store_sk",
+     "ss_quantity",
+     "ss_sales_price",
+     "ss_net_paid"
+    ],
+    "input": {
+     "op": "filter",
+     "condition": {
+      "op": "gte",
+      "left": {
+       "op": "column",
+       "name": "ss_sales_price"
+      },
+      "right": {
+       "op": "literal",
+       "data_type": "double",
+       "value": 27.6
+      }
+     },
+     "input": {
+      "op": "governed_scan",
+      "relation": "lake.sales.store_sales"
+     }
+    }
+   }
+  },
+  "rows": 13752062,
+  "authorized_rows": 28800991,
+  "actual_ratio": 0.477486,
+  "business_sql": "ss_sales_price >= 27.60",
+  "row_filter_sql": null
+ },
+ {
+  "name": "bench_full_1_0",
+  "principal": "bench_full",
+  "target": 1.0,
+  "threshold": null,
+  "plan": {
+   "version": 2,
+   "schema_version": "1",
+   "root": {
+    "op": "project",
+    "columns": [
+     "ss_item_sk",
+     "ss_store_sk",
+     "ss_quantity",
+     "ss_sales_price",
+     "ss_net_paid"
+    ],
+    "input": {
+     "op": "governed_scan",
+     "relation": "lake.sales.store_sales"
+    }
+   }
+  },
+  "rows": 28800991,
+  "authorized_rows": 28800991,
+  "actual_ratio": 1.0,
+  "business_sql": "true",
+  "row_filter_sql": null
+ }
+]

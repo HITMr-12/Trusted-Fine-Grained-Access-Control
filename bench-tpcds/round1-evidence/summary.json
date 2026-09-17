@@ -1,0 +1,392 @@
+[
+ {
+  "case": "alice_001",
+  "NATIVE": {
+   "n": 6,
+   "min": 2729.9,
+   "median": 2877.4,
+   "p90": 2884.2,
+   "max": 2932.2
+  },
+  "FGAC": {
+   "n": 6,
+   "min": 2537.3,
+   "median": 2638.9,
+   "p90": 2662.3,
+   "max": 2666.5
+  },
+  "INLINE": {
+   "n": 6,
+   "min": 2612.0,
+   "median": 2726.9,
+   "p90": 2772.6,
+   "max": 2773.4
+  },
+  "FGAC_vs_NATIVE": 0.917,
+  "INLINE_vs_NATIVE": 0.948
+ },
+ {
+  "case": "alice_01",
+  "NATIVE": {
+   "n": 6,
+   "min": 2785.9,
+   "median": 2916.6,
+   "p90": 3062.3,
+   "max": 3110.2
+  },
+  "FGAC": {
+   "n": 6,
+   "min": 2552.1,
+   "median": 2582.1,
+   "p90": 2613.2,
+   "max": 2878.9
+  },
+  "INLINE": {
+   "n": 6,
+   "min": 2663.1,
+   "median": 2716.5,
+   "p90": 2730.5,
+   "max": 2735.7
+  },
+  "FGAC_vs_NATIVE": 0.885,
+  "INLINE_vs_NATIVE": 0.931
+ },
+ {
+  "case": "alice_1",
+  "NATIVE": {
+   "n": 6,
+   "min": 2785.0,
+   "median": 2842.1,
+   "p90": 2921.6,
+   "max": 3016.9
+  },
+  "FGAC": {
+   "n": 6,
+   "min": 2570.0,
+   "median": 2625.1,
+   "p90": 2704.5,
+   "max": 2734.0
+  },
+  "INLINE": {
+   "n": 6,
+   "min": 2638.0,
+   "median": 2700.8,
+   "p90": 2739.3,
+   "max": 2770.9
+  },
+  "FGAC_vs_NATIVE": 0.924,
+  "INLINE_vs_NATIVE": 0.95
+ },
+ {
+  "case": "alice_1_0",
+  "NATIVE": {
+   "n": 6,
+   "min": 2712.3,
+   "median": 2839.0,
+   "p90": 2842.6,
+   "max": 3040.3
+  },
+  "FGAC": {
+   "n": 6,
+   "min": 2660.5,
+   "median": 2741.6,
+   "p90": 2810.4,
+   "max": 2836.4
+  },
+  "INLINE": {
+   "n": 6,
+   "min": 2593.5,
+   "median": 2671.6,
+   "p90": 2689.6,
+   "max": 2724.3
+  },
+  "FGAC_vs_NATIVE": 0.966,
+  "INLINE_vs_NATIVE": 0.941
+ },
+ {
+  "case": "alice_5",
+  "NATIVE": {
+   "n": 6,
+   "min": 2848.2,
+   "median": 2919.8,
+   "p90": 2974.9,
+   "max": 3058.2
+  },
+  "FGAC": {
+   "n": 6,
+   "min": 2604.0,
+   "median": 2711.2,
+   "p90": 2779.4,
+   "max": 2790.5
+  },
+  "INLINE": {
+   "n": 6,
+   "min": 2691.5,
+   "median": 2764.9,
+   "p90": 2805.4,
+   "max": 2830.1
+  },
+  "FGAC_vs_NATIVE": 0.929,
+  "INLINE_vs_NATIVE": 0.947
+ },
+ {
+  "case": "bench_full_001",
+  "NATIVE": {
+   "n": 6,
+   "min": 3834.4,
+   "median": 3966.4,
+   "p90": 4062.5,
+   "max": 4128.8
+  },
+  "FGAC": {
+   "n": 6,
+   "min": 4008.7,
+   "median": 4080.2,
+   "p90": 4297.7,
+   "max": 4322.4
+  },
+  "INLINE": {
+   "n": 6,
+   "min": 3892.4,
+   "median": 3924.8,
+   "p90": 3935.5,
+   "max": 4028.6
+  },
+  "FGAC_vs_NATIVE": 1.029,
+  "INLINE_vs_NATIVE": 0.99
+ },
+ {
+  "case": "bench_full_01",
+  "NATIVE": {
+   "n": 6,
+   "min": 3873.4,
+   "median": 4046.5,
+   "p90": 4177.3,
+   "max": 4177.6
+  },
+  "FGAC": {
+   "n": 6,
+   "min": 3923.7,
+   "median": 3993.5,
+   "p90": 4153.0,
+   "max": 4273.8
+  },
+  "INLINE": {
+   "n": 6,
+   "min": 3860.1,
+   "median": 4001.2,
+   "p90": 4019.5,
+   "max": 4036.8
+  },
+  "FGAC_vs_NATIVE": 0.987,
+  "INLINE_vs_NATIVE": 0.989
+ },
+ {
+  "case": "bench_full_1",
+  "NATIVE": {
+   "n": 6,
+   "min": 4576.7,
+   "median": 4712.1,
+   "p90": 4803.6,
+   "max": 4888.7
+  },
+  "FGAC": {
+   "n": 6,
+   "min": 5140.1,
+   "median": 5200.4,
+   "p90": 5349.3,
+   "max": 5403.1
+  },
+  "INLINE": {
+   "n": 6,
+   "min": 4501.6,
+   "median": 4719.1,
+   "p90": 4795.4,
+   "max": 4861.2
+  },
+  "FGAC_vs_NATIVE": 1.104,
+  "INLINE_vs_NATIVE": 1.001
+ },
+ {
+  "case": "bench_full_1_0",
+  "NATIVE": {
+   "n": 6,
+   "min": 9541.6,
+   "median": 9692.2,
+   "p90": 10068.5,
+   "max": 10108.5
+  },
+  "FGAC": {
+   "n": 6,
+   "min": 14494.1,
+   "median": 15252.3,
+   "p90": 15397.5,
+   "max": 15614.4
+  },
+  "INLINE": {
+   "n": 6,
+   "min": 9583.5,
+   "median": 9750.9,
+   "p90": 9934.9,
+   "max": 9993.9
+  },
+  "FGAC_vs_NATIVE": 1.574,
+  "INLINE_vs_NATIVE": 1.006
+ },
+ {
+  "case": "bench_full_5",
+  "NATIVE": {
+   "n": 6,
+   "min": 7502.9,
+   "median": 7698.0,
+   "p90": 7776.8,
+   "max": 8025.9
+  },
+  "FGAC": {
+   "n": 6,
+   "min": 9983.0,
+   "median": 10424.0,
+   "p90": 10499.1,
+   "max": 10637.1
+  },
+  "INLINE": {
+   "n": 6,
+   "min": 7348.0,
+   "median": 7435.7,
+   "p90": 7608.7,
+   "max": 7863.4
+  },
+  "FGAC_vs_NATIVE": 1.354,
+  "INLINE_vs_NATIVE": 0.966
+ },
+ {
+  "case": "bob_001",
+  "NATIVE": {
+   "n": 6,
+   "min": 2875.7,
+   "median": 2939.0,
+   "p90": 2967.8,
+   "max": 3165.7
+  },
+  "FGAC": {
+   "n": 6,
+   "min": 2517.2,
+   "median": 2615.9,
+   "p90": 2727.7,
+   "max": 2822.0
+  },
+  "INLINE": {
+   "n": 6,
+   "min": 2611.4,
+   "median": 2731.9,
+   "p90": 2744.6,
+   "max": 2767.3
+  },
+  "FGAC_vs_NATIVE": 0.89,
+  "INLINE_vs_NATIVE": 0.93
+ },
+ {
+  "case": "bob_01",
+  "NATIVE": {
+   "n": 6,
+   "min": 2860.7,
+   "median": 2943.6,
+   "p90": 2966.5,
+   "max": 3017.8
+  },
+  "FGAC": {
+   "n": 6,
+   "min": 2503.0,
+   "median": 2595.4,
+   "p90": 2691.7,
+   "max": 2713.9
+  },
+  "INLINE": {
+   "n": 6,
+   "min": 2608.6,
+   "median": 2706.9,
+   "p90": 2745.0,
+   "max": 2798.0
+  },
+  "FGAC_vs_NATIVE": 0.882,
+  "INLINE_vs_NATIVE": 0.92
+ },
+ {
+  "case": "bob_1",
+  "NATIVE": {
+   "n": 6,
+   "min": 2939.7,
+   "median": 3006.4,
+   "p90": 3019.8,
+   "max": 3136.8
+  },
+  "FGAC": {
+   "n": 6,
+   "min": 2583.8,
+   "median": 2639.8,
+   "p90": 2670.8,
+   "max": 2747.4
+  },
+  "INLINE": {
+   "n": 6,
+   "min": 2630.7,
+   "median": 2665.1,
+   "p90": 2734.7,
+   "max": 2775.1
+  },
+  "FGAC_vs_NATIVE": 0.878,
+  "INLINE_vs_NATIVE": 0.886
+ },
+ {
+  "case": "bob_1_0",
+  "NATIVE": {
+   "n": 6,
+   "min": 2786.6,
+   "median": 2868.0,
+   "p90": 2900.8,
+   "max": 3248.6
+  },
+  "FGAC": {
+   "n": 6,
+   "min": 2599.5,
+   "median": 2705.8,
+   "p90": 2762.3,
+   "max": 2831.4
+  },
+  "INLINE": {
+   "n": 6,
+   "min": 2560.9,
+   "median": 2637.8,
+   "p90": 2659.6,
+   "max": 2714.8
+  },
+  "FGAC_vs_NATIVE": 0.943,
+  "INLINE_vs_NATIVE": 0.92
+ },
+ {
+  "case": "bob_5",
+  "NATIVE": {
+   "n": 6,
+   "min": 2952.6,
+   "median": 2974.6,
+   "p90": 3002.7,
+   "max": 3027.7
+  },
+  "FGAC": {
+   "n": 6,
+   "min": 2658.6,
+   "median": 2759.7,
+   "p90": 2781.6,
+   "max": 3001.1
+  },
+  "INLINE": {
+   "n": 6,
+   "min": 2680.6,
+   "median": 2769.0,
+   "p90": 2789.8,
+   "max": 2795.8
+  },
+  "FGAC_vs_NATIVE": 0.928,
+  "INLINE_vs_NATIVE": 0.931
+ }
+]

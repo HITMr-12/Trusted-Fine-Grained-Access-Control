@@ -1,0 +1,7 @@
+[
+  {
+    "ok": false,
+    "id": "negative-fgac",
+    "error": "Traceback (most recent call last):\n  File \"/home/lyb/fgac-lab/deploy/fgac-tpcds-bench/tpcds_worker.py\", line 65, in <module>\n    bridge = FlightBridge(case['plan'], 'Bearer ' + case['principal'] + '-token', prefetch=True)\n  File \"/home/lyb/fgac-lab/deploy/fgac-tpcds-bench/flight_bridge_tpcds.py\", line 9, in __init__\n  File \"/home/lyb/fgac-lab/deploy/fgac-current/streaming/client.py\", line 19, in describe\n    return self.client.get_flight_info(descriptor, self.options)\n  File \"pyarrow/_flight.pyx\", line 1675, in pyarrow._flight.FlightClient.get_flight_info\n  File \"pyarrow/_flight.pyx\", line 64, in pyarrow._flight.check_flight_status\npyarrow._flight.FlightUnauthenticatedError: Catalog rejected identity. Detail: Unauthenticated\n"
+  }
+]
