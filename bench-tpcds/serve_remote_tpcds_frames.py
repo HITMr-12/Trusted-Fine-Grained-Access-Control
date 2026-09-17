@@ -100,31 +100,53 @@ class FramesFlightServer(GovernedFlightServer):
             start = time.time()
             tmpdir = Path(tempfile.mkdtemp(prefix='fgac-frames-', dir=TMP_ROOT))
             frames = nbytes = 0
-            write_ms = read_ms = 0.0
+            read_ms = 0.0
             first_frame_ms = None
             status = 'aborted'
             cpu = usage()
-            try:
+            # v2 streaming: Spark writes in a background thread; each task commits
+            # its part files the moment it finishes, so we poll the output dir and
+            # send every committed file as a frame while the job is still running.
+            write_done = threading.Event()
+            write_ms = 0.0
+
+            def do_write():
+                nonlocal write_ms
                 t = time.perf_counter()
-                prepared.frame.write.mode('overwrite').option('compression', 'snappy') \
-                    .option('maxRecordsPerFile', 250000).parquet(str(tmpdir))
-                write_ms = (time.perf_counter() - t) * 1000
-                for f in sorted(tmpdir.rglob('*.parquet')):
-                    if context.is_cancelled():
-                        raise flight.FlightCancelledError('Client cancelled scan')
-                    if time.monotonic() >= expires:
-                        raise flight.FlightUnauthorizedError('Scan lease expired')
-                    t = time.perf_counter()
-                    data = f.read_bytes()
-                    read_ms += (time.perf_counter() - t) * 1000
-                    if len(data) < 500:
-                        continue
-                    batch = pa.RecordBatch.from_arrays([pa.array([data])], schema=FRAME_SCHEMA)
-                    if first_frame_ms is None:
-                        first_frame_ms = (time.time() - start) * 1000
-                    frames += 1
-                    nbytes += len(data)
-                    yield batch
+                try:
+                    prepared.frame.write.mode('overwrite').option('compression', 'snappy') \
+                        .option('maxRecordsPerFile', 250000).parquet(str(tmpdir))
+                finally:
+                    write_ms = (time.perf_counter() - t) * 1000
+                    write_done.set()
+
+            threading.Thread(target=do_write, daemon=True).start()
+            sent = set()
+            try:
+                while True:
+                    done = write_done.is_set()
+                    for f in sorted(tmpdir.rglob('*.parquet')):
+                        if f in sent:
+                            continue
+                        if context.is_cancelled():
+                            raise flight.FlightCancelledError('Client cancelled scan')
+                        if time.monotonic() >= expires:
+                            raise flight.FlightUnauthorizedError('Scan lease expired')
+                        t = time.perf_counter()
+                        data = f.read_bytes()
+                        read_ms += (time.perf_counter() - t) * 1000
+                        sent.add(f)
+                        if len(data) < 500:
+                            continue
+                        batch = pa.RecordBatch.from_arrays([pa.array([data])], schema=FRAME_SCHEMA)
+                        if first_frame_ms is None:
+                            first_frame_ms = (time.time() - start) * 1000
+                        frames += 1
+                        nbytes += len(data)
+                        yield batch
+                    if done:
+                        break
+                    time.sleep(0.15)
                 status = 'complete'
             finally:
                 shutil.rmtree(tmpdir, ignore_errors=True)
