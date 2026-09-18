@@ -33,7 +33,13 @@ def main():
     ap.add_argument('--out', required=True)
     ap.add_argument('--reps', type=int, default=3)
     ap.add_argument('--only', default=None)
+    ap.add_argument('--mask-ports', default=None,
+                    help='on_port,off_port override for mask/mask3 combos')
     args = ap.parse_args()
+
+    mask_on_port = mask_off_port = None
+    if args.mask_ports:
+        mask_on_port, mask_off_port = args.mask_ports.split(',')
 
     cases = [c for c in json.load(open(args.cases)) if c['name'].startswith('bench_full_')]
     ports = {}
@@ -59,6 +65,8 @@ def main():
             seq += 1
             cmd = {'case': case, 'mode': MODE_OF[kind], 'id': '%s-%s-r%s-%d' % (case['name'], combo, rep, seq),
                    'rep': rep, 'sec': sec == 'on', 'authorization': auth}
+            if kind in ('mask', 'mask3') and mask_on_port:
+                cmd['mask_port'] = mask_on_port if sec == 'on' else mask_off_port
             t = time.time()
             ans = call(ports[kind], cmd)
             row = {'sequence': seq, 'case': case['name'], 'combo': combo, 'rep': rep,

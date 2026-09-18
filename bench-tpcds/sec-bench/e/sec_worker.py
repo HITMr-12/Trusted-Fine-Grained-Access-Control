@@ -113,7 +113,8 @@ try:
                            'relation_id': 'lake.sales.store_sales', 'schema_version': '1',
                            'columns': COLS, 'authorization': cmd['authorization']}
                 result = scan_digest_v3(s, os.environ['MASK3_DELIVERY_ROOT'], request, business,
-                    host=os.environ['MASK_HOST'], port=int('19051' if sec else '19052'),
+                    host=os.environ['MASK_HOST'],
+                    port=int(cmd.get('mask_port') or ('19051' if sec else '19052')),
                     ca=os.environ.get('SEC_CA'), sec=sec)
                 end = time.perf_counter()
                 if int(result['digest']['rows']) != case['rows']:
