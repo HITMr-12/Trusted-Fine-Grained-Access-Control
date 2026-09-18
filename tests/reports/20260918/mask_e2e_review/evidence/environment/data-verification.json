@@ -1,0 +1,775 @@
+{
+  "ok": true,
+  "rows": 28800991,
+  "files": [
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00000-0-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00000.parquet",
+      "rows": 970294,
+      "sha256": "6b2a05a571752ca2cf679ef385b48b6577a0a6b33569a9fe79b578b9d6e48281",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 43630,
+        "ss_quantity": 43411,
+        "ss_sales_price": 43353,
+        "ss_net_paid": 43463
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 9687622
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00001-1-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00001.parquet",
+      "rows": 970218,
+      "sha256": "60313561067a89c2f9043c818a50d40cce4d7ab542113c35cc5bb8dc056dbd6a",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 43383,
+        "ss_quantity": 43331,
+        "ss_sales_price": 43418,
+        "ss_net_paid": 43477
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 9690550
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00002-2-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00002.parquet",
+      "rows": 970472,
+      "sha256": "f5d84a3ba8bd5b8bc90a5815fdf0b42ba0ecad8dbe4e9d5fec8eadc2be6ae28c",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 43648,
+        "ss_quantity": 43568,
+        "ss_sales_price": 43802,
+        "ss_net_paid": 43752
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 9687258
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00003-3-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00003.parquet",
+      "rows": 970480,
+      "sha256": "8b564d67c03c4017799886c61a5fa25008f1f54d4ed1c8bb77fd5698cb9f4c0c",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 43649,
+        "ss_quantity": 44005,
+        "ss_sales_price": 43634,
+        "ss_net_paid": 44199
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 9690333
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00004-4-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00004.parquet",
+      "rows": 970508,
+      "sha256": "5098631ef728d1ab573ca87855a68fd67979a60fdb7f106e790b2e28c49341fc",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 43934,
+        "ss_quantity": 44081,
+        "ss_sales_price": 43678,
+        "ss_net_paid": 43731
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 9685961
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00005-5-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00005.parquet",
+      "rows": 970510,
+      "sha256": "4282e05d5ad46d97c18235df84686d31df6995f90c1e1c39b3a3c5d838d8e187",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 43696,
+        "ss_quantity": 43699,
+        "ss_sales_price": 43821,
+        "ss_net_paid": 43906
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 9690257
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00006-6-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00006.parquet",
+      "rows": 970276,
+      "sha256": "07c1e8b7d849c0d32c2549935cac4096aa799a523ffbdb45808ca227fe26dba5",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 43653,
+        "ss_quantity": 43494,
+        "ss_sales_price": 43621,
+        "ss_net_paid": 43610
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 9683935
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00007-7-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00007.parquet",
+      "rows": 985482,
+      "sha256": "13fb0a26298e592a872cdadce8bbf2f865f4c61c809db87fb0d70b3442aa1521",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 44268,
+        "ss_quantity": 44284,
+        "ss_sales_price": 44240,
+        "ss_net_paid": 44042
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 9841877
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00008-8-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00008.parquet",
+      "rows": 977784,
+      "sha256": "fd851cc63f5a6a3de24fdd5feafaaaeafa6052a24c4969c5882e3fe18024b933",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 44527,
+        "ss_quantity": 44451,
+        "ss_sales_price": 44190,
+        "ss_net_paid": 44397
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 9758520
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00009-9-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00009.parquet",
+      "rows": 977334,
+      "sha256": "ce4cbfd086b71ff7271fd1b7814f16b1ec25208ecee9d5a46419bfc70bd80064",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 43868,
+        "ss_quantity": 43588,
+        "ss_sales_price": 43741,
+        "ss_net_paid": 43782
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 9756777
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00010-10-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00010.parquet",
+      "rows": 977363,
+      "sha256": "901dc8dbbebca3de7253a2503f48f92e1e0005410a12e215cd481146e65c7e07",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 43867,
+        "ss_quantity": 43476,
+        "ss_sales_price": 43698,
+        "ss_net_paid": 43825
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 9756197
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00011-11-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00011.parquet",
+      "rows": 977308,
+      "sha256": "4d205757bd84daebf069b64747885dde1da9dd07d1b428394b6a2365942625c5",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 43608,
+        "ss_quantity": 43758,
+        "ss_sales_price": 43914,
+        "ss_net_paid": 43802
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 9753677
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00012-12-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00012.parquet",
+      "rows": 977597,
+      "sha256": "9b53bc38a5a0955f9f5f39168befdf9ff2f4ebefb56be09a6b31dd211a6036a2",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 44048,
+        "ss_quantity": 44241,
+        "ss_sales_price": 44335,
+        "ss_net_paid": 44289
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 9758208
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00013-13-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00013.parquet",
+      "rows": 977564,
+      "sha256": "2ecbccfe07952d29c9886a6d2382dd5239f4d4ed8c06bda13ebb117bac9aa48d",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 44177,
+        "ss_quantity": 44246,
+        "ss_sales_price": 44004,
+        "ss_net_paid": 44072
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 9755442
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00014-14-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00014.parquet",
+      "rows": 970301,
+      "sha256": "fdde8555fbc19bcd10b71aa69bb36a0ec986d234680b33e93194285a26dbf82e",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 43469,
+        "ss_quantity": 43375,
+        "ss_sales_price": 43557,
+        "ss_net_paid": 43907
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 9688126
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00015-15-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00015.parquet",
+      "rows": 970423,
+      "sha256": "bd94d5bdb0efa4a040085d324c46938150ba9de94c63956c8278c508eac6fd95",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 43808,
+        "ss_quantity": 43575,
+        "ss_sales_price": 43749,
+        "ss_net_paid": 43670
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 9687967
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00016-16-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00016.parquet",
+      "rows": 831492,
+      "sha256": "e3c663e94299489e96095f91b57b258e4517b5a8d329decfa19b81df463d58ec",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 37383,
+        "ss_quantity": 37363,
+        "ss_sales_price": 37329,
+        "ss_net_paid": 37550
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 8296953
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00017-17-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00017.parquet",
+      "rows": 831018,
+      "sha256": "f40e3219f8f3073914d467acc6163272e543469a0ec0c05612d2ff7a821c456c",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 37442,
+        "ss_quantity": 37522,
+        "ss_sales_price": 37277,
+        "ss_net_paid": 37344
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 8300110
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00018-18-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00018.parquet",
+      "rows": 830319,
+      "sha256": "059df65279cf324a01b9c95a72b87c58c9f47abd45428ab21a5d2ff42b9e2227",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 37254,
+        "ss_quantity": 37431,
+        "ss_sales_price": 37304,
+        "ss_net_paid": 37323
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 8283227
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00019-19-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00019.parquet",
+      "rows": 829883,
+      "sha256": "9e859e9eac9d3cbe0ece5636c4e6ccbc484fc16d0b93ebd2c9e2ef00aeee7775",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 36919,
+        "ss_quantity": 37220,
+        "ss_sales_price": 37324,
+        "ss_net_paid": 37048
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 8280009
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00020-20-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00020.parquet",
+      "rows": 829852,
+      "sha256": "909a8165e8131f1fd6ebc36df9bb975d223f7c542e0de2f6519bc7f31fdfc733",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 37277,
+        "ss_quantity": 37169,
+        "ss_sales_price": 37512,
+        "ss_net_paid": 37437
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 8281908
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00021-21-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00021.parquet",
+      "rows": 829563,
+      "sha256": "075951d65a38a78c204020b1d8f2fc52c51976fb473e4ea6757bf89e3bf54546",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 37343,
+        "ss_quantity": 37152,
+        "ss_sales_price": 37444,
+        "ss_net_paid": 36934
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 8287737
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00022-22-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00022.parquet",
+      "rows": 829325,
+      "sha256": "8ead310ed1e17b69df0f3624835613ba01f65a2ec429f5a769ae3e5b719e8430",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 37543,
+        "ss_quantity": 37545,
+        "ss_sales_price": 37489,
+        "ss_net_paid": 37414
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 8276429
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00023-23-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00023.parquet",
+      "rows": 829045,
+      "sha256": "2f3542083eed5b483171d5356ebb3e3cc86cec253cc44161ae7bd3d527af52da",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 37362,
+        "ss_quantity": 37468,
+        "ss_sales_price": 37153,
+        "ss_net_paid": 37208
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 8276755
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00024-24-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00024.parquet",
+      "rows": 828753,
+      "sha256": "61d8a713b906f65a62b4ba4803bd364b042e4aa3c7e3c98b9cfa3dbb43589aba",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 37484,
+        "ss_quantity": 37187,
+        "ss_sales_price": 37267,
+        "ss_net_paid": 37444
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 8266102
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00025-25-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00025.parquet",
+      "rows": 822061,
+      "sha256": "e5ce95c0bc111150bf939827611d06aa45ec1878d5e7cd0c0d2bd8e6f0d9b210",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 37006,
+        "ss_quantity": 36837,
+        "ss_sales_price": 37174,
+        "ss_net_paid": 37106
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 8206835
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00026-26-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00026.parquet",
+      "rows": 823002,
+      "sha256": "48cd5f584cf6cd268c98b3fc477a17b30719bfbcc3834b9fbabe8a361d2ee487",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 37219,
+        "ss_quantity": 37192,
+        "ss_sales_price": 37295,
+        "ss_net_paid": 37387
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 8215546
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00027-27-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00027.parquet",
+      "rows": 822187,
+      "sha256": "fc7d8f00b3ca4925092932c573e9352294ebbc115df60c1ce56a531443bf177a",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 36892,
+        "ss_quantity": 37256,
+        "ss_sales_price": 37104,
+        "ss_net_paid": 37269
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 8208742
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00028-28-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00028.parquet",
+      "rows": 821791,
+      "sha256": "28b7c5ec5886dffa8d7596e5d41bd397a0d568b35967776aead004255a3887df",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 36934,
+        "ss_quantity": 36887,
+        "ss_sales_price": 37013,
+        "ss_net_paid": 36915
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 8198911
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00029-29-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00029.parquet",
+      "rows": 821649,
+      "sha256": "df2dee82064d933039507cef71f27059d5563485b57f28ec11129277e032f9be",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 37025,
+        "ss_quantity": 36809,
+        "ss_sales_price": 36897,
+        "ss_net_paid": 36852
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 8201585
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00030-30-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00030.parquet",
+      "rows": 821427,
+      "sha256": "0a7468727ac6edb225e85dc9d7d9a2c6fd07499dff753b51a4ff05b1ad8806e7",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 37205,
+        "ss_quantity": 37220,
+        "ss_sales_price": 37320,
+        "ss_net_paid": 37120
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 8189722
+    },
+    {
+      "source": "fgac/warehouse/tpcds/store_sales/data/00031-31-a555f858-ee40-43ab-b3ed-90048ce80092-0-00001.parquet",
+      "layout": "/tmp/masklayout_zstd/part-00031.parquet",
+      "rows": 815710,
+      "sha256": "776e9a1f2b4ff2c1bc6997701bbf20c2481cc9b7019ad33b79d29ec523dc710f",
+      "equal": true,
+      "nulls": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 36617,
+        "ss_quantity": 36703,
+        "ss_sales_price": 36714,
+        "ss_net_paid": 36448
+      },
+      "sentinel_collisions": {
+        "ss_item_sk": 0,
+        "ss_store_sk": 0,
+        "ss_quantity": 0,
+        "ss_sales_price": 0,
+        "ss_net_paid": 0
+      },
+      "row_groups": 1,
+      "codec": "ZSTD",
+      "size": 8142709
+    }
+  ],
+  "seconds": 4.0552942752838135
+}

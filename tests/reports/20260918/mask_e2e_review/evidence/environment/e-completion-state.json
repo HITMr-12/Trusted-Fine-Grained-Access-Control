@@ -1,0 +1,27 @@
+{
+  "side": "e",
+  "time": 1789714070.26928,
+  "remaining_test_workers": [],
+  "removed_query_caches": [
+    {
+      "path": "/dev/shm/mask-review-20260918",
+      "files": 8,
+      "bytes": 199552237
+    },
+    {
+      "path": "/dev/shm/mask-review-fair-20260918",
+      "files": 0,
+      "bytes": 0
+    },
+    {
+      "path": "/dev/shm/mask-review-original-20260918",
+      "files": 0,
+      "bytes": 0
+    },
+    {
+      "path": "/dev/shm/mask-review-faults-20260918",
+      "files": 36,
+      "bytes": 834082903
+    }
+  ]
+}

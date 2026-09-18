@@ -1,0 +1,32 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "mode": "NATIVE",
+      "principal": "denied",
+      "exit": 0,
+      "results": [
+        "NEGATIVE_PASS denied 执行业务语句 | AccessControlException"
+      ],
+      "ok": true
+    },
+    {
+      "mode": "NATIVE",
+      "principal": "alice",
+      "exit": 0,
+      "results": [
+        "NEGATIVE_PASS alice 查未授权列 ss_ticket_number | AccessControlException"
+      ],
+      "ok": true
+    },
+    {
+      "mode": "FGAC",
+      "exit": 0,
+      "results": [
+        "NEGATIVE_PASS 无效token -> UNAUTHENTICATED",
+        "NEGATIVE_PASS 未授权列 -> UNAUTHORIZED: Catalog denied request. Detail: Unauthorized"
+      ],
+      "ok": true
+    }
+  ]
+}

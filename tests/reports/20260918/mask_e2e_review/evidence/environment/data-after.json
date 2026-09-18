@@ -1,0 +1,133 @@
+{
+  "ok": true,
+  "files": [
+    {
+      "file": "/tmp/masklayout_zstd/part-00000.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00001.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00002.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00003.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00004.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00005.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00006.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00007.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00008.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00009.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00010.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00011.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00012.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00013.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00014.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00015.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00016.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00017.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00018.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00019.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00020.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00021.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00022.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00023.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00024.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00025.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00026.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00027.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00028.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00029.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00030.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "/tmp/masklayout_zstd/part-00031.parquet",
+      "unchanged": true
+    }
+  ]
+}

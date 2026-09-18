@@ -1,0 +1,21 @@
+{
+  "side": "e",
+  "stopped_pids": [
+    2771707,
+    2772160,
+    2774187,
+    2774572,
+    3014157,
+    3014566,
+    3027279,
+    3027656,
+    3040706,
+    3041080,
+    3353062,
+    3381367,
+    3381788
+  ],
+  "remaining": [],
+  "fresh_runtime": "/home/lyb/fgac-lab/runs/review-mask-20260918/runtime",
+  "storage": "preserved pending full data verification"
+}

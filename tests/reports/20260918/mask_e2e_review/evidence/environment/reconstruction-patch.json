@@ -1,0 +1,1 @@
+{"reason": "TPCDS relation allowlist not committed; old deployment contains this single-line diff", "file": "deployed_plan_compiler.py", "patch": "add lake.sales.store_sales to ALLOWED_RELATIONS"}

@@ -1,0 +1,15 @@
+{
+  "commit": "839cb49",
+  "modes": [
+    "NATIVE",
+    "FGAC",
+    "MASK2"
+  ],
+  "reps": 3,
+  "seed": 91826,
+  "warmup": "Every case in every mode once",
+  "timer": "E driver monotonic request-to-final-validated-result, includes transport and complete producer, excludes service startup and post-result directory removal",
+  "cpu": "E processes and R FGAC/MASK2 each restricted to 2 CPUs; documented FGAC backpressure patch enabled",
+  "input": "all 32 layout files verified value-for-value against original S3; regenerated skeleton",
+  "order": "balanced cyclic Latin square over 3 reps, cases shuffled per rep"
+}

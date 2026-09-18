@@ -1,0 +1,15 @@
+{
+  "commit": "839cb49",
+  "modes": [
+    "NATIVE",
+    "FGAC",
+    "MASK16"
+  ],
+  "reps": 3,
+  "seed": 91826,
+  "warmup": "Every selected case in every mode once",
+  "timer": "E driver monotonic request-to-final-validated-result, includes transport and complete producer, excludes service startup and post-result directory removal",
+  "cpu": "Original published posture: E local[2], R FGAC local[2], MASK16 workers=16; OS affinity unrestricted on both machines",
+  "input": "all 32 layout files verified value-for-value against original S3; regenerated skeleton",
+  "order": "balanced cyclic Latin square over 3 reps, cases shuffled per rep"
+}

@@ -1,5 +1,7 @@
 # TPC-DS store_sales 公平基准套件（bench-tpcds）
 
+报告导航：[TPC-DS / MASK 历史报告](REPORTS.md) · [09-18 独立端到端复测](../tests/reports/20260918/mask_e2e_review/README.md)。下文为早期套件说明；其授权验证不能直接覆盖后续更换配置的计时。
+
 2026-09-16 建立，供 FGAC / 基线（NATIVE）/ inline 三方案横向性能测试复用。
 口径完全对齐 0915 taxi 基线（等值行策略 + 业务阈值梯度 + 固定列投影 + xxhash64 双盐摘要汇）。
 

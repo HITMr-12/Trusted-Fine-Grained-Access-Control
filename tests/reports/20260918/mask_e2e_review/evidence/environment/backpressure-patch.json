@@ -1,0 +1,7 @@
+{
+  "time": 1789696440.681864,
+  "source": "839cb49:bench-tpcds/patch_backpressure.py",
+  "application": "replace only produce() body; preserve current branch compression and CLI support",
+  "before_sha256": "63f169260c4ac5a8f6bbc675b8eba875396ff0325a80c1cf34ef1db380a83c1b",
+  "after_sha256": "e4d57a93783daa13f995dc72c446344bdc65be07f625d4c2a90b72b9e783a5ec"
+}

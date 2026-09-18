@@ -1,5 +1,7 @@
 # FGAC 可信 Demo
 
+报告入口：[实验与复测报告目录](tests/reports/README.md)；当前 MASK 分支的[历史结论对照](tests/reports/20260918/mask_e2e_review/COMPARISON.md)与[独立端到端复测](tests/reports/20260918/mask_e2e_review/REVIEW.md)。
+
 本仓库保存不含可信硬件依赖的 FGAC Demo。控制面基于 Apache Polaris 1.7.0；Remote
 执行域与 Spark/PostgreSQL 适配插件均为独立发布组件，不并入 Polaris 进程或制品。
 
