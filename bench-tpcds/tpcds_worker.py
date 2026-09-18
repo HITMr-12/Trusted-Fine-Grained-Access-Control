@@ -42,6 +42,11 @@ def requests():
 
 COLS = ["ss_item_sk", "ss_store_sk", "ss_quantity", "ss_sales_price", "ss_net_paid"]
 TABLE = "fgac.tpcds.store_sales"
+# MASK delivery materializes NULLs as the -2 sentinel (PLAIN pages carry no
+# definition levels). E restores NULL semantics before predicate/digest, so the
+# rows seen by the digest are value-identical to NATIVE.
+MASK_NULLABLE = ["ss_store_sk", "ss_quantity", "ss_sales_price", "ss_net_paid"]
+MASK_NULLFILL = -2
 
 try:
     for line in requests():
@@ -69,6 +74,16 @@ try:
                 os.environ['FGAC_FLIGHT_URL'] = 'grpc://172.168.22.23:18836'
                 bridge = FrameBridge(case['plan'], 'Bearer ' + case['principal'] + '-token')
                 df = bridge.dataframe(s)
+            elif mode == 'MASK':
+                # MASK E-side read: the delivered (masked, uncompressed) Parquet
+                # files, NULL sentinel restored, filtered by the SAME business
+                # predicate, ending in the SAME xxhash64 digest sink below ->
+                # read config is byte-for-byte identical to NATIVE (same
+                # session/conf/parallelism/digest).
+                df = s.read.parquet(case['mask_dir'])
+                for c in MASK_NULLABLE:
+                    df = df.withColumn(c, F.when(F.col(c) != MASK_NULLFILL, F.col(c)))
+                df = df.filter(business)
             else:
                 df = s.sql(sql)
             ready = time.perf_counter()

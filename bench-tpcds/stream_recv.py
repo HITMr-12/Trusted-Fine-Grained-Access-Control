@@ -23,11 +23,14 @@ while True:
     data = inp.read(plen)
     assert len(data) == plen, 'short read on %s' % name
     t0 = time.perf_counter()
-    (outdir / name).write_bytes(data)
+    tmp = outdir / (name + '.part')
+    tmp.write_bytes(data)
+    tmp.rename(outdir / name)          # atomic publish
     got += plen
     n += 1
     print(json.dumps({'file': name, 'bytes': plen, 'n': n, 'cum_bytes': got,
                       'cum_wall_s': round(time.perf_counter() - t_start, 2)}),
           flush=True)
+(outdir / '.done').write_text('files=%d bytes=%d' % (n, got))
 print('RECV_DONE files=%d bytes=%d wall_s=%.2f' %
       (n, got, time.perf_counter() - t_start), flush=True)
