@@ -13,8 +13,9 @@ import socket
 import sys
 import time
 
-COMBOS = ['native-off', 'native-on', 'fgac-off', 'fgac-on', 'mask-off', 'mask-on']
-MODE_OF = {'native': 'NATIVE', 'fgac': 'FGAC', 'mask': 'MASK'}
+COMBOS = ['native-off', 'native-on', 'fgac-off', 'fgac-on', 'mask-off', 'mask-on',
+          'mask3-off', 'mask3-on']
+MODE_OF = {'native': 'NATIVE', 'fgac': 'FGAC', 'mask': 'MASK', 'mask3': 'MASK3'}
 
 
 def call(port, cmd, timeout=300):
@@ -36,7 +37,9 @@ def main():
 
     cases = [c for c in json.load(open(args.cases)) if c['name'].startswith('bench_full_')]
     ports = {}
-    for kind in ('native', 'fgac', 'mask'):
+    kinds = {'native', 'fgac', 'mask'} | {c.rsplit('-', 1)[0] for c in
+            (args.only.split(',') if args.only else COMBOS)}
+    for kind in sorted(kinds):
         ready = json.load(open('%s/%s.ready' % (args.ready_dir, kind)))
         ports[kind] = ready['control_port']
     combos = args.only.split(',') if args.only else COMBOS

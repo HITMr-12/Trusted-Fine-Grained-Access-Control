@@ -35,11 +35,11 @@ def budget(sock, deadline):
     sock.settimeout(min(30, remaining))
 
 
-def read_exact(sock, size, deadline):
+def read_exact(sock, size, deadline, chunk=1024 * 1024):
     data = bytearray()
     while len(data) < size:
         budget(sock, deadline)
-        part = sock.recv(min(size - len(data), 1024 * 1024))
+        part = sock.recv(min(size - len(data), chunk))
         if not part:
             raise EOFError('connection ended before explicit commit')
         data.extend(part)

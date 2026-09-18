@@ -16,7 +16,8 @@ from mask_protocol import (VERSION, MAX_FILES, MAX_FILE, MAX_TOTAL, LEASE_SECOND
                            identifier, digest, read_json, read_exact, send_json)
 
 
-def fetch(root, request, *, host, port, ca=None, sec=True, on_file=None):
+def fetch(root, request, *, host, port, ca=None, sec=True, on_file=None,
+          chunk_bytes=1024 * 1024):
     ident = identifier(request['request_id'])
     root = Path(root)
     root.mkdir(mode=0o700, parents=True, exist_ok=True)
@@ -63,7 +64,8 @@ def fetch(root, request, *, host, port, ca=None, sec=True, on_file=None):
                     with pending.open('xb') as file:
                         remaining = size
                         while remaining:
-                            data = read_exact(conn, min(remaining, 1024 * 1024), deadline)
+                            data = read_exact(conn, min(remaining, chunk_bytes), deadline,
+                                              chunk=chunk_bytes)
                             if sec:
                                 checksum.update(data)
                             file.write(data)

@@ -104,6 +104,25 @@ try:
                         'start': start_wall, 'end': time.time(), 'total_ms': (end - t) * 1000,
                         'e_cpu_ms': (usage() - cpu) * 1000, **result})
                 continue
+            elif mode == 'MASK3':
+                # Fused variant: v2 governance/SEC intact, per-file Spark jobs
+                # micro-batched and reception chunks enlarged (E-side only).
+                from mask_scan_v3 import scan_digest as scan_digest_v3
+                sec = bool(cmd.get('sec'))
+                request = {'version': 2, 'request_id': uuid.uuid4().hex,
+                           'relation_id': 'lake.sales.store_sales', 'schema_version': '1',
+                           'columns': COLS, 'authorization': cmd['authorization']}
+                result = scan_digest_v3(s, os.environ['MASK3_DELIVERY_ROOT'], request, business,
+                    host=os.environ['MASK_HOST'], port=int('19051' if sec else '19052'),
+                    ca=os.environ.get('SEC_CA'), sec=sec)
+                end = time.perf_counter()
+                if int(result['digest']['rows']) != case['rows']:
+                    raise ValueError('MASK3 row count mismatch')
+                answer({'ok': True, 'id': ident, 'case': case['name'], 'mode': mode,
+                        'principal': case['principal'], 'rep': cmd['rep'], 'warmup': cmd['rep'] < 0,
+                        'start': start_wall, 'end': time.time(), 'total_ms': (end - t) * 1000,
+                        'e_cpu_ms': (usage() - cpu) * 1000, **result})
+                continue
             else:
                 hc = s.sparkContext._jsc.hadoopConfiguration()
                 if cmd.get('sec'):
